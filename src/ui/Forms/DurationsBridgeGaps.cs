@@ -103,7 +103,7 @@ namespace Nikse.SubtitleEdit.Forms
             {
                 Configuration.Settings.Tools.BridgeGapMilliseconds = SubtitleFormat.FramesToMilliseconds((double)numericUpDownMaxMs.Value);
             }
-                
+
             DialogResult = DialogResult.OK;
         }
 

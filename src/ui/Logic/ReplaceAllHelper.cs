@@ -44,7 +44,7 @@ namespace Nikse.SubtitleEdit.Logic
                 while (findHelper.FindNext(p.Text, start))
                 {
                     p.Text = p.Text.Remove(findHelper.SelectedLineIndex, findHelper.FindTextLength).Insert(findHelper.SelectedLineIndex, findHelper.ReplaceText);
-                    start = findHelper.SelectedLineIndex + findHelper.ReplaceText.Length -1;
+                    start = findHelper.SelectedLineIndex + findHelper.ReplaceText.Length - 1;
                     replaceCount++;
                 }
             }

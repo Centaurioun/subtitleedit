@@ -49,7 +49,7 @@ namespace Nikse.SubtitleEdit.Core.Dictionaries
                 input.StartsWith(input[0].ToString().ToUpperInvariant()) &&
                 input != input.ToLowerInvariant() && input != input.ToUpperInvariant() &&
                 input.Length < 12)
-            { 
+            {
                 //TODO: Improve... some better way to detect uncommon/special names
                 return input;
             }
@@ -110,7 +110,7 @@ namespace Nikse.SubtitleEdit.Core.Dictionaries
                 {
                     // Ignore list
                     "Andor", "honour", "honours", "putain", "whoah", "eastside", "Starpath", "comlink", "Taamet",
-                    "Atwater", "Lakeview", "Glassman", "Starfleet", "Coulda", "Woulda", "percenters", 
+                    "Atwater", "Lakeview", "Glassman", "Starfleet", "Coulda", "Woulda", "percenters",
                     "starbase", "damnit", "Goddamnit", "Goodfellas", "Stillwater", "ahold", "Coldplay",
                 });
             }

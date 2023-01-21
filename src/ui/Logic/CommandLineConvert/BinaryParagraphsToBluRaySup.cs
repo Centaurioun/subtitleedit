@@ -29,7 +29,7 @@ namespace Nikse.SubtitleEdit.Logic.CommandLineConvert
                     var p = sub[index];
                     var brSub = new BluRaySupPicture
                     {
-                        StartTime = (long)Math.Round(paragraph.StartTime.TotalMilliseconds, MidpointRounding.AwayFromZero) ,
+                        StartTime = (long)Math.Round(paragraph.StartTime.TotalMilliseconds, MidpointRounding.AwayFromZero),
                         EndTime = (long)Math.Round(paragraph.EndTime.TotalMilliseconds, MidpointRounding.AwayFromZero),
                         Width = screenWidth,
                         Height = screenHeight,

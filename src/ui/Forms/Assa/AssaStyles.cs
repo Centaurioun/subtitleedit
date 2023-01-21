@@ -1522,7 +1522,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
 
             var idx = listViewStyles.SelectedIndices[0];
             var style = _currentFileStyles[idx];
-            using (var form = new ReplaceStyleWith(style, _currentFileStyles,  _storageCategories, _subtitle))
+            using (var form = new ReplaceStyleWith(style, _currentFileStyles, _storageCategories, _subtitle))
             {
                 if (form.ShowDialog(this) == DialogResult.OK)
                 {

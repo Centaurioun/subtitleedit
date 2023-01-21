@@ -346,7 +346,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
                 comboBoxContinuationStyle.SelectedIndex = ContinuationUtilities.GetIndexFromContinuationStyle(RulesProfiles[idx].ContinuationStyle);
             }
             catch
-            { 
+            {
                 // ignore
             }
 

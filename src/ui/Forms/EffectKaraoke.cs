@@ -116,7 +116,7 @@ namespace Nikse.SubtitleEdit.Forms
 
             var duration = _paragraph.Duration.TotalMilliseconds - ((double)numericUpDownDelay.Value * TimeCode.BaseUnit);
             var partsBase = EffectAnimationPart.MakeBase(_paragraph.Text);
-            var stepsLength = duration / partsBase.Count+1;
+            var stepsLength = duration / partsBase.Count + 1;
             for (var index = 0; index <= partsBase.Count; index++)
             {
                 var list = EffectAnimationPart.MakeEffectKaraoke(partsBase, panelColor.BackColor, index);

@@ -1123,9 +1123,9 @@ namespace Nikse.SubtitleEdit.Controls
                 {
                     // This try/catch is due to some characters crashing MeasureString, see https://github.com/SubtitleEdit/subtitleedit/issues/6108
                     text = "?";
-                    measureResult = new SizeF(5,5);
+                    measureResult = new SizeF(5, 5);
                 }
-                
+
                 while (text.Length > removeLength && graphics.MeasureString(text, font).Width > max)
                 {
                     text = text.Remove(text.Length - removeLength).TrimEnd() + "…";

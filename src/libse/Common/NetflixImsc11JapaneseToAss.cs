@@ -542,7 +542,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                 finalSub.Paragraphs.AddRange(SplitToAssRenderLines(paragraph, width, height));
             }
 
-            var style = new SsaStyle{ FontSize = 40, Bold = false};
+            var style = new SsaStyle { FontSize = 40, Bold = false };
             finalSub.Header = string.Format(AdvancedSubStationAlpha.HeaderNoStyles, string.Empty, style.ToRawAss());
 
             finalSub.Header = finalSub.Header.Replace("PlayDepth: 0", @"PlayDepth: 0

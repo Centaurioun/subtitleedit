@@ -276,7 +276,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                     encodings.Add(enc);
                 }
             }
-            catch 
+            catch
             {
                 // ignore
             }

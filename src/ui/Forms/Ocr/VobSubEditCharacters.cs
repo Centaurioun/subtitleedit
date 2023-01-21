@@ -191,7 +191,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
                     count++;
                 }
             }
-           
+
             texts.Sort();
             labelCount.Text = $"{count:#,##0}";
 

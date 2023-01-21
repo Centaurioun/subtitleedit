@@ -180,7 +180,7 @@ namespace Nikse.SubtitleEdit.Forms
                 indices.Add(selectedItem.Index);
             }
 
-            foreach (var index in indices.OrderByDescending(p=>p))
+            foreach (var index in indices.OrderByDescending(p => p))
             {
                 ShotChanges.RemoveAt(index);
             }

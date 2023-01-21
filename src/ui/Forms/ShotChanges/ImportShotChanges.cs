@@ -68,7 +68,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
                 numericUpDownThreshold.Enabled = true;
             }
 
-            numericUpDownThreshold.Left = labelFfmpegThreshold.Left + labelFfmpegThreshold.Width + 4;          
+            numericUpDownThreshold.Left = labelFfmpegThreshold.Left + labelFfmpegThreshold.Width + 4;
         }
 
         public sealed override string Text

@@ -22,7 +22,7 @@ namespace Nikse.SubtitleEdit.Logic
             {
                 if (fontFamily.IsStyleAvailable(FontStyle.Regular) && fontFamily.IsStyleAvailable(FontStyle.Bold))
                 {
-                    fonts.Add(fontFamily);  
+                    fonts.Add(fontFamily);
                 }
             }
 
