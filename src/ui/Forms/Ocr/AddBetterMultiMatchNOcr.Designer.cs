@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Ocr
+namespace Nikse.SubtitleEdit.Forms.Ocr
 {
     partial class AddBetterMultiMatchNOcr
     {
@@ -102,12 +102,12 @@
             // numericUpDownExpandCount
             // 
             this.numericUpDownExpandCount.Location = new System.Drawing.Point(252, 38);
-            this.numericUpDownExpandCount.Maximum = new decimal(new int[] {
+            this.numericUpDownExpandCount.Maximum = new decimal(new[]{
             3,
             0,
             0,
             0});
-            this.numericUpDownExpandCount.Minimum = new decimal(new int[] {
+            this.numericUpDownExpandCount.Minimum = new decimal(new[]{
             2,
             0,
             0,
@@ -115,7 +115,7 @@
             this.numericUpDownExpandCount.Name = "numericUpDownExpandCount";
             this.numericUpDownExpandCount.Size = new System.Drawing.Size(63, 20);
             this.numericUpDownExpandCount.TabIndex = 1;
-            this.numericUpDownExpandCount.Value = new decimal(new int[] {
+            this.numericUpDownExpandCount.Value = new decimal(new[]{
             2,
             0,
             0,

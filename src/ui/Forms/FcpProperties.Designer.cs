@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class FcpProperties
     {
@@ -74,7 +74,7 @@
             // numericUpDownFontSize
             // 
             this.numericUpDownFontSize.Location = new System.Drawing.Point(133, 54);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             200,
             0,
             0,

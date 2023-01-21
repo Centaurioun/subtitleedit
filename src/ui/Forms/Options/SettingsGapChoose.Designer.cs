@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Options
+namespace Nikse.SubtitleEdit.Forms.Options
 {
     partial class SettingsGapChoose
     {
@@ -86,7 +86,7 @@
             // numericUpDownFrames
             // 
             this.numericUpDownFrames.Location = new System.Drawing.Point(15, 94);
-            this.numericUpDownFrames.Maximum = new decimal(new int[] {
+            this.numericUpDownFrames.Maximum = new decimal(new[]{
             25,
             0,
             0,
@@ -94,7 +94,7 @@
             this.numericUpDownFrames.Name = "numericUpDownFrames";
             this.numericUpDownFrames.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownFrames.TabIndex = 52;
-            this.numericUpDownFrames.Value = new decimal(new int[] {
+            this.numericUpDownFrames.Value = new decimal(new[]{
             2,
             0,
             0,

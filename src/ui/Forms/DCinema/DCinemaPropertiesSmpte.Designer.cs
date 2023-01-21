@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 
 namespace Nikse.SubtitleEdit.Forms.DCinema
 {
@@ -261,12 +261,12 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             // numericUpDownReelNumber
             // 
             this.numericUpDownReelNumber.Location = new System.Drawing.Point(181, 116);
-            this.numericUpDownReelNumber.Maximum = new decimal(new int[] {
+            this.numericUpDownReelNumber.Maximum = new decimal(new[]{
             250,
             0,
             0,
             0});
-            this.numericUpDownReelNumber.Minimum = new decimal(new int[] {
+            this.numericUpDownReelNumber.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -274,7 +274,7 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             this.numericUpDownReelNumber.Name = "numericUpDownReelNumber";
             this.numericUpDownReelNumber.Size = new System.Drawing.Size(112, 20);
             this.numericUpDownReelNumber.TabIndex = 2;
-            this.numericUpDownReelNumber.Value = new decimal(new int[] {
+            this.numericUpDownReelNumber.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -336,7 +336,7 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             // numericUpDownFadeDown
             // 
             this.numericUpDownFadeDown.Location = new System.Drawing.Point(174, 230);
-            this.numericUpDownFadeDown.Maximum = new decimal(new int[] {
+            this.numericUpDownFadeDown.Maximum = new decimal(new[]{
             50,
             0,
             0,
@@ -357,7 +357,7 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             // numericUpDownFadeUp
             // 
             this.numericUpDownFadeUp.Location = new System.Drawing.Point(174, 204);
-            this.numericUpDownFadeUp.Maximum = new decimal(new int[] {
+            this.numericUpDownFadeUp.Maximum = new decimal(new[]{
             50,
             0,
             0,
@@ -389,12 +389,12 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             // numericUpDownTopBottomMargin
             // 
             this.numericUpDownTopBottomMargin.Location = new System.Drawing.Point(175, 176);
-            this.numericUpDownTopBottomMargin.Maximum = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Maximum = new decimal(new[]{
             50,
             0,
             0,
             0});
-            this.numericUpDownTopBottomMargin.Minimum = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -402,7 +402,7 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             this.numericUpDownTopBottomMargin.Name = "numericUpDownTopBottomMargin";
             this.numericUpDownTopBottomMargin.Size = new System.Drawing.Size(112, 20);
             this.numericUpDownTopBottomMargin.TabIndex = 9;
-            this.numericUpDownTopBottomMargin.Value = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -467,7 +467,7 @@ namespace Nikse.SubtitleEdit.Forms.DCinema
             // numericUpDownFontSize
             // 
             this.numericUpDownFontSize.Location = new System.Drawing.Point(175, 150);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             250,
             0,
             0,

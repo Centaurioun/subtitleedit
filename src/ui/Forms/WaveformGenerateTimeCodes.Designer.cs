@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class WaveformGenerateTimeCodes
     {
@@ -131,7 +131,7 @@
             // numericUpDownMinVol
             // 
             this.numericUpDownMinVol.Location = new System.Drawing.Point(208, 60);
-            this.numericUpDownMinVol.Minimum = new decimal(new int[] {
+            this.numericUpDownMinVol.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -139,7 +139,7 @@
             this.numericUpDownMinVol.Name = "numericUpDownMinVol";
             this.numericUpDownMinVol.Size = new System.Drawing.Size(51, 20);
             this.numericUpDownMinVol.TabIndex = 7;
-            this.numericUpDownMinVol.Value = new decimal(new int[] {
+            this.numericUpDownMinVol.Value = new decimal(new[]{
             35,
             0,
             0,
@@ -231,12 +231,12 @@
             // numericUpDownBlockSize
             // 
             this.numericUpDownBlockSize.Location = new System.Drawing.Point(149, 24);
-            this.numericUpDownBlockSize.Maximum = new decimal(new int[] {
+            this.numericUpDownBlockSize.Maximum = new decimal(new[]{
             300,
             0,
             0,
             0});
-            this.numericUpDownBlockSize.Minimum = new decimal(new int[] {
+            this.numericUpDownBlockSize.Minimum = new decimal(new[]{
             50,
             0,
             0,
@@ -244,7 +244,7 @@
             this.numericUpDownBlockSize.Name = "numericUpDownBlockSize";
             this.numericUpDownBlockSize.Size = new System.Drawing.Size(51, 20);
             this.numericUpDownBlockSize.TabIndex = 13;
-            this.numericUpDownBlockSize.Value = new decimal(new int[] {
+            this.numericUpDownBlockSize.Value = new decimal(new[]{
             100,
             0,
             0,
@@ -271,7 +271,7 @@
             // numericUpDownMaxVol
             // 
             this.numericUpDownMaxVol.Location = new System.Drawing.Point(208, 89);
-            this.numericUpDownMaxVol.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxVol.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -279,7 +279,7 @@
             this.numericUpDownMaxVol.Name = "numericUpDownMaxVol";
             this.numericUpDownMaxVol.Size = new System.Drawing.Size(51, 20);
             this.numericUpDownMaxVol.TabIndex = 10;
-            this.numericUpDownMaxVol.Value = new decimal(new int[] {
+            this.numericUpDownMaxVol.Value = new decimal(new[]{
             70,
             0,
             0,
@@ -320,12 +320,12 @@
             // numericUpDownDefaultMilliseconds
             // 
             this.numericUpDownDefaultMilliseconds.Location = new System.Drawing.Point(111, 26);
-            this.numericUpDownDefaultMilliseconds.Maximum = new decimal(new int[] {
+            this.numericUpDownDefaultMilliseconds.Maximum = new decimal(new[]{
             99999,
             0,
             0,
             0});
-            this.numericUpDownDefaultMilliseconds.Minimum = new decimal(new int[] {
+            this.numericUpDownDefaultMilliseconds.Minimum = new decimal(new[]{
             2000,
             0,
             0,
@@ -333,7 +333,7 @@
             this.numericUpDownDefaultMilliseconds.Name = "numericUpDownDefaultMilliseconds";
             this.numericUpDownDefaultMilliseconds.Size = new System.Drawing.Size(51, 20);
             this.numericUpDownDefaultMilliseconds.TabIndex = 11;
-            this.numericUpDownDefaultMilliseconds.Value = new decimal(new int[] {
+            this.numericUpDownDefaultMilliseconds.Value = new decimal(new[]{
             3500,
             0,
             0,

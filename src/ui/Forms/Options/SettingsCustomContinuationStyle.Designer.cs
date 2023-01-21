@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Options
+namespace Nikse.SubtitleEdit.Forms.Options
 {
     sealed partial class SettingsCustomContinuationStyle
     {
@@ -241,7 +241,7 @@
             // numericUpDownDifferentStyleGapMs
             // 
             this.numericUpDownDifferentStyleGapMs.Location = new System.Drawing.Point(227, 184);
-            this.numericUpDownDifferentStyleGapMs.Maximum = new decimal(new int[] {
+            this.numericUpDownDifferentStyleGapMs.Maximum = new decimal(new[]{
             5000,
             0,
             0,
@@ -249,7 +249,7 @@
             this.numericUpDownDifferentStyleGapMs.Name = "numericUpDownDifferentStyleGapMs";
             this.numericUpDownDifferentStyleGapMs.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownDifferentStyleGapMs.TabIndex = 9;
-            this.numericUpDownDifferentStyleGapMs.Value = new decimal(new int[] {
+            this.numericUpDownDifferentStyleGapMs.Value = new decimal(new[]{
             300,
             0,
             0,

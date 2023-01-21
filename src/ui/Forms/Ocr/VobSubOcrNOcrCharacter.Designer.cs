@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Ocr
+namespace Nikse.SubtitleEdit.Forms.Ocr
 {
     partial class VobSubOcrNOcrCharacter
     {
@@ -242,7 +242,7 @@
             // 
             this.numericUpDownLinesToDraw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDownLinesToDraw.Location = new System.Drawing.Point(455, 99);
-            this.numericUpDownLinesToDraw.Maximum = new decimal(new int[] {
+            this.numericUpDownLinesToDraw.Maximum = new decimal(new[]{
             255,
             0,
             0,

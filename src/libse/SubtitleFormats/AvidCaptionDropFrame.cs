@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -63,7 +63,7 @@ namespace Nikse.SubtitleEdit.Core.SubtitleFormats
             _errorCount = 0;
             bool beginFound = false;
             bool endFound = false;
-            var splitChars = new char[] { ':', ';' };
+            var splitChars = new[] { ':', ';' };
             foreach (var line in lines)
             {
                 var trimmedLine = line.Trim();
@@ -83,8 +83,8 @@ namespace Nikse.SubtitleEdit.Core.SubtitleFormats
                     var start = temp.Substring(0, 11);
                     var end = temp.Substring(12, 11);
 
-                   var startParts = start.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
-                   var endParts = end.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
+                    var startParts = start.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
+                    var endParts = end.Split(splitChars, StringSplitOptions.RemoveEmptyEntries);
                     if (startParts.Length == 4 && endParts.Length == 4)
                     {
                         p = new Paragraph(DecodeTimeCodeFramesFourParts(startParts), DecodeTimeCodeFramesFourParts(endParts), string.Empty);

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Options
+namespace Nikse.SubtitleEdit.Forms.Options
 {
     partial class SettingsFixContinuationStyle
     {
@@ -129,7 +129,7 @@
             // numericUpDownContinuationPause
             // 
             this.numericUpDownContinuationPause.Location = new System.Drawing.Point(101, 138);
-            this.numericUpDownContinuationPause.Maximum = new decimal(new int[] {
+            this.numericUpDownContinuationPause.Maximum = new decimal(new[]{
             5000,
             0,
             0,
@@ -137,7 +137,7 @@
             this.numericUpDownContinuationPause.Name = "numericUpDownContinuationPause";
             this.numericUpDownContinuationPause.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownContinuationPause.TabIndex = 6;
-            this.numericUpDownContinuationPause.Value = new decimal(new int[] {
+            this.numericUpDownContinuationPause.Value = new decimal(new[]{
             300,
             0,
             0,

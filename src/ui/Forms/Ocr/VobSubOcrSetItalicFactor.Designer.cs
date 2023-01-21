@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Ocr
+namespace Nikse.SubtitleEdit.Forms.Ocr
 {
     sealed partial class VobSubOcrSetItalicFactor
     {
@@ -96,13 +96,13 @@
             // numericUpDownItalicFactor
             // 
             this.numericUpDownItalicFactor.DecimalPlaces = 2;
-            this.numericUpDownItalicFactor.Increment = new decimal(new int[] {
+            this.numericUpDownItalicFactor.Increment = new decimal(new[]{
             1,
             0,
             0,
             131072});
             this.numericUpDownItalicFactor.Location = new System.Drawing.Point(12, 19);
-            this.numericUpDownItalicFactor.Maximum = new decimal(new int[] {
+            this.numericUpDownItalicFactor.Maximum = new decimal(new[]{
             10,
             0,
             0,
@@ -110,7 +110,7 @@
             this.numericUpDownItalicFactor.Name = "numericUpDownItalicFactor";
             this.numericUpDownItalicFactor.Size = new System.Drawing.Size(57, 20);
             this.numericUpDownItalicFactor.TabIndex = 10;
-            this.numericUpDownItalicFactor.Value = new decimal(new int[] {
+            this.numericUpDownItalicFactor.Value = new decimal(new[]{
             31,
             0,
             0,

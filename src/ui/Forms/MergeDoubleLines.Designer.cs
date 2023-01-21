@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class MergeDoubleLines
     {
@@ -158,7 +158,7 @@
             // numericUpDownMaxMillisecondsBetweenLines
             // 
             this.numericUpDownMaxMillisecondsBetweenLines.Location = new System.Drawing.Point(202, 15);
-            this.numericUpDownMaxMillisecondsBetweenLines.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxMillisecondsBetweenLines.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -166,7 +166,7 @@
             this.numericUpDownMaxMillisecondsBetweenLines.Name = "numericUpDownMaxMillisecondsBetweenLines";
             this.numericUpDownMaxMillisecondsBetweenLines.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownMaxMillisecondsBetweenLines.TabIndex = 48;
-            this.numericUpDownMaxMillisecondsBetweenLines.Value = new decimal(new int[] {
+            this.numericUpDownMaxMillisecondsBetweenLines.Value = new decimal(new[]{
             250,
             0,
             0,

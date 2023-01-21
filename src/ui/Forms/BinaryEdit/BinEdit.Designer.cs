@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 {
     partial class BinEdit
@@ -248,12 +248,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownY
             // 
             this.numericUpDownY.Location = new System.Drawing.Point(313, 20);
-            this.numericUpDownY.Maximum = new decimal(new int[] {
+            this.numericUpDownY.Maximum = new decimal(new[]{
             999999999,
             0,
             0,
             0});
-            this.numericUpDownY.Minimum = new decimal(new int[] {
+            this.numericUpDownY.Minimum = new decimal(new[]{
             99999,
             0,
             0,
@@ -266,12 +266,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownX
             // 
             this.numericUpDownX.Location = new System.Drawing.Point(243, 20);
-            this.numericUpDownX.Maximum = new decimal(new int[] {
+            this.numericUpDownX.Maximum = new decimal(new[]{
             999999999,
             0,
             0,
             0});
-            this.numericUpDownX.Minimum = new decimal(new int[] {
+            this.numericUpDownX.Minimum = new decimal(new[]{
             99999,
             0,
             0,
@@ -400,12 +400,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownScreenHeight
             // 
             this.numericUpDownScreenHeight.Location = new System.Drawing.Point(152, 21);
-            this.numericUpDownScreenHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownScreenHeight.Maximum = new decimal(new[]{
             999999999,
             0,
             0,
             0});
-            this.numericUpDownScreenHeight.Minimum = new decimal(new int[] {
+            this.numericUpDownScreenHeight.Minimum = new decimal(new[]{
             99999,
             0,
             0,
@@ -418,12 +418,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownScreenWidth
             // 
             this.numericUpDownScreenWidth.Location = new System.Drawing.Point(71, 21);
-            this.numericUpDownScreenWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownScreenWidth.Maximum = new decimal(new[]{
             999999999,
             0,
             0,
             0});
-            this.numericUpDownScreenWidth.Minimum = new decimal(new int[] {
+            this.numericUpDownScreenWidth.Minimum = new decimal(new[]{
             99999,
             0,
             0,

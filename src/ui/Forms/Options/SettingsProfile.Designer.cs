@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Options
+namespace Nikse.SubtitleEdit.Forms.Options
 {
     sealed partial class SettingsProfile
     {
@@ -251,13 +251,13 @@
             // numericUpDownOptimalCharsSec
             // 
             this.numericUpDownOptimalCharsSec.DecimalPlaces = 1;
-            this.numericUpDownOptimalCharsSec.Increment = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownOptimalCharsSec.Location = new System.Drawing.Point(233, 41);
-            this.numericUpDownOptimalCharsSec.Minimum = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -265,7 +265,7 @@
             this.numericUpDownOptimalCharsSec.Name = "numericUpDownOptimalCharsSec";
             this.numericUpDownOptimalCharsSec.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownOptimalCharsSec.TabIndex = 110;
-            this.numericUpDownOptimalCharsSec.Value = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Value = new decimal(new[]{
             11,
             0,
             0,
@@ -284,12 +284,12 @@
             // numericUpDownMaxWordsMin
             // 
             this.numericUpDownMaxWordsMin.Location = new System.Drawing.Point(233, 95);
-            this.numericUpDownMaxWordsMin.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxWordsMin.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownMaxWordsMin.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxWordsMin.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -297,7 +297,7 @@
             this.numericUpDownMaxWordsMin.Name = "numericUpDownMaxWordsMin";
             this.numericUpDownMaxWordsMin.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMaxWordsMin.TabIndex = 130;
-            this.numericUpDownMaxWordsMin.Value = new decimal(new int[] {
+            this.numericUpDownMaxWordsMin.Value = new decimal(new[]{
             300,
             0,
             0,
@@ -334,12 +334,12 @@
             // numericUpDownMaxNumberOfLines
             // 
             this.numericUpDownMaxNumberOfLines.Location = new System.Drawing.Point(233, 201);
-            this.numericUpDownMaxNumberOfLines.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxNumberOfLines.Maximum = new decimal(new[]{
             25,
             0,
             0,
             0});
-            this.numericUpDownMaxNumberOfLines.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxNumberOfLines.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -347,7 +347,7 @@
             this.numericUpDownMaxNumberOfLines.Name = "numericUpDownMaxNumberOfLines";
             this.numericUpDownMaxNumberOfLines.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMaxNumberOfLines.TabIndex = 170;
-            this.numericUpDownMaxNumberOfLines.Value = new decimal(new int[] {
+            this.numericUpDownMaxNumberOfLines.Value = new decimal(new[]{
             2,
             0,
             0,
@@ -375,12 +375,12 @@
             // numericUpDownDurationMin
             // 
             this.numericUpDownDurationMin.Location = new System.Drawing.Point(233, 122);
-            this.numericUpDownDurationMin.Maximum = new decimal(new int[] {
+            this.numericUpDownDurationMin.Maximum = new decimal(new[]{
             2000,
             0,
             0,
             0});
-            this.numericUpDownDurationMin.Minimum = new decimal(new int[] {
+            this.numericUpDownDurationMin.Minimum = new decimal(new[]{
             100,
             0,
             0,
@@ -388,7 +388,7 @@
             this.numericUpDownDurationMin.Name = "numericUpDownDurationMin";
             this.numericUpDownDurationMin.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownDurationMin.TabIndex = 140;
-            this.numericUpDownDurationMin.Value = new decimal(new int[] {
+            this.numericUpDownDurationMin.Value = new decimal(new[]{
             100,
             0,
             0,
@@ -398,12 +398,12 @@
             // numericUpDownDurationMax
             // 
             this.numericUpDownDurationMax.Location = new System.Drawing.Point(233, 148);
-            this.numericUpDownDurationMax.Maximum = new decimal(new int[] {
+            this.numericUpDownDurationMax.Maximum = new decimal(new[]{
             50000,
             0,
             0,
             0});
-            this.numericUpDownDurationMax.Minimum = new decimal(new int[] {
+            this.numericUpDownDurationMax.Minimum = new decimal(new[]{
             3000,
             0,
             0,
@@ -411,7 +411,7 @@
             this.numericUpDownDurationMax.Name = "numericUpDownDurationMax";
             this.numericUpDownDurationMax.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownDurationMax.TabIndex = 150;
-            this.numericUpDownDurationMax.Value = new decimal(new int[] {
+            this.numericUpDownDurationMax.Value = new decimal(new[]{
             50000,
             0,
             0,
@@ -440,7 +440,7 @@
             // numericUpDownMinGapMs
             // 
             this.numericUpDownMinGapMs.Location = new System.Drawing.Point(233, 174);
-            this.numericUpDownMinGapMs.Maximum = new decimal(new int[] {
+            this.numericUpDownMinGapMs.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -448,7 +448,7 @@
             this.numericUpDownMinGapMs.Name = "numericUpDownMinGapMs";
             this.numericUpDownMinGapMs.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMinGapMs.TabIndex = 160;
-            this.numericUpDownMinGapMs.Value = new decimal(new int[] {
+            this.numericUpDownMinGapMs.Value = new decimal(new[]{
             25,
             0,
             0,
@@ -458,13 +458,13 @@
             // numericUpDownMaxCharsSec
             // 
             this.numericUpDownMaxCharsSec.DecimalPlaces = 1;
-            this.numericUpDownMaxCharsSec.Increment = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownMaxCharsSec.Location = new System.Drawing.Point(233, 68);
-            this.numericUpDownMaxCharsSec.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -472,7 +472,7 @@
             this.numericUpDownMaxCharsSec.Name = "numericUpDownMaxCharsSec";
             this.numericUpDownMaxCharsSec.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMaxCharsSec.TabIndex = 120;
-            this.numericUpDownMaxCharsSec.Value = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Value = new decimal(new[]{
             24,
             0,
             0,
@@ -491,12 +491,12 @@
             // numericUpDownSubtitleLineMaximumLength
             // 
             this.numericUpDownSubtitleLineMaximumLength.Location = new System.Drawing.Point(233, 14);
-            this.numericUpDownSubtitleLineMaximumLength.Maximum = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Maximum = new decimal(new[]{
             999,
             0,
             0,
             0});
-            this.numericUpDownSubtitleLineMaximumLength.Minimum = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -504,7 +504,7 @@
             this.numericUpDownSubtitleLineMaximumLength.Name = "numericUpDownSubtitleLineMaximumLength";
             this.numericUpDownSubtitleLineMaximumLength.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownSubtitleLineMaximumLength.TabIndex = 100;
-            this.numericUpDownSubtitleLineMaximumLength.Value = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Value = new decimal(new[]{
             100,
             0,
             0,

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Options
+namespace Nikse.SubtitleEdit.Forms.Options
 {
     sealed partial class SettingsLineWidth
     {
@@ -78,7 +78,7 @@
             // numericUpDownMaxLineWidth
             // 
             this.numericUpDownMaxLineWidth.Location = new System.Drawing.Point(119, 12);
-            this.numericUpDownMaxLineWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxLineWidth.Maximum = new decimal(new[]{
             5000,
             0,
             0,
@@ -86,7 +86,7 @@
             this.numericUpDownMaxLineWidth.Name = "numericUpDownMaxLineWidth";
             this.numericUpDownMaxLineWidth.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMaxLineWidth.TabIndex = 1;
-            this.numericUpDownMaxLineWidth.Value = new decimal(new int[] {
+            this.numericUpDownMaxLineWidth.Value = new decimal(new[]{
             576,
             0,
             0,
@@ -137,12 +137,12 @@
             // 
             this.numericUpDownMeasureFontSize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDownMeasureFontSize.Location = new System.Drawing.Point(324, 38);
-            this.numericUpDownMeasureFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownMeasureFontSize.Maximum = new decimal(new[]{
             200,
             0,
             0,
             0});
-            this.numericUpDownMeasureFontSize.Minimum = new decimal(new int[] {
+            this.numericUpDownMeasureFontSize.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -150,7 +150,7 @@
             this.numericUpDownMeasureFontSize.Name = "numericUpDownMeasureFontSize";
             this.numericUpDownMeasureFontSize.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownMeasureFontSize.TabIndex = 3;
-            this.numericUpDownMeasureFontSize.Value = new decimal(new int[] {
+            this.numericUpDownMeasureFontSize.Value = new decimal(new[]{
             24,
             0,
             0,

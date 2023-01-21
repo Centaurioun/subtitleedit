@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.ShotChanges
+namespace Nikse.SubtitleEdit.Forms.ShotChanges
 {
     partial class ImportShotChanges
     {
@@ -221,18 +221,18 @@
             // numericUpDownThreshold
             // 
             this.numericUpDownThreshold.DecimalPlaces = 2;
-            this.numericUpDownThreshold.Increment = new decimal(new int[] {
+            this.numericUpDownThreshold.Increment = new decimal(new[]{
             1,
             0,
             0,
             131072});
             this.numericUpDownThreshold.Location = new System.Drawing.Point(66, 364);
-            this.numericUpDownThreshold.Maximum = new decimal(new int[] {
+            this.numericUpDownThreshold.Maximum = new decimal(new[]{
             9,
             0,
             0,
             65536});
-            this.numericUpDownThreshold.Minimum = new decimal(new int[] {
+            this.numericUpDownThreshold.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -240,7 +240,7 @@
             this.numericUpDownThreshold.Name = "numericUpDownThreshold";
             this.numericUpDownThreshold.Size = new System.Drawing.Size(48, 20);
             this.numericUpDownThreshold.TabIndex = 4;
-            this.numericUpDownThreshold.Value = new decimal(new int[] {
+            this.numericUpDownThreshold.Value = new decimal(new[]{
             4,
             0,
             0,

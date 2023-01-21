@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class SplitLongLines
     {
@@ -105,12 +105,12 @@
             // numericUpDownSingleLineMaxCharacters
             // 
             this.numericUpDownSingleLineMaxCharacters.Location = new System.Drawing.Point(28, 33);
-            this.numericUpDownSingleLineMaxCharacters.Maximum = new decimal(new int[] {
+            this.numericUpDownSingleLineMaxCharacters.Maximum = new decimal(new[]{
             200,
             0,
             0,
             0});
-            this.numericUpDownSingleLineMaxCharacters.Minimum = new decimal(new int[] {
+            this.numericUpDownSingleLineMaxCharacters.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -118,7 +118,7 @@
             this.numericUpDownSingleLineMaxCharacters.Name = "numericUpDownSingleLineMaxCharacters";
             this.numericUpDownSingleLineMaxCharacters.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownSingleLineMaxCharacters.TabIndex = 0;
-            this.numericUpDownSingleLineMaxCharacters.Value = new decimal(new int[] {
+            this.numericUpDownSingleLineMaxCharacters.Value = new decimal(new[]{
             50,
             0,
             0,
@@ -171,12 +171,12 @@
             // numericUpDownLineMaxCharacters
             // 
             this.numericUpDownLineMaxCharacters.Location = new System.Drawing.Point(243, 33);
-            this.numericUpDownLineMaxCharacters.Maximum = new decimal(new int[] {
+            this.numericUpDownLineMaxCharacters.Maximum = new decimal(new[]{
             200,
             0,
             0,
             0});
-            this.numericUpDownLineMaxCharacters.Minimum = new decimal(new int[] {
+            this.numericUpDownLineMaxCharacters.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -184,7 +184,7 @@
             this.numericUpDownLineMaxCharacters.Name = "numericUpDownLineMaxCharacters";
             this.numericUpDownLineMaxCharacters.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownLineMaxCharacters.TabIndex = 1;
-            this.numericUpDownLineMaxCharacters.Value = new decimal(new int[] {
+            this.numericUpDownLineMaxCharacters.Value = new decimal(new[]{
             90,
             0,
             0,

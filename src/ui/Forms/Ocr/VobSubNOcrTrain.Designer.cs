@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Ocr
+namespace Nikse.SubtitleEdit.Forms.Ocr
 {
     sealed partial class VobSubNOcrTrain
     {
@@ -132,12 +132,12 @@
             // 
             this.numericUpDownSegmentsPerCharacter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDownSegmentsPerCharacter.Location = new System.Drawing.Point(264, 390);
-            this.numericUpDownSegmentsPerCharacter.Maximum = new decimal(new int[] {
+            this.numericUpDownSegmentsPerCharacter.Maximum = new decimal(new[]{
             255,
             0,
             0,
             0});
-            this.numericUpDownSegmentsPerCharacter.Minimum = new decimal(new int[] {
+            this.numericUpDownSegmentsPerCharacter.Minimum = new decimal(new[]{
             50,
             0,
             0,
@@ -145,7 +145,7 @@
             this.numericUpDownSegmentsPerCharacter.Name = "numericUpDownSegmentsPerCharacter";
             this.numericUpDownSegmentsPerCharacter.Size = new System.Drawing.Size(66, 20);
             this.numericUpDownSegmentsPerCharacter.TabIndex = 6;
-            this.numericUpDownSegmentsPerCharacter.Value = new decimal(new int[] {
+            this.numericUpDownSegmentsPerCharacter.Value = new decimal(new[]{
             100,
             0,
             0,

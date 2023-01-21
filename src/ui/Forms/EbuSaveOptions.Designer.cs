@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 
 namespace Nikse.SubtitleEdit.Forms
 {
@@ -427,7 +427,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMaxRows
             // 
             this.numericUpDownMaxRows.Location = new System.Drawing.Point(613, 251);
-            this.numericUpDownMaxRows.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxRows.Maximum = new decimal(new[]{
             99,
             0,
             0,
@@ -500,7 +500,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMaxCharacters
             // 
             this.numericUpDownMaxCharacters.Location = new System.Drawing.Point(613, 225);
-            this.numericUpDownMaxCharacters.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxCharacters.Maximum = new decimal(new[]{
             99,
             0,
             0,
@@ -522,7 +522,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownDiskSequenceNumber
             // 
             this.numericUpDownDiskSequenceNumber.Location = new System.Drawing.Point(613, 277);
-            this.numericUpDownDiskSequenceNumber.Maximum = new decimal(new int[] {
+            this.numericUpDownDiskSequenceNumber.Maximum = new decimal(new[]{
             9,
             0,
             0,
@@ -534,7 +534,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownTotalNumberOfDiscs
             // 
             this.numericUpDownTotalNumberOfDiscs.Location = new System.Drawing.Point(613, 303);
-            this.numericUpDownTotalNumberOfDiscs.Maximum = new decimal(new int[] {
+            this.numericUpDownTotalNumberOfDiscs.Maximum = new decimal(new[]{
             9,
             0,
             0,
@@ -546,7 +546,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownRevisionNumber
             // 
             this.numericUpDownRevisionNumber.Location = new System.Drawing.Point(613, 199);
-            this.numericUpDownRevisionNumber.Maximum = new decimal(new int[] {
+            this.numericUpDownRevisionNumber.Maximum = new decimal(new[]{
             99,
             0,
             0,
@@ -765,7 +765,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownNewLineRows
             // 
             this.numericUpDownNewLineRows.Location = new System.Drawing.Point(256, 78);
-            this.numericUpDownNewLineRows.Maximum = new decimal(new int[] {
+            this.numericUpDownNewLineRows.Maximum = new decimal(new[]{
             10,
             0,
             0,
@@ -773,7 +773,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownNewLineRows.Name = "numericUpDownNewLineRows";
             this.numericUpDownNewLineRows.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownNewLineRows.TabIndex = 54;
-            this.numericUpDownNewLineRows.Value = new decimal(new int[] {
+            this.numericUpDownNewLineRows.Value = new decimal(new[]{
             2,
             0,
             0,
@@ -801,7 +801,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMarginBottom
             // 
             this.numericUpDownMarginBottom.Location = new System.Drawing.Point(256, 52);
-            this.numericUpDownMarginBottom.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginBottom.Maximum = new decimal(new[]{
             50,
             0,
             0,
@@ -813,7 +813,7 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMarginTop
             // 
             this.numericUpDownMarginTop.Location = new System.Drawing.Point(256, 26);
-            this.numericUpDownMarginTop.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginTop.Maximum = new decimal(new[]{
             50,
             0,
             0,

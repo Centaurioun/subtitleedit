@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class Split
     {
@@ -124,7 +124,7 @@
             // numericUpDownParts
             // 
             this.numericUpDownParts.Location = new System.Drawing.Point(151, 38);
-            this.numericUpDownParts.Minimum = new decimal(new int[] {
+            this.numericUpDownParts.Minimum = new decimal(new[]{
             2,
             0,
             0,
@@ -132,7 +132,7 @@
             this.numericUpDownParts.Name = "numericUpDownParts";
             this.numericUpDownParts.Size = new System.Drawing.Size(50, 20);
             this.numericUpDownParts.TabIndex = 1;
-            this.numericUpDownParts.Value = new decimal(new int[] {
+            this.numericUpDownParts.Value = new decimal(new[]{
             2,
             0,
             0,

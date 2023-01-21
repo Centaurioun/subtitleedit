@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 {
     partial class BinEditNewText
@@ -155,7 +155,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownLineSpacing
             // 
             this.numericUpDownLineSpacing.Location = new System.Drawing.Point(802, 110);
-            this.numericUpDownLineSpacing.Maximum = new decimal(new int[] {
+            this.numericUpDownLineSpacing.Maximum = new decimal(new[]{
             500,
             0,
             0,
@@ -163,7 +163,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             this.numericUpDownLineSpacing.Name = "numericUpDownLineSpacing";
             this.numericUpDownLineSpacing.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownLineSpacing.TabIndex = 44;
-            this.numericUpDownLineSpacing.Value = new decimal(new int[] {
+            this.numericUpDownLineSpacing.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -173,12 +173,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // numericUpDownShadowTransparency
             // 
             this.numericUpDownShadowTransparency.Location = new System.Drawing.Point(802, 81);
-            this.numericUpDownShadowTransparency.Maximum = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Maximum = new decimal(new[]{
             255,
             0,
             0,
             0});
-            this.numericUpDownShadowTransparency.Minimum = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -186,7 +186,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             this.numericUpDownShadowTransparency.Name = "numericUpDownShadowTransparency";
             this.numericUpDownShadowTransparency.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownShadowTransparency.TabIndex = 43;
-            this.numericUpDownShadowTransparency.Value = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Value = new decimal(new[]{
             200,
             0,
             0,

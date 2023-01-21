@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class DurationsBridgeGaps
     {
@@ -91,18 +91,18 @@
             // 
             // numericUpDownMaxMs
             // 
-            this.numericUpDownMaxMs.Increment = new decimal(new int[] {
+            this.numericUpDownMaxMs.Increment = new decimal(new[]{
             25,
             0,
             0,
             0});
             this.numericUpDownMaxMs.Location = new System.Drawing.Point(140, 10);
-            this.numericUpDownMaxMs.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxMs.Maximum = new decimal(new[]{
             2000,
             0,
             0,
             0});
-            this.numericUpDownMaxMs.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxMs.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -110,7 +110,7 @@
             this.numericUpDownMaxMs.Name = "numericUpDownMaxMs";
             this.numericUpDownMaxMs.Size = new System.Drawing.Size(50, 20);
             this.numericUpDownMaxMs.TabIndex = 1;
-            this.numericUpDownMaxMs.Value = new decimal(new int[] {
+            this.numericUpDownMaxMs.Value = new decimal(new[]{
             100,
             0,
             0,
@@ -188,13 +188,13 @@
             // 
             // numericUpDownMinMsBetweenLines
             // 
-            this.numericUpDownMinMsBetweenLines.Increment = new decimal(new int[] {
+            this.numericUpDownMinMsBetweenLines.Increment = new decimal(new[]{
             5,
             0,
             0,
             0});
             this.numericUpDownMinMsBetweenLines.Location = new System.Drawing.Point(175, 38);
-            this.numericUpDownMinMsBetweenLines.Maximum = new decimal(new int[] {
+            this.numericUpDownMinMsBetweenLines.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -202,7 +202,7 @@
             this.numericUpDownMinMsBetweenLines.Name = "numericUpDownMinMsBetweenLines";
             this.numericUpDownMinMsBetweenLines.Size = new System.Drawing.Size(50, 20);
             this.numericUpDownMinMsBetweenLines.TabIndex = 4;
-            this.numericUpDownMinMsBetweenLines.Value = new decimal(new int[] {
+            this.numericUpDownMinMsBetweenLines.Value = new decimal(new[]{
             40,
             0,
             0,

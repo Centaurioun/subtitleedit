@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class ChooseResolution
     {
@@ -56,7 +56,7 @@
             // numericUpDownVideoHeight
             // 
             this.numericUpDownVideoHeight.Location = new System.Drawing.Point(205, 29);
-            this.numericUpDownVideoHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoHeight.Maximum = new decimal(new[]{
             100000,
             0,
             0,
@@ -64,7 +64,7 @@
             this.numericUpDownVideoHeight.Name = "numericUpDownVideoHeight";
             this.numericUpDownVideoHeight.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownVideoHeight.TabIndex = 3;
-            this.numericUpDownVideoHeight.Value = new decimal(new int[] {
+            this.numericUpDownVideoHeight.Value = new decimal(new[]{
             1080,
             0,
             0,
@@ -92,7 +92,7 @@
             // numericUpDownVideoWidth
             // 
             this.numericUpDownVideoWidth.Location = new System.Drawing.Point(132, 29);
-            this.numericUpDownVideoWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoWidth.Maximum = new decimal(new[]{
             100000,
             0,
             0,
@@ -100,7 +100,7 @@
             this.numericUpDownVideoWidth.Name = "numericUpDownVideoWidth";
             this.numericUpDownVideoWidth.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownVideoWidth.TabIndex = 1;
-            this.numericUpDownVideoWidth.Value = new decimal(new int[] {
+            this.numericUpDownVideoWidth.Value = new decimal(new[]{
             1920,
             0,
             0,

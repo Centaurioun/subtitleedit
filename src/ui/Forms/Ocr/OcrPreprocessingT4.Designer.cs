@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Ocr
+namespace Nikse.SubtitleEdit.Forms.Ocr
 {
     sealed partial class OcrPreprocessingT4
     {
@@ -66,12 +66,12 @@
             // numericUpDownThreshold
             // 
             this.numericUpDownThreshold.Location = new System.Drawing.Point(20, 32);
-            this.numericUpDownThreshold.Maximum = new decimal(new int[] {
+            this.numericUpDownThreshold.Maximum = new decimal(new[]{
             765,
             0,
             0,
             0});
-            this.numericUpDownThreshold.Minimum = new decimal(new int[] {
+            this.numericUpDownThreshold.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -79,7 +79,7 @@
             this.numericUpDownThreshold.Name = "numericUpDownThreshold";
             this.numericUpDownThreshold.Size = new System.Drawing.Size(57, 20);
             this.numericUpDownThreshold.TabIndex = 15;
-            this.numericUpDownThreshold.Value = new decimal(new int[] {
+            this.numericUpDownThreshold.Value = new decimal(new[]{
             200,
             0,
             0,
@@ -187,12 +187,12 @@
             // numericUpDownScaling
             // 
             this.numericUpDownScaling.Location = new System.Drawing.Point(20, 181);
-            this.numericUpDownScaling.Maximum = new decimal(new int[] {
+            this.numericUpDownScaling.Maximum = new decimal(new[]{
             500,
             0,
             0,
             0});
-            this.numericUpDownScaling.Minimum = new decimal(new int[] {
+            this.numericUpDownScaling.Minimum = new decimal(new[]{
             100,
             0,
             0,
@@ -200,7 +200,7 @@
             this.numericUpDownScaling.Name = "numericUpDownScaling";
             this.numericUpDownScaling.Size = new System.Drawing.Size(57, 20);
             this.numericUpDownScaling.TabIndex = 17;
-            this.numericUpDownScaling.Value = new decimal(new int[] {
+            this.numericUpDownScaling.Value = new decimal(new[]{
             100,
             0,
             0,

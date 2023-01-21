@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class EffectKaraoke
     {
@@ -67,18 +67,18 @@
             // numericUpDownDelay
             // 
             this.numericUpDownDelay.DecimalPlaces = 3;
-            this.numericUpDownDelay.Increment = new decimal(new int[] {
+            this.numericUpDownDelay.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownDelay.Location = new System.Drawing.Point(169, 72);
-            this.numericUpDownDelay.Maximum = new decimal(new int[] {
+            this.numericUpDownDelay.Maximum = new decimal(new[]{
             99999,
             0,
             0,
             0});
-            this.numericUpDownDelay.Minimum = new decimal(new int[] {
+            this.numericUpDownDelay.Minimum = new decimal(new[]{
             99999,
             0,
             0,

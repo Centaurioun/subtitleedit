@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class SeekSilence
     {
@@ -104,18 +104,18 @@
             // numericUpDownSeconds
             // 
             this.numericUpDownSeconds.DecimalPlaces = 1;
-            this.numericUpDownSeconds.Increment = new decimal(new int[] {
+            this.numericUpDownSeconds.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownSeconds.Location = new System.Drawing.Point(247, 91);
-            this.numericUpDownSeconds.Maximum = new decimal(new int[] {
+            this.numericUpDownSeconds.Maximum = new decimal(new[]{
             5,
             0,
             0,
             0});
-            this.numericUpDownSeconds.Minimum = new decimal(new int[] {
+            this.numericUpDownSeconds.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -123,7 +123,7 @@
             this.numericUpDownSeconds.Name = "numericUpDownSeconds";
             this.numericUpDownSeconds.Size = new System.Drawing.Size(75, 20);
             this.numericUpDownSeconds.TabIndex = 6;
-            this.numericUpDownSeconds.Value = new decimal(new int[] {
+            this.numericUpDownSeconds.Value = new decimal(new[]{
             3,
             0,
             0,
@@ -132,7 +132,7 @@
             // numericUpDownVolume
             // 
             this.numericUpDownVolume.DecimalPlaces = 2;
-            this.numericUpDownVolume.Increment = new decimal(new int[] {
+            this.numericUpDownVolume.Increment = new decimal(new[]{
             1,
             0,
             0,
@@ -141,7 +141,7 @@
             this.numericUpDownVolume.Name = "numericUpDownVolume";
             this.numericUpDownVolume.Size = new System.Drawing.Size(75, 20);
             this.numericUpDownVolume.TabIndex = 7;
-            this.numericUpDownVolume.Value = new decimal(new int[] {
+            this.numericUpDownVolume.Value = new decimal(new[]{
             3,
             0,
             0,

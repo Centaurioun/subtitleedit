@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class AdjustDisplayDuration
     {
@@ -172,13 +172,13 @@
             // 
             this.numericUpDownMaxCharsSec.DecimalPlaces = 1;
             this.numericUpDownMaxCharsSec.Enabled = false;
-            this.numericUpDownMaxCharsSec.Increment = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownMaxCharsSec.Location = new System.Drawing.Point(357, 89);
-            this.numericUpDownMaxCharsSec.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -186,7 +186,7 @@
             this.numericUpDownMaxCharsSec.Name = "numericUpDownMaxCharsSec";
             this.numericUpDownMaxCharsSec.Size = new System.Drawing.Size(80, 21);
             this.numericUpDownMaxCharsSec.TabIndex = 6;
-            this.numericUpDownMaxCharsSec.Value = new decimal(new int[] {
+            this.numericUpDownMaxCharsSec.Value = new decimal(new[]{
             24,
             0,
             0,
@@ -204,18 +204,18 @@
             // numericUpDownSeconds
             // 
             this.numericUpDownSeconds.DecimalPlaces = 3;
-            this.numericUpDownSeconds.Increment = new decimal(new int[] {
+            this.numericUpDownSeconds.Increment = new decimal(new[]{
             1,
             0,
             0,
             131072});
             this.numericUpDownSeconds.Location = new System.Drawing.Point(13, 89);
-            this.numericUpDownSeconds.Maximum = new decimal(new int[] {
+            this.numericUpDownSeconds.Maximum = new decimal(new[]{
             20,
             0,
             0,
             0});
-            this.numericUpDownSeconds.Minimum = new decimal(new int[] {
+            this.numericUpDownSeconds.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -223,7 +223,7 @@
             this.numericUpDownSeconds.Name = "numericUpDownSeconds";
             this.numericUpDownSeconds.Size = new System.Drawing.Size(80, 21);
             this.numericUpDownSeconds.TabIndex = 3;
-            this.numericUpDownSeconds.Value = new decimal(new int[] {
+            this.numericUpDownSeconds.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -232,12 +232,12 @@
             // numericUpDownPercent
             // 
             this.numericUpDownPercent.Location = new System.Drawing.Point(182, 89);
-            this.numericUpDownPercent.Maximum = new decimal(new int[] {
+            this.numericUpDownPercent.Maximum = new decimal(new[]{
             999,
             0,
             0,
             0});
-            this.numericUpDownPercent.Minimum = new decimal(new int[] {
+            this.numericUpDownPercent.Minimum = new decimal(new[]{
             75,
             0,
             0,
@@ -245,7 +245,7 @@
             this.numericUpDownPercent.Name = "numericUpDownPercent";
             this.numericUpDownPercent.Size = new System.Drawing.Size(80, 21);
             this.numericUpDownPercent.TabIndex = 4;
-            this.numericUpDownPercent.Value = new decimal(new int[] {
+            this.numericUpDownPercent.Value = new decimal(new[]{
             110,
             0,
             0,
@@ -255,13 +255,13 @@
             // 
             this.numericUpDownOptimalCharsSec.DecimalPlaces = 1;
             this.numericUpDownOptimalCharsSec.Enabled = false;
-            this.numericUpDownOptimalCharsSec.Increment = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownOptimalCharsSec.Location = new System.Drawing.Point(357, 147);
-            this.numericUpDownOptimalCharsSec.Minimum = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -269,7 +269,7 @@
             this.numericUpDownOptimalCharsSec.Name = "numericUpDownOptimalCharsSec";
             this.numericUpDownOptimalCharsSec.Size = new System.Drawing.Size(80, 21);
             this.numericUpDownOptimalCharsSec.TabIndex = 7;
-            this.numericUpDownOptimalCharsSec.Value = new decimal(new int[] {
+            this.numericUpDownOptimalCharsSec.Value = new decimal(new[]{
             17,
             0,
             0,
@@ -288,7 +288,7 @@
             // 
             this.numericUpDownFixedMilliseconds.Enabled = false;
             this.numericUpDownFixedMilliseconds.Location = new System.Drawing.Point(501, 89);
-            this.numericUpDownFixedMilliseconds.Maximum = new decimal(new int[] {
+            this.numericUpDownFixedMilliseconds.Maximum = new decimal(new[]{
             20000,
             0,
             0,
@@ -296,7 +296,7 @@
             this.numericUpDownFixedMilliseconds.Name = "numericUpDownFixedMilliseconds";
             this.numericUpDownFixedMilliseconds.Size = new System.Drawing.Size(80, 21);
             this.numericUpDownFixedMilliseconds.TabIndex = 9;
-            this.numericUpDownFixedMilliseconds.Value = new decimal(new int[] {
+            this.numericUpDownFixedMilliseconds.Value = new decimal(new[]{
             3000,
             0,
             0,

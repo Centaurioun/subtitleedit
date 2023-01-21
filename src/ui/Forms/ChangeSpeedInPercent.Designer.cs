@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class ChangeSpeedInPercent
     {
@@ -82,12 +82,12 @@
             // 
             this.numericUpDownPercent.DecimalPlaces = 5;
             this.numericUpDownPercent.Location = new System.Drawing.Point(12, 40);
-            this.numericUpDownPercent.Maximum = new decimal(new int[] {
+            this.numericUpDownPercent.Maximum = new decimal(new[]{
             200,
             0,
             0,
             0});
-            this.numericUpDownPercent.Minimum = new decimal(new int[] {
+            this.numericUpDownPercent.Minimum = new decimal(new[]{
             50,
             0,
             0,
@@ -95,7 +95,7 @@
             this.numericUpDownPercent.Name = "numericUpDownPercent";
             this.numericUpDownPercent.Size = new System.Drawing.Size(81, 20);
             this.numericUpDownPercent.TabIndex = 0;
-            this.numericUpDownPercent.Value = new decimal(new int[] {
+            this.numericUpDownPercent.Value = new decimal(new[]{
             100,
             0,
             0,

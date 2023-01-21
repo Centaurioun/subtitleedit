@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class HardSubExtract
     {
@@ -106,7 +106,7 @@
             this.numericUpDownCustomMaxDiff.Name = "numericUpDownCustomMaxDiff";
             this.numericUpDownCustomMaxDiff.Size = new System.Drawing.Size(38, 20);
             this.numericUpDownCustomMaxDiff.TabIndex = 2;
-            this.numericUpDownCustomMaxDiff.Value = new decimal(new int[] {
+            this.numericUpDownCustomMaxDiff.Value = new decimal(new[]{
             14,
             0,
             0,
@@ -137,7 +137,7 @@
             // numericUpDownPixelsBottom
             // 
             this.numericUpDownPixelsBottom.Location = new System.Drawing.Point(192, 16);
-            this.numericUpDownPixelsBottom.Maximum = new decimal(new int[] {
+            this.numericUpDownPixelsBottom.Maximum = new decimal(new[]{
             2000,
             0,
             0,
@@ -145,7 +145,7 @@
             this.numericUpDownPixelsBottom.Name = "numericUpDownPixelsBottom";
             this.numericUpDownPixelsBottom.Size = new System.Drawing.Size(66, 20);
             this.numericUpDownPixelsBottom.TabIndex = 19;
-            this.numericUpDownPixelsBottom.Value = new decimal(new int[] {
+            this.numericUpDownPixelsBottom.Value = new decimal(new[]{
             127,
             0,
             0,
