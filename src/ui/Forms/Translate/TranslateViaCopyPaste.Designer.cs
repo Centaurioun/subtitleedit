@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.Translate
 {
     partial class TranslateViaCopyPaste
@@ -78,18 +78,18 @@ namespace Nikse.SubtitleEdit.Forms.Translate
             // 
             // numericUpDownMaxBytes
             // 
-            this.numericUpDownMaxBytes.Increment = new decimal(new int[] {
+            this.numericUpDownMaxBytes.Increment = new decimal(new[]{
             100,
             0,
             0,
             0});
             this.numericUpDownMaxBytes.Location = new System.Drawing.Point(105, 15);
-            this.numericUpDownMaxBytes.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxBytes.Maximum = new decimal(new[]{
             100000,
             0,
             0,
             0});
-            this.numericUpDownMaxBytes.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxBytes.Minimum = new decimal(new[]{
             100,
             0,
             0,
@@ -97,7 +97,7 @@ namespace Nikse.SubtitleEdit.Forms.Translate
             this.numericUpDownMaxBytes.Name = "numericUpDownMaxBytes";
             this.numericUpDownMaxBytes.Size = new System.Drawing.Size(57, 20);
             this.numericUpDownMaxBytes.TabIndex = 1;
-            this.numericUpDownMaxBytes.Value = new decimal(new int[] {
+            this.numericUpDownMaxBytes.Value = new decimal(new[]{
             5000,
             0,
             0,

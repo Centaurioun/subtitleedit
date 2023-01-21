@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Styles
+namespace Nikse.SubtitleEdit.Forms.Styles
 {
     sealed partial class SubStationAlphaStyles
     {
@@ -517,7 +517,7 @@
             // numericUpDownShadowWidth
             // 
             this.numericUpDownShadowWidth.DecimalPlaces = 1;
-            this.numericUpDownShadowWidth.Increment = new decimal(new int[] {
+            this.numericUpDownShadowWidth.Increment = new decimal(new[]{
             1,
             0,
             0,
@@ -531,7 +531,7 @@
             // numericUpDownOutline
             // 
             this.numericUpDownOutline.DecimalPlaces = 1;
-            this.numericUpDownOutline.Increment = new decimal(new int[] {
+            this.numericUpDownOutline.Increment = new decimal(new[]{
             1,
             0,
             0,
@@ -586,7 +586,7 @@
             // numericUpDownMarginVertical
             // 
             this.numericUpDownMarginVertical.Location = new System.Drawing.Point(61, 66);
-            this.numericUpDownMarginVertical.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginVertical.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -599,7 +599,7 @@
             // numericUpDownMarginRight
             // 
             this.numericUpDownMarginRight.Location = new System.Drawing.Point(61, 40);
-            this.numericUpDownMarginRight.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginRight.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -612,7 +612,7 @@
             // numericUpDownMarginLeft
             // 
             this.numericUpDownMarginLeft.Location = new System.Drawing.Point(61, 14);
-            this.numericUpDownMarginLeft.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginLeft.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -923,18 +923,18 @@
             // numericUpDownAngle
             // 
             this.numericUpDownAngle.DecimalPlaces = 1;
-            this.numericUpDownAngle.Increment = new decimal(new int[] {
+            this.numericUpDownAngle.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownAngle.Location = new System.Drawing.Point(391, 84);
-            this.numericUpDownAngle.Maximum = new decimal(new int[] {
+            this.numericUpDownAngle.Maximum = new decimal(new[]{
             180,
             0,
             0,
             0});
-            this.numericUpDownAngle.Minimum = new decimal(new int[] {
+            this.numericUpDownAngle.Minimum = new decimal(new[]{
             180,
             0,
             0,
@@ -957,7 +957,7 @@
             // 
             this.numericUpDownSpacing.DecimalPlaces = 1;
             this.numericUpDownSpacing.Location = new System.Drawing.Point(288, 84);
-            this.numericUpDownSpacing.Maximum = new decimal(new int[] {
+            this.numericUpDownSpacing.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -980,7 +980,7 @@
             // 
             this.numericUpDownScaleY.DecimalPlaces = 1;
             this.numericUpDownScaleY.Location = new System.Drawing.Point(166, 84);
-            this.numericUpDownScaleY.Maximum = new decimal(new int[] {
+            this.numericUpDownScaleY.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -1003,7 +1003,7 @@
             // 
             this.numericUpDownScaleX.DecimalPlaces = 1;
             this.numericUpDownScaleX.Location = new System.Drawing.Point(54, 84);
-            this.numericUpDownScaleX.Maximum = new decimal(new int[] {
+            this.numericUpDownScaleX.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -1060,7 +1060,7 @@
             // 
             this.numericUpDownFontSize.DecimalPlaces = 1;
             this.numericUpDownFontSize.Location = new System.Drawing.Point(374, 18);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             200,
             0,
             0,

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Assa
+namespace Nikse.SubtitleEdit.Forms.Assa
 {
     partial class AssaProperties
     {
@@ -325,7 +325,7 @@
             // numericUpDownVideoHeight
             // 
             this.numericUpDownVideoHeight.Location = new System.Drawing.Point(277, 19);
-            this.numericUpDownVideoHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoHeight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -366,7 +366,7 @@
             // numericUpDownVideoWidth
             // 
             this.numericUpDownVideoWidth.Location = new System.Drawing.Point(191, 19);
-            this.numericUpDownVideoWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoWidth.Maximum = new decimal(new[]{
             10000,
             0,
             0,

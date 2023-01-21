@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.Styles
+namespace Nikse.SubtitleEdit.Forms.Styles
 {
     sealed partial class SubStationAlphaStylesBatchConvert
     {
@@ -157,7 +157,7 @@
             // numericUpDownVideoHeight
             // 
             this.numericUpDownVideoHeight.Location = new System.Drawing.Point(264, 19);
-            this.numericUpDownVideoHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoHeight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -189,7 +189,7 @@
             // numericUpDownVideoWidth
             // 
             this.numericUpDownVideoWidth.Location = new System.Drawing.Point(191, 19);
-            this.numericUpDownVideoWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoWidth.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -312,7 +312,7 @@
             // numericUpDownShadowWidth
             // 
             this.numericUpDownShadowWidth.DecimalPlaces = 1;
-            this.numericUpDownShadowWidth.Increment = new decimal(new int[] {
+            this.numericUpDownShadowWidth.Increment = new decimal(new[]{
             1,
             0,
             0,
@@ -326,7 +326,7 @@
             // numericUpDownOutline
             // 
             this.numericUpDownOutline.DecimalPlaces = 1;
-            this.numericUpDownOutline.Increment = new decimal(new int[] {
+            this.numericUpDownOutline.Increment = new decimal(new[]{
             1,
             0,
             0,
@@ -366,7 +366,7 @@
             // numericUpDownMarginVertical
             // 
             this.numericUpDownMarginVertical.Location = new System.Drawing.Point(188, 33);
-            this.numericUpDownMarginVertical.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginVertical.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -379,7 +379,7 @@
             // numericUpDownMarginRight
             // 
             this.numericUpDownMarginRight.Location = new System.Drawing.Point(101, 33);
-            this.numericUpDownMarginRight.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginRight.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -392,7 +392,7 @@
             // numericUpDownMarginLeft
             // 
             this.numericUpDownMarginLeft.Location = new System.Drawing.Point(16, 33);
-            this.numericUpDownMarginLeft.Maximum = new decimal(new int[] {
+            this.numericUpDownMarginLeft.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -679,7 +679,7 @@
             // 
             this.numericUpDownFontSize.DecimalPlaces = 1;
             this.numericUpDownFontSize.Location = new System.Drawing.Point(100, 44);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             200,
             0,
             0,
