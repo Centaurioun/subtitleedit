@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using Nikse.SubtitleEdit.Core.Forms.FixCommonErrors;
 using System;
 using System.Collections.Generic;
@@ -183,11 +183,11 @@ namespace Nikse.SubtitleEdit.Core.Forms
                                 {
                                     newText += "<u>" + line;
                                 }
-                                else if (pre.Contains('[') && line.Contains(']') && !line.Contains("["))
+                                else if (pre.Contains('[') && line.Contains(']') && !line.Contains('['))
                                 {
                                     newText += "[" + line;
                                 }
-                                else if (pre.Contains('(') && line.EndsWith(')') && !line.Contains("("))
+                                else if (pre.Contains('(') && line.EndsWith(')') && !line.Contains('('))
                                 {
                                     newText += "(" + line;
                                 }
@@ -213,11 +213,11 @@ namespace Nikse.SubtitleEdit.Core.Forms
                                 {
                                     newText += "<u>" + line;
                                 }
-                                else if (pre.Contains('[') && line.Contains(']') && !line.Contains("["))
+                                else if (pre.Contains('[') && line.Contains(']') && !line.Contains('['))
                                 {
                                     newText += "[" + line;
                                 }
-                                else if (pre.Contains('(') && line.EndsWith(')') && !line.Contains("("))
+                                else if (pre.Contains('(') && line.EndsWith(')') && !line.Contains('('))
                                 {
                                     newText += "(" + line;
                                 }
@@ -373,8 +373,8 @@ namespace Nikse.SubtitleEdit.Core.Forms
 
                                     var l1Trim = HtmlUtil.RemoveHtmlTags(lines[0]).TrimEnd('"');
                                     if (!skipDoToNumbers &&
-                                        count == 1 && 
-                                        lines.Count == 2 && 
+                                        count == 1 &&
+                                        lines.Count == 2 &&
                                         !l1Trim.EndsWith('.') &&
                                         !l1Trim.EndsWith('!') &&
                                         !l1Trim.EndsWith('?'))
@@ -1191,7 +1191,7 @@ namespace Nikse.SubtitleEdit.Core.Forms
                 return inputWithoutUnicodeReplace;
             }
 
-            if (inputWithoutUnicodeReplace.Contains("\u2010") && !inputWithoutUnicodeReplace.Contains("-"))
+            if (inputWithoutUnicodeReplace.Contains("\u2010") && !inputWithoutUnicodeReplace.Contains('-'))
             {
                 text = text.Replace("-", "\u2010"); // try to keep original dashes
             }

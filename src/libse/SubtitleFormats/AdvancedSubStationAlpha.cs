@@ -521,7 +521,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
                         if (node.Attributes["tts:fontFamily"]?.Value != null)
                         {
                             fontFamily = node.Attributes["tts:fontFamily"].Value;
-                            if (fontFamily.Contains(","))
+                            if (fontFamily.Contains(','))
                             {
                                 fontFamily = fontFamily.Split(',')[0];
                             }
@@ -652,7 +652,7 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
                         if (node.Attributes["tts:fontFamily"]?.Value != null)
                         {
                             fontFamily = node.Attributes["tts:fontFamily"].Value;
-                            if (fontFamily.Contains(","))
+                            if (fontFamily.Contains(','))
                             {
                                 fontFamily = fontFamily.Split(',')[0];
                             }

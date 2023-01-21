@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using Nikse.SubtitleEdit.Core.Interfaces;
 using System;
 
@@ -238,7 +238,7 @@ namespace Nikse.SubtitleEdit.Core.Forms.FixCommonErrors
 
         private string FixDifferentQuotes(string text)
         {
-            if (text.Contains("„"))
+            if (text.Contains('„'))
             {
                 return text;
             }

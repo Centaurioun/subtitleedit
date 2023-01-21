@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Dictionaries;
+using Nikse.SubtitleEdit.Core.Dictionaries;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -187,7 +187,7 @@ namespace Nikse.SubtitleEdit.Core.Common
 
         public static string FixStutter(string text)
         {
-            if (!text.Contains("-"))
+            if (!text.Contains('-'))
             {
                 return text;
             }

@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common.TextLengthCalculator;
+using Nikse.SubtitleEdit.Core.Common.TextLengthCalculator;
 using Nikse.SubtitleEdit.Core.ContainerFormats.Matroska;
 using Nikse.SubtitleEdit.Core.SubtitleFormats;
 using System;
@@ -273,7 +273,7 @@ namespace Nikse.SubtitleEdit.Core.Common
 
         public static string AutoBreakLineMoreThanTwoLines(string text, int maximumLength, int mergeLinesShorterThan, string language)
         {
-            if (text == null || text.Length < 3 || !(text.Contains(" ") || text.Contains("\n")))
+            if (text == null || text.Length < 3 || !(text.Contains(' ') || text.Contains("\n")))
             {
                 return text;
             }
@@ -807,7 +807,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                         {
                             var ci = CultureInfo.GetCultureInfo(name.Replace('_', '-'));
                             var displayName = ci.DisplayName;
-                            if (displayName.Contains("("))
+                            if (displayName.Contains('('))
                             {
                                 displayName = displayName.Remove(displayName.IndexOf('(')).TrimEnd();
                             }
@@ -1987,7 +1987,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                         if (match.Index > 4)
                         {
                             var before = text.Substring(match.Index - 4, 4);
-                            if (int.TryParse(before.Trim(), NumberStyles.None, CultureInfo.InvariantCulture, out  var n) && n > 999)
+                            if (int.TryParse(before.Trim(), NumberStyles.None, CultureInfo.InvariantCulture, out var n) && n > 999)
                             {
                                 skip = false;
                             }
@@ -2285,7 +2285,7 @@ namespace Nikse.SubtitleEdit.Core.Common
             text = text.Trim();
             text = text.Replace(Environment.NewLine + " ", Environment.NewLine);
 
-            if (text.Contains("-") && text.Length > 2 && !text.StartsWith("--", StringComparison.Ordinal))
+            if (text.Contains('-') && text.Length > 2 && !text.StartsWith("--", StringComparison.Ordinal))
             {
                 var dialogHelper = new DialogSplitMerge { DialogStyle = Configuration.Settings.General.DialogStyle, ContinuationStyle = Configuration.Settings.General.ContinuationStyle };
                 text = dialogHelper.RemoveSpaces(text);
@@ -2890,7 +2890,7 @@ namespace Nikse.SubtitleEdit.Core.Common
 
         public static string ReSplit(string text, int selectionStart)
         {
-            if (string.IsNullOrWhiteSpace(text) || !text.Contains(" ") || selectionStart == 0)
+            if (string.IsNullOrWhiteSpace(text) || !text.Contains(' ') || selectionStart == 0)
             {
                 return text;
             }

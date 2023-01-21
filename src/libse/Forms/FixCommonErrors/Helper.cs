@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Linq;
 using System.Text;
@@ -105,7 +105,7 @@ namespace Nikse.SubtitleEdit.Core.Forms.FixCommonErrors
                 }
             }
 
-            if (text.StartsWith("{\\") && text.Contains("}"))
+            if (text.StartsWith("{\\") && text.Contains('}'))
             {
                 tag = text.Substring(0, text.IndexOf('}') + 1);
                 var tagPlusPeriod = tag + "...";
