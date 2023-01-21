@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Controls;
+using Nikse.SubtitleEdit.Controls;
 
 namespace Nikse.SubtitleEdit.Forms.Ocr
 {
@@ -708,7 +708,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownNOcrMaxWrongPixels.Name = "numericUpDownNOcrMaxWrongPixels";
             this.numericUpDownNOcrMaxWrongPixels.Size = new System.Drawing.Size(50, 21);
             this.numericUpDownNOcrMaxWrongPixels.TabIndex = 43;
-            this.numericUpDownNOcrMaxWrongPixels.Value = new decimal(new int[] {
+            this.numericUpDownNOcrMaxWrongPixels.Value = new decimal(new[]{
             45,
             0,
             0,
@@ -795,12 +795,12 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             // numericUpDownNumberOfPixelsIsSpaceNOCR
             // 
             this.numericUpDownNumberOfPixelsIsSpaceNOCR.Location = new System.Drawing.Point(122, 17);
-            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Maximum = new decimal(new int[] {
+            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Maximum = new decimal(new[]{
             50,
             0,
             0,
             0});
-            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Minimum = new decimal(new int[] {
+            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -808,7 +808,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownNumberOfPixelsIsSpaceNOCR.Name = "numericUpDownNumberOfPixelsIsSpaceNOCR";
             this.numericUpDownNumberOfPixelsIsSpaceNOCR.Size = new System.Drawing.Size(50, 21);
             this.numericUpDownNumberOfPixelsIsSpaceNOCR.TabIndex = 5;
-            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Value = new decimal(new int[] {
+            this.numericUpDownNumberOfPixelsIsSpaceNOCR.Value = new decimal(new[]{
             12,
             0,
             0,
@@ -954,13 +954,13 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             // numericUpDownMaxErrorPct
             // 
             this.numericUpDownMaxErrorPct.DecimalPlaces = 1;
-            this.numericUpDownMaxErrorPct.Increment = new decimal(new int[] {
+            this.numericUpDownMaxErrorPct.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownMaxErrorPct.Location = new System.Drawing.Point(173, 81);
-            this.numericUpDownMaxErrorPct.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxErrorPct.Maximum = new decimal(new[]{
             20,
             0,
             0,
@@ -968,7 +968,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownMaxErrorPct.Name = "numericUpDownMaxErrorPct";
             this.numericUpDownMaxErrorPct.Size = new System.Drawing.Size(50, 21);
             this.numericUpDownMaxErrorPct.TabIndex = 44;
-            this.numericUpDownMaxErrorPct.Value = new decimal(new int[] {
+            this.numericUpDownMaxErrorPct.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -988,12 +988,12 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             // numericUpDownPixelsIsSpace
             // 
             this.numericUpDownPixelsIsSpace.Location = new System.Drawing.Point(173, 54);
-            this.numericUpDownPixelsIsSpace.Maximum = new decimal(new int[] {
+            this.numericUpDownPixelsIsSpace.Maximum = new decimal(new[]{
             50,
             0,
             0,
             0});
-            this.numericUpDownPixelsIsSpace.Minimum = new decimal(new int[] {
+            this.numericUpDownPixelsIsSpace.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -1001,7 +1001,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownPixelsIsSpace.Name = "numericUpDownPixelsIsSpace";
             this.numericUpDownPixelsIsSpace.Size = new System.Drawing.Size(50, 21);
             this.numericUpDownPixelsIsSpace.TabIndex = 5;
-            this.numericUpDownPixelsIsSpace.Value = new decimal(new int[] {
+            this.numericUpDownPixelsIsSpace.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -1196,12 +1196,12 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             // numericUpDownStartNumber
             // 
             this.numericUpDownStartNumber.Location = new System.Drawing.Point(123, 47);
-            this.numericUpDownStartNumber.Maximum = new decimal(new int[] {
+            this.numericUpDownStartNumber.Maximum = new decimal(new[]{
             99999,
             0,
             0,
             0});
-            this.numericUpDownStartNumber.Minimum = new decimal(new int[] {
+            this.numericUpDownStartNumber.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -1209,7 +1209,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownStartNumber.Name = "numericUpDownStartNumber";
             this.numericUpDownStartNumber.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownStartNumber.TabIndex = 3;
-            this.numericUpDownStartNumber.Value = new decimal(new int[] {
+            this.numericUpDownStartNumber.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -1691,7 +1691,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             // 
             this.numericUpDownAutoTransparentAlphaMax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDownAutoTransparentAlphaMax.Location = new System.Drawing.Point(607, 169);
-            this.numericUpDownAutoTransparentAlphaMax.Maximum = new decimal(new int[] {
+            this.numericUpDownAutoTransparentAlphaMax.Maximum = new decimal(new[]{
             255,
             0,
             0,
@@ -1699,7 +1699,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             this.numericUpDownAutoTransparentAlphaMax.Name = "numericUpDownAutoTransparentAlphaMax";
             this.numericUpDownAutoTransparentAlphaMax.Size = new System.Drawing.Size(44, 21);
             this.numericUpDownAutoTransparentAlphaMax.TabIndex = 37;
-            this.numericUpDownAutoTransparentAlphaMax.Value = new decimal(new int[] {
+            this.numericUpDownAutoTransparentAlphaMax.Value = new decimal(new[]{
             140,
             0,
             0,

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class ExportPngXml
     {
@@ -395,7 +395,7 @@
             // numericUpDownLineSpacing
             // 
             this.numericUpDownLineSpacing.Location = new System.Drawing.Point(802, 130);
-            this.numericUpDownLineSpacing.Maximum = new decimal(new int[] {
+            this.numericUpDownLineSpacing.Maximum = new decimal(new[]{
             500,
             0,
             0,
@@ -403,7 +403,7 @@
             this.numericUpDownLineSpacing.Name = "numericUpDownLineSpacing";
             this.numericUpDownLineSpacing.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownLineSpacing.TabIndex = 44;
-            this.numericUpDownLineSpacing.Value = new decimal(new int[] {
+            this.numericUpDownLineSpacing.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -414,12 +414,12 @@
             // numericUpDownShadowTransparency
             // 
             this.numericUpDownShadowTransparency.Location = new System.Drawing.Point(802, 81);
-            this.numericUpDownShadowTransparency.Maximum = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Maximum = new decimal(new[]{
             255,
             0,
             0,
             0});
-            this.numericUpDownShadowTransparency.Minimum = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -427,7 +427,7 @@
             this.numericUpDownShadowTransparency.Name = "numericUpDownShadowTransparency";
             this.numericUpDownShadowTransparency.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownShadowTransparency.TabIndex = 43;
-            this.numericUpDownShadowTransparency.Value = new decimal(new int[] {
+            this.numericUpDownShadowTransparency.Value = new decimal(new[]{
             200,
             0,
             0,
@@ -532,7 +532,7 @@
             // numericUpDownDepth3D
             // 
             this.numericUpDownDepth3D.Location = new System.Drawing.Point(353, 135);
-            this.numericUpDownDepth3D.Minimum = new decimal(new int[] {
+            this.numericUpDownDepth3D.Minimum = new decimal(new[]{
             100,
             0,
             0,

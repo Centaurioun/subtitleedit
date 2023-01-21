@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -63,7 +63,7 @@ namespace Nikse.SubtitleEdit.Core.SubtitleFormats
             _errorCount = 0;
             bool beginFound = false;
             bool endFound = false;
-            var splitChars = new char[] { ':', ';' };
+            var splitChars = new[]{ ':', ';' };
             foreach (var line in lines)
             {
                 var trimmedLine = line.Trim();

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class ModifySelection
     {
@@ -140,7 +140,7 @@
             // numericUpDownDuration
             // 
             this.numericUpDownDuration.Location = new System.Drawing.Point(198, 22);
-            this.numericUpDownDuration.Maximum = new decimal(new int[] {
+            this.numericUpDownDuration.Maximum = new decimal(new[]{
             10000,
             0,
             0,

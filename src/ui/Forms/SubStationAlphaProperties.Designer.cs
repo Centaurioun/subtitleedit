@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class SubStationAlphaProperties
     {
@@ -321,7 +321,7 @@
             // numericUpDownVideoHeight
             // 
             this.numericUpDownVideoHeight.Location = new System.Drawing.Point(260, 19);
-            this.numericUpDownVideoHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoHeight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -362,7 +362,7 @@
             // numericUpDownVideoWidth
             // 
             this.numericUpDownVideoWidth.Location = new System.Drawing.Point(191, 19);
-            this.numericUpDownVideoWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownVideoWidth.Maximum = new decimal(new[]{
             10000,
             0,
             0,

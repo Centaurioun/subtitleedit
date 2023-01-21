@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class ApplyDurationLimits
     {
@@ -62,12 +62,12 @@
             // numericUpDownDurationMax
             // 
             this.numericUpDownDurationMax.Location = new System.Drawing.Point(191, 38);
-            this.numericUpDownDurationMax.Maximum = new decimal(new int[] {
+            this.numericUpDownDurationMax.Maximum = new decimal(new[]{
             50000,
             0,
             0,
             0});
-            this.numericUpDownDurationMax.Minimum = new decimal(new int[] {
+            this.numericUpDownDurationMax.Minimum = new decimal(new[]{
             3000,
             0,
             0,
@@ -75,7 +75,7 @@
             this.numericUpDownDurationMax.Name = "numericUpDownDurationMax";
             this.numericUpDownDurationMax.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownDurationMax.TabIndex = 4;
-            this.numericUpDownDurationMax.Value = new decimal(new int[] {
+            this.numericUpDownDurationMax.Value = new decimal(new[]{
             50000,
             0,
             0,
@@ -87,12 +87,12 @@
             // numericUpDownDurationMin
             // 
             this.numericUpDownDurationMin.Location = new System.Drawing.Point(191, 12);
-            this.numericUpDownDurationMin.Maximum = new decimal(new int[] {
+            this.numericUpDownDurationMin.Maximum = new decimal(new[]{
             3000,
             0,
             0,
             0});
-            this.numericUpDownDurationMin.Minimum = new decimal(new int[] {
+            this.numericUpDownDurationMin.Minimum = new decimal(new[]{
             100,
             0,
             0,
@@ -100,7 +100,7 @@
             this.numericUpDownDurationMin.Name = "numericUpDownDurationMin";
             this.numericUpDownDurationMin.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownDurationMin.TabIndex = 2;
-            this.numericUpDownDurationMin.Value = new decimal(new int[] {
+            this.numericUpDownDurationMin.Value = new decimal(new[]{
             100,
             0,
             0,

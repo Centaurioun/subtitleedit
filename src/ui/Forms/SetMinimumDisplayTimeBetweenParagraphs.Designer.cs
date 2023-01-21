@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class SetMinimumDisplayTimeBetweenParagraphs
     {
@@ -86,7 +86,7 @@
             // numericUpDownMinMillisecondsBetweenLines
             // 
             this.numericUpDownMinMillisecondsBetweenLines.Location = new System.Drawing.Point(18, 34);
-            this.numericUpDownMinMillisecondsBetweenLines.Maximum = new decimal(new int[] {
+            this.numericUpDownMinMillisecondsBetweenLines.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -94,7 +94,7 @@
             this.numericUpDownMinMillisecondsBetweenLines.Name = "numericUpDownMinMillisecondsBetweenLines";
             this.numericUpDownMinMillisecondsBetweenLines.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownMinMillisecondsBetweenLines.TabIndex = 1;
-            this.numericUpDownMinMillisecondsBetweenLines.Value = new decimal(new int[] {
+            this.numericUpDownMinMillisecondsBetweenLines.Value = new decimal(new[]{
             50,
             0,
             0,
@@ -170,7 +170,7 @@
             // numericUpDownFrames
             // 
             this.numericUpDownFrames.Location = new System.Drawing.Point(220, 25);
-            this.numericUpDownFrames.Maximum = new decimal(new int[] {
+            this.numericUpDownFrames.Maximum = new decimal(new[]{
             25,
             0,
             0,
@@ -178,7 +178,7 @@
             this.numericUpDownFrames.Name = "numericUpDownFrames";
             this.numericUpDownFrames.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownFrames.TabIndex = 52;
-            this.numericUpDownFrames.Value = new decimal(new int[] {
+            this.numericUpDownFrames.Value = new decimal(new[]{
             2,
             0,
             0,

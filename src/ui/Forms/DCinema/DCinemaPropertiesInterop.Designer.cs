@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms.DCinema
+namespace Nikse.SubtitleEdit.Forms.DCinema
 {
     partial class DCinemaPropertiesInterop
     {
@@ -143,12 +143,12 @@
             // numericUpDownReelNumber
             // 
             this.numericUpDownReelNumber.Location = new System.Drawing.Point(139, 123);
-            this.numericUpDownReelNumber.Maximum = new decimal(new int[] {
+            this.numericUpDownReelNumber.Maximum = new decimal(new[]{
             250,
             0,
             0,
             0});
-            this.numericUpDownReelNumber.Minimum = new decimal(new int[] {
+            this.numericUpDownReelNumber.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -156,7 +156,7 @@
             this.numericUpDownReelNumber.Name = "numericUpDownReelNumber";
             this.numericUpDownReelNumber.Size = new System.Drawing.Size(112, 20);
             this.numericUpDownReelNumber.TabIndex = 3;
-            this.numericUpDownReelNumber.Value = new decimal(new int[] {
+            this.numericUpDownReelNumber.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -211,7 +211,7 @@
             // numericUpDownFadeDown
             // 
             this.numericUpDownFadeDown.Location = new System.Drawing.Point(133, 233);
-            this.numericUpDownFadeDown.Maximum = new decimal(new int[] {
+            this.numericUpDownFadeDown.Maximum = new decimal(new[]{
             50,
             0,
             0,
@@ -232,7 +232,7 @@
             // numericUpDownFadeUp
             // 
             this.numericUpDownFadeUp.Location = new System.Drawing.Point(133, 207);
-            this.numericUpDownFadeUp.Maximum = new decimal(new int[] {
+            this.numericUpDownFadeUp.Maximum = new decimal(new[]{
             50,
             0,
             0,
@@ -264,18 +264,18 @@
             // numericUpDownZPosition
             // 
             this.numericUpDownZPosition.DecimalPlaces = 2;
-            this.numericUpDownZPosition.Increment = new decimal(new int[] {
+            this.numericUpDownZPosition.Increment = new decimal(new[]{
             5,
             0,
             0,
             131072});
             this.numericUpDownZPosition.Location = new System.Drawing.Point(133, 259);
-            this.numericUpDownZPosition.Maximum = new decimal(new int[] {
+            this.numericUpDownZPosition.Maximum = new decimal(new[]{
             10,
             0,
             0,
             0});
-            this.numericUpDownZPosition.Minimum = new decimal(new int[] {
+            this.numericUpDownZPosition.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -296,12 +296,12 @@
             // numericUpDownTopBottomMargin
             // 
             this.numericUpDownTopBottomMargin.Location = new System.Drawing.Point(133, 181);
-            this.numericUpDownTopBottomMargin.Maximum = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Maximum = new decimal(new[]{
             50,
             0,
             0,
             0});
-            this.numericUpDownTopBottomMargin.Minimum = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -309,7 +309,7 @@
             this.numericUpDownTopBottomMargin.Name = "numericUpDownTopBottomMargin";
             this.numericUpDownTopBottomMargin.Size = new System.Drawing.Size(112, 20);
             this.numericUpDownTopBottomMargin.TabIndex = 31;
-            this.numericUpDownTopBottomMargin.Value = new decimal(new int[] {
+            this.numericUpDownTopBottomMargin.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -365,7 +365,7 @@
             // numericUpDownFontSize
             // 
             this.numericUpDownFontSize.Location = new System.Drawing.Point(133, 155);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             250,
             0,
             0,

@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class ImportText
     {
@@ -270,12 +270,12 @@
             // numericUpDownSubtitleLineMaximumLength
             // 
             this.numericUpDownSubtitleLineMaximumLength.Location = new System.Drawing.Point(112, 44);
-            this.numericUpDownSubtitleLineMaximumLength.Maximum = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Maximum = new decimal(new[]{
             999,
             0,
             0,
             0});
-            this.numericUpDownSubtitleLineMaximumLength.Minimum = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -283,7 +283,7 @@
             this.numericUpDownSubtitleLineMaximumLength.Name = "numericUpDownSubtitleLineMaximumLength";
             this.numericUpDownSubtitleLineMaximumLength.Size = new System.Drawing.Size(49, 21);
             this.numericUpDownSubtitleLineMaximumLength.TabIndex = 20;
-            this.numericUpDownSubtitleLineMaximumLength.Value = new decimal(new int[] {
+            this.numericUpDownSubtitleLineMaximumLength.Value = new decimal(new[]{
             43,
             0,
             0,
@@ -329,12 +329,12 @@
             // numericUpDownAutoSplitMaxLines
             // 
             this.numericUpDownAutoSplitMaxLines.Location = new System.Drawing.Point(115, 17);
-            this.numericUpDownAutoSplitMaxLines.Maximum = new decimal(new int[] {
+            this.numericUpDownAutoSplitMaxLines.Maximum = new decimal(new[]{
             2,
             0,
             0,
             0});
-            this.numericUpDownAutoSplitMaxLines.Minimum = new decimal(new int[] {
+            this.numericUpDownAutoSplitMaxLines.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -342,7 +342,7 @@
             this.numericUpDownAutoSplitMaxLines.Name = "numericUpDownAutoSplitMaxLines";
             this.numericUpDownAutoSplitMaxLines.Size = new System.Drawing.Size(46, 21);
             this.numericUpDownAutoSplitMaxLines.TabIndex = 10;
-            this.numericUpDownAutoSplitMaxLines.Value = new decimal(new int[] {
+            this.numericUpDownAutoSplitMaxLines.Value = new decimal(new[]{
             2,
             0,
             0,
@@ -405,7 +405,7 @@
             // numericUpDownGapBetweenLines
             // 
             this.numericUpDownGapBetweenLines.Location = new System.Drawing.Point(192, 20);
-            this.numericUpDownGapBetweenLines.Maximum = new decimal(new int[] {
+            this.numericUpDownGapBetweenLines.Maximum = new decimal(new[]{
             100000,
             0,
             0,
@@ -413,7 +413,7 @@
             this.numericUpDownGapBetweenLines.Name = "numericUpDownGapBetweenLines";
             this.numericUpDownGapBetweenLines.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownGapBetweenLines.TabIndex = 1;
-            this.numericUpDownGapBetweenLines.Value = new decimal(new int[] {
+            this.numericUpDownGapBetweenLines.Value = new decimal(new[]{
             1000,
             0,
             0,
@@ -435,7 +435,7 @@
             // numericUpDownDurationFixed
             // 
             this.numericUpDownDurationFixed.Location = new System.Drawing.Point(111, 42);
-            this.numericUpDownDurationFixed.Maximum = new decimal(new int[] {
+            this.numericUpDownDurationFixed.Maximum = new decimal(new[]{
             100000,
             0,
             0,
@@ -443,7 +443,7 @@
             this.numericUpDownDurationFixed.Name = "numericUpDownDurationFixed";
             this.numericUpDownDurationFixed.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownDurationFixed.TabIndex = 2;
-            this.numericUpDownDurationFixed.Value = new decimal(new int[] {
+            this.numericUpDownDurationFixed.Value = new decimal(new[]{
             2000,
             0,
             0,

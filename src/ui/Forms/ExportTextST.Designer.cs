@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     partial class ExportTextST
     {
@@ -373,12 +373,12 @@
             // numericUpDownRegionStyleFontOutlineThickness
             // 
             this.numericUpDownRegionStyleFontOutlineThickness.Location = new System.Drawing.Point(143, 516);
-            this.numericUpDownRegionStyleFontOutlineThickness.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontOutlineThickness.Maximum = new decimal(new[]{
             3,
             0,
             0,
             0});
-            this.numericUpDownRegionStyleFontOutlineThickness.Minimum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontOutlineThickness.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -386,7 +386,7 @@
             this.numericUpDownRegionStyleFontOutlineThickness.Name = "numericUpDownRegionStyleFontOutlineThickness";
             this.numericUpDownRegionStyleFontOutlineThickness.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownRegionStyleFontOutlineThickness.TabIndex = 41;
-            this.numericUpDownRegionStyleFontOutlineThickness.Value = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontOutlineThickness.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -405,7 +405,7 @@
             // numericUpDownRegionStyleFontOutlinePaletteId
             // 
             this.numericUpDownRegionStyleFontOutlinePaletteId.Location = new System.Drawing.Point(143, 490);
-            this.numericUpDownRegionStyleFontOutlinePaletteId.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontOutlinePaletteId.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -413,7 +413,7 @@
             this.numericUpDownRegionStyleFontOutlinePaletteId.Name = "numericUpDownRegionStyleFontOutlinePaletteId";
             this.numericUpDownRegionStyleFontOutlinePaletteId.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownRegionStyleFontOutlinePaletteId.TabIndex = 39;
-            this.numericUpDownRegionStyleFontOutlinePaletteId.Value = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontOutlinePaletteId.Value = new decimal(new[]{
             8,
             0,
             0,
@@ -432,7 +432,7 @@
             // numericUpDownRegionStyleFontPaletteId
             // 
             this.numericUpDownRegionStyleFontPaletteId.Location = new System.Drawing.Point(143, 464);
-            this.numericUpDownRegionStyleFontPaletteId.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontPaletteId.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -454,7 +454,7 @@
             // numericUpDownRegionStyleFontStyle
             // 
             this.numericUpDownRegionStyleFontStyle.Location = new System.Drawing.Point(143, 412);
-            this.numericUpDownRegionStyleFontStyle.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontStyle.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -476,7 +476,7 @@
             // numericUpDownRegionStyleFontIdRef
             // 
             this.numericUpDownRegionStyleFontIdRef.Location = new System.Drawing.Point(143, 386);
-            this.numericUpDownRegionStyleFontIdRef.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontIdRef.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -498,7 +498,7 @@
             // numericUpDownRegionStyleLineSpace
             // 
             this.numericUpDownRegionStyleLineSpace.Location = new System.Drawing.Point(143, 360);
-            this.numericUpDownRegionStyleLineSpace.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleLineSpace.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -520,7 +520,7 @@
             // numericUpDownRegionStyleTextVerAlign
             // 
             this.numericUpDownRegionStyleTextVerAlign.Location = new System.Drawing.Point(143, 334);
-            this.numericUpDownRegionStyleTextVerAlign.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTextVerAlign.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -542,7 +542,7 @@
             // numericUpDownRegionStyleTextHorAlign
             // 
             this.numericUpDownRegionStyleTextHorAlign.Location = new System.Drawing.Point(143, 308);
-            this.numericUpDownRegionStyleTextHorAlign.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTextHorAlign.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -564,7 +564,7 @@
             // numericUpDownRegionStyleTextFlow
             // 
             this.numericUpDownRegionStyleTextFlow.Location = new System.Drawing.Point(143, 282);
-            this.numericUpDownRegionStyleTextFlow.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTextFlow.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -586,7 +586,7 @@
             // numericUpDownRegionStyleTBHeight
             // 
             this.numericUpDownRegionStyleTBHeight.Location = new System.Drawing.Point(143, 256);
-            this.numericUpDownRegionStyleTBHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTBHeight.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -608,7 +608,7 @@
             // numericUpDownRegionStyleTBWidth
             // 
             this.numericUpDownRegionStyleTBWidth.Location = new System.Drawing.Point(143, 230);
-            this.numericUpDownRegionStyleTBWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTBWidth.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -630,7 +630,7 @@
             // numericUpDownRegionStyleTBVerPos
             // 
             this.numericUpDownRegionStyleTBVerPos.Location = new System.Drawing.Point(143, 204);
-            this.numericUpDownRegionStyleTBVerPos.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTBVerPos.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -652,7 +652,7 @@
             // numericUpDownRegionStyleTBHorPos
             // 
             this.numericUpDownRegionStyleTBHorPos.Location = new System.Drawing.Point(143, 178);
-            this.numericUpDownRegionStyleTBHorPos.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleTBHorPos.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -674,12 +674,12 @@
             // numericUpDownRegionStyleFontSize
             // 
             this.numericUpDownRegionStyleFontSize.Location = new System.Drawing.Point(143, 438);
-            this.numericUpDownRegionStyleFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontSize.Maximum = new decimal(new[]{
             144,
             0,
             0,
             0});
-            this.numericUpDownRegionStyleFontSize.Minimum = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontSize.Minimum = new decimal(new[]{
             8,
             0,
             0,
@@ -687,7 +687,7 @@
             this.numericUpDownRegionStyleFontSize.Name = "numericUpDownRegionStyleFontSize";
             this.numericUpDownRegionStyleFontSize.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownRegionStyleFontSize.TabIndex = 15;
-            this.numericUpDownRegionStyleFontSize.Value = new decimal(new int[] {
+            this.numericUpDownRegionStyleFontSize.Value = new decimal(new[]{
             8,
             0,
             0,
@@ -706,7 +706,7 @@
             // numericUpDownRegionStylePaletteEntryId
             // 
             this.numericUpDownRegionStylePaletteEntryId.Location = new System.Drawing.Point(143, 152);
-            this.numericUpDownRegionStylePaletteEntryId.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStylePaletteEntryId.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -728,7 +728,7 @@
             // numericUpDownRegionStyleHeight
             // 
             this.numericUpDownRegionStyleHeight.Location = new System.Drawing.Point(143, 126);
-            this.numericUpDownRegionStyleHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleHeight.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -750,7 +750,7 @@
             // numericUpDownRegionStyleWidth
             // 
             this.numericUpDownRegionStyleWidth.Location = new System.Drawing.Point(143, 100);
-            this.numericUpDownRegionStyleWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleWidth.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -772,7 +772,7 @@
             // numericUpDownRegionStyleVPos
             // 
             this.numericUpDownRegionStyleVPos.Location = new System.Drawing.Point(143, 74);
-            this.numericUpDownRegionStyleVPos.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleVPos.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -794,7 +794,7 @@
             // numericUpDownRegionStyleHPos
             // 
             this.numericUpDownRegionStyleHPos.Location = new System.Drawing.Point(143, 48);
-            this.numericUpDownRegionStyleHPos.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleHPos.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -816,7 +816,7 @@
             // numericUpDownRegionStyleId
             // 
             this.numericUpDownRegionStyleId.Location = new System.Drawing.Point(143, 22);
-            this.numericUpDownRegionStyleId.Maximum = new decimal(new int[] {
+            this.numericUpDownRegionStyleId.Maximum = new decimal(new[]{
             59,
             0,
             0,
@@ -890,7 +890,7 @@
             // numericUpDownPaletteOpacity
             // 
             this.numericUpDownPaletteOpacity.Location = new System.Drawing.Point(82, 131);
-            this.numericUpDownPaletteOpacity.Maximum = new decimal(new int[] {
+            this.numericUpDownPaletteOpacity.Maximum = new decimal(new[]{
             255,
             0,
             0,
@@ -912,7 +912,7 @@
             // numericUpDownPaletteCb
             // 
             this.numericUpDownPaletteCb.Location = new System.Drawing.Point(82, 105);
-            this.numericUpDownPaletteCb.Maximum = new decimal(new int[] {
+            this.numericUpDownPaletteCb.Maximum = new decimal(new[]{
             240,
             0,
             0,
@@ -934,12 +934,12 @@
             // numericUpDownPaletteCr
             // 
             this.numericUpDownPaletteCr.Location = new System.Drawing.Point(82, 79);
-            this.numericUpDownPaletteCr.Maximum = new decimal(new int[] {
+            this.numericUpDownPaletteCr.Maximum = new decimal(new[]{
             240,
             0,
             0,
             0});
-            this.numericUpDownPaletteCr.Minimum = new decimal(new int[] {
+            this.numericUpDownPaletteCr.Minimum = new decimal(new[]{
             16,
             0,
             0,
@@ -947,7 +947,7 @@
             this.numericUpDownPaletteCr.Name = "numericUpDownPaletteCr";
             this.numericUpDownPaletteCr.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownPaletteCr.TabIndex = 5;
-            this.numericUpDownPaletteCr.Value = new decimal(new int[] {
+            this.numericUpDownPaletteCr.Value = new decimal(new[]{
             16,
             0,
             0,
@@ -966,12 +966,12 @@
             // numericUpDownPaletteY
             // 
             this.numericUpDownPaletteY.Location = new System.Drawing.Point(82, 53);
-            this.numericUpDownPaletteY.Maximum = new decimal(new int[] {
+            this.numericUpDownPaletteY.Maximum = new decimal(new[]{
             235,
             0,
             0,
             0});
-            this.numericUpDownPaletteY.Minimum = new decimal(new int[] {
+            this.numericUpDownPaletteY.Minimum = new decimal(new[]{
             16,
             0,
             0,
@@ -979,7 +979,7 @@
             this.numericUpDownPaletteY.Name = "numericUpDownPaletteY";
             this.numericUpDownPaletteY.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownPaletteY.TabIndex = 3;
-            this.numericUpDownPaletteY.Value = new decimal(new int[] {
+            this.numericUpDownPaletteY.Value = new decimal(new[]{
             16,
             0,
             0,
@@ -998,7 +998,7 @@
             // numericUpDownPaletteEntry
             // 
             this.numericUpDownPaletteEntry.Location = new System.Drawing.Point(82, 27);
-            this.numericUpDownPaletteEntry.Maximum = new decimal(new int[] {
+            this.numericUpDownPaletteEntry.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1066,7 +1066,7 @@
             // numericUpDownUserStyleLineSpaceDelta
             // 
             this.numericUpDownUserStyleLineSpaceDelta.Location = new System.Drawing.Point(184, 438);
-            this.numericUpDownUserStyleLineSpaceDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleLineSpaceDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1088,7 +1088,7 @@
             // numericUpDownUserStyleLineSpaceIncDec
             // 
             this.numericUpDownUserStyleLineSpaceIncDec.Location = new System.Drawing.Point(184, 412);
-            this.numericUpDownUserStyleLineSpaceIncDec.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleLineSpaceIncDec.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1110,7 +1110,7 @@
             // numericUpDownUserStyleTBHeightDelta
             // 
             this.numericUpDownUserStyleTBHeightDelta.Location = new System.Drawing.Point(184, 386);
-            this.numericUpDownUserStyleTBHeightDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBHeightDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1132,7 +1132,7 @@
             // numericUpDownUserStyleTBHeightIncDec
             // 
             this.numericUpDownUserStyleTBHeightIncDec.Location = new System.Drawing.Point(184, 360);
-            this.numericUpDownUserStyleTBHeightIncDec.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBHeightIncDec.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1154,7 +1154,7 @@
             // numericUpDownUserStyleTBWidthDelta
             // 
             this.numericUpDownUserStyleTBWidthDelta.Location = new System.Drawing.Point(184, 334);
-            this.numericUpDownUserStyleTBWidthDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBWidthDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1176,7 +1176,7 @@
             // numericUpDownUserStyleTBWidthIncDec
             // 
             this.numericUpDownUserStyleTBWidthIncDec.Location = new System.Drawing.Point(184, 308);
-            this.numericUpDownUserStyleTBWidthIncDec.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBWidthIncDec.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1198,7 +1198,7 @@
             // numericUpDownUserStyleTBVerPosDelta
             // 
             this.numericUpDownUserStyleTBVerPosDelta.Location = new System.Drawing.Point(184, 282);
-            this.numericUpDownUserStyleTBVerPosDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBVerPosDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1220,7 +1220,7 @@
             // numericUpDownUserStyleTBVerPosDir
             // 
             this.numericUpDownUserStyleTBVerPosDir.Location = new System.Drawing.Point(184, 256);
-            this.numericUpDownUserStyleTBVerPosDir.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBVerPosDir.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -1242,7 +1242,7 @@
             // numericUpDownUserStyleTBHorPosDelta
             // 
             this.numericUpDownUserStyleTBHorPosDelta.Location = new System.Drawing.Point(184, 230);
-            this.numericUpDownUserStyleTBHorPosDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBHorPosDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1264,7 +1264,7 @@
             // numericUpDownUserStyleTBHorPosDir
             // 
             this.numericUpDownUserStyleTBHorPosDir.Location = new System.Drawing.Point(184, 204);
-            this.numericUpDownUserStyleTBHorPosDir.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleTBHorPosDir.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -1286,7 +1286,7 @@
             // numericUpDownUserStyleFontSizeDelta
             // 
             this.numericUpDownUserStyleFontSizeDelta.Location = new System.Drawing.Point(184, 178);
-            this.numericUpDownUserStyleFontSizeDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleFontSizeDelta.Maximum = new decimal(new[]{
             59,
             0,
             0,
@@ -1308,7 +1308,7 @@
             // numericUpDownUserStyleFontSizeIncDec
             // 
             this.numericUpDownUserStyleFontSizeIncDec.Location = new System.Drawing.Point(184, 152);
-            this.numericUpDownUserStyleFontSizeIncDec.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleFontSizeIncDec.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1330,7 +1330,7 @@
             // numericUpDownUserStyleVerPosDelta
             // 
             this.numericUpDownUserStyleVerPosDelta.Location = new System.Drawing.Point(184, 126);
-            this.numericUpDownUserStyleVerPosDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleVerPosDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1352,7 +1352,7 @@
             // numericUpDownUserStyleVerPosDir
             // 
             this.numericUpDownUserStyleVerPosDir.Location = new System.Drawing.Point(184, 100);
-            this.numericUpDownUserStyleVerPosDir.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleVerPosDir.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -1374,7 +1374,7 @@
             // numericUpDownUserStyleHorPosDelta
             // 
             this.numericUpDownUserStyleHorPosDelta.Location = new System.Drawing.Point(184, 74);
-            this.numericUpDownUserStyleHorPosDelta.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleHorPosDelta.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1396,7 +1396,7 @@
             // numericUpDownUserStyleHorPosDir
             // 
             this.numericUpDownUserStyleHorPosDir.Location = new System.Drawing.Point(184, 48);
-            this.numericUpDownUserStyleHorPosDir.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleHorPosDir.Maximum = new decimal(new[]{
             7679,
             0,
             0,
@@ -1418,7 +1418,7 @@
             // numericUpDownUserStyleId
             // 
             this.numericUpDownUserStyleId.Location = new System.Drawing.Point(184, 22);
-            this.numericUpDownUserStyleId.Maximum = new decimal(new int[] {
+            this.numericUpDownUserStyleId.Maximum = new decimal(new[]{
             59,
             0,
             0,
@@ -1469,7 +1469,7 @@
             // numericUpDownSubRegionStyleIdRef
             // 
             this.numericUpDownSubRegionStyleIdRef.Location = new System.Drawing.Point(106, 74);
-            this.numericUpDownSubRegionStyleIdRef.Maximum = new decimal(new int[] {
+            this.numericUpDownSubRegionStyleIdRef.Maximum = new decimal(new[]{
             4319,
             0,
             0,
@@ -1592,7 +1592,7 @@
             // numericUpDownChangeFontStyleOutlinePaletteId
             // 
             this.numericUpDownChangeFontStyleOutlinePaletteId.Location = new System.Drawing.Point(129, 50);
-            this.numericUpDownChangeFontStyleOutlinePaletteId.Maximum = new decimal(new int[] {
+            this.numericUpDownChangeFontStyleOutlinePaletteId.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1642,7 +1642,7 @@
             // numericUpDownChangeFontColor
             // 
             this.numericUpDownChangeFontColor.Location = new System.Drawing.Point(100, 18);
-            this.numericUpDownChangeFontColor.Maximum = new decimal(new int[] {
+            this.numericUpDownChangeFontColor.Maximum = new decimal(new[]{
             254,
             0,
             0,
@@ -1664,12 +1664,12 @@
             // numericUpDownChangeFontSize
             // 
             this.numericUpDownChangeFontSize.Location = new System.Drawing.Point(80, 23);
-            this.numericUpDownChangeFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownChangeFontSize.Maximum = new decimal(new[]{
             144,
             0,
             0,
             0});
-            this.numericUpDownChangeFontSize.Minimum = new decimal(new int[] {
+            this.numericUpDownChangeFontSize.Minimum = new decimal(new[]{
             8,
             0,
             0,
@@ -1677,7 +1677,7 @@
             this.numericUpDownChangeFontSize.Name = "numericUpDownChangeFontSize";
             this.numericUpDownChangeFontSize.Size = new System.Drawing.Size(76, 20);
             this.numericUpDownChangeFontSize.TabIndex = 35;
-            this.numericUpDownChangeFontSize.Value = new decimal(new int[] {
+            this.numericUpDownChangeFontSize.Value = new decimal(new[]{
             8,
             0,
             0,
@@ -1855,7 +1855,7 @@
             // numericUpDownFontSetFontId
             // 
             this.numericUpDownFontSetFontId.Location = new System.Drawing.Point(100, 18);
-            this.numericUpDownFontSetFontId.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSetFontId.Maximum = new decimal(new[]{
             254,
             0,
             0,

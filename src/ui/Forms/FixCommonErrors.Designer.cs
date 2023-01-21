@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Controls;
+using Nikse.SubtitleEdit.Controls;
 using Nikse.SubtitleEdit.Core.Common;
 
 namespace Nikse.SubtitleEdit.Forms
@@ -669,18 +669,18 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownDuration
             // 
             this.numericUpDownDuration.DecimalPlaces = 3;
-            this.numericUpDownDuration.Increment = new decimal(new int[] {
+            this.numericUpDownDuration.Increment = new decimal(new[]{
             1,
             0,
             0,
             65536});
             this.numericUpDownDuration.Location = new System.Drawing.Point(99, 28);
-            this.numericUpDownDuration.Maximum = new decimal(new int[] {
+            this.numericUpDownDuration.Maximum = new decimal(new[]{
             99999,
             0,
             0,
             0});
-            this.numericUpDownDuration.Minimum = new decimal(new int[] {
+            this.numericUpDownDuration.Minimum = new decimal(new[]{
             99999,
             0,
             0,

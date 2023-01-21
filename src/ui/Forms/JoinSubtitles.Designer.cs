@@ -1,4 +1,4 @@
-﻿namespace Nikse.SubtitleEdit.Forms
+namespace Nikse.SubtitleEdit.Forms
 {
     sealed partial class JoinSubtitles
     {
@@ -196,7 +196,7 @@
             // 
             this.numericUpDownAddMs.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDownAddMs.Location = new System.Drawing.Point(385, 357);
-            this.numericUpDownAddMs.Maximum = new decimal(new int[] {
+            this.numericUpDownAddMs.Maximum = new decimal(new[]{
             100000,
             0,
             0,

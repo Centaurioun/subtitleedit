@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Controls;
+using Nikse.SubtitleEdit.Controls;
 
 namespace Nikse.SubtitleEdit.Forms
 {
@@ -81,12 +81,12 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMaxCharacters
             // 
             this.numericUpDownMaxCharacters.Location = new System.Drawing.Point(190, 27);
-            this.numericUpDownMaxCharacters.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxCharacters.Maximum = new decimal(new[]{
             999,
             0,
             0,
             0});
-            this.numericUpDownMaxCharacters.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxCharacters.Minimum = new decimal(new[]{
             10,
             0,
             0,
@@ -94,7 +94,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownMaxCharacters.Name = "numericUpDownMaxCharacters";
             this.numericUpDownMaxCharacters.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownMaxCharacters.TabIndex = 0;
-            this.numericUpDownMaxCharacters.Value = new decimal(new int[] {
+            this.numericUpDownMaxCharacters.Value = new decimal(new[]{
             65,
             0,
             0,
@@ -122,12 +122,12 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownMaxMillisecondsBetweenLines
             // 
             this.numericUpDownMaxMillisecondsBetweenLines.Location = new System.Drawing.Point(486, 26);
-            this.numericUpDownMaxMillisecondsBetweenLines.Maximum = new decimal(new int[] {
+            this.numericUpDownMaxMillisecondsBetweenLines.Maximum = new decimal(new[]{
             10000,
             0,
             0,
             0});
-            this.numericUpDownMaxMillisecondsBetweenLines.Minimum = new decimal(new int[] {
+            this.numericUpDownMaxMillisecondsBetweenLines.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -135,7 +135,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownMaxMillisecondsBetweenLines.Name = "numericUpDownMaxMillisecondsBetweenLines";
             this.numericUpDownMaxMillisecondsBetweenLines.Size = new System.Drawing.Size(64, 21);
             this.numericUpDownMaxMillisecondsBetweenLines.TabIndex = 2;
-            this.numericUpDownMaxMillisecondsBetweenLines.Value = new decimal(new int[] {
+            this.numericUpDownMaxMillisecondsBetweenLines.Value = new decimal(new[]{
             250,
             0,
             0,

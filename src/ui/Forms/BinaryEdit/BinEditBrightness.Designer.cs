@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 {
     sealed partial class BinEditBrightness
@@ -103,7 +103,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             // 
             this.numericUpDownBrightness.DecimalPlaces = 2;
             this.numericUpDownBrightness.Location = new System.Drawing.Point(474, 51);
-            this.numericUpDownBrightness.Maximum = new decimal(new int[] {
+            this.numericUpDownBrightness.Maximum = new decimal(new[]{
             200,
             0,
             0,

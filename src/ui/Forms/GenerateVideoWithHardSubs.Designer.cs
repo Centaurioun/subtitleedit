@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms
 {
     partial class GenerateVideoWithHardSubs
@@ -150,12 +150,12 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownFontSize
             // 
             this.numericUpDownFontSize.Location = new System.Drawing.Point(120, 33);
-            this.numericUpDownFontSize.Maximum = new decimal(new int[] {
+            this.numericUpDownFontSize.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownFontSize.Minimum = new decimal(new int[] {
+            this.numericUpDownFontSize.Minimum = new decimal(new[]{
             3,
             0,
             0,
@@ -163,7 +163,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownFontSize.Name = "numericUpDownFontSize";
             this.numericUpDownFontSize.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownFontSize.TabIndex = 1;
-            this.numericUpDownFontSize.Value = new decimal(new int[] {
+            this.numericUpDownFontSize.Value = new decimal(new[]{
             50,
             0,
             0,
@@ -336,18 +336,18 @@ namespace Nikse.SubtitleEdit.Forms
             // 
             // numericUpDownWidth
             // 
-            this.numericUpDownWidth.Increment = new decimal(new int[] {
+            this.numericUpDownWidth.Increment = new decimal(new[]{
             2,
             0,
             0,
             0});
             this.numericUpDownWidth.Location = new System.Drawing.Point(102, 26);
-            this.numericUpDownWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownWidth.Maximum = new decimal(new[]{
             50000,
             0,
             0,
             0});
-            this.numericUpDownWidth.Minimum = new decimal(new int[] {
+            this.numericUpDownWidth.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -355,7 +355,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownWidth.Name = "numericUpDownWidth";
             this.numericUpDownWidth.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownWidth.TabIndex = 1;
-            this.numericUpDownWidth.Value = new decimal(new int[] {
+            this.numericUpDownWidth.Value = new decimal(new[]{
             1280,
             0,
             0,
@@ -364,18 +364,18 @@ namespace Nikse.SubtitleEdit.Forms
             // 
             // numericUpDownHeight
             // 
-            this.numericUpDownHeight.Increment = new decimal(new int[] {
+            this.numericUpDownHeight.Increment = new decimal(new[]{
             2,
             0,
             0,
             0});
             this.numericUpDownHeight.Location = new System.Drawing.Point(190, 26);
-            this.numericUpDownHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownHeight.Maximum = new decimal(new[]{
             50000,
             0,
             0,
             0});
-            this.numericUpDownHeight.Minimum = new decimal(new int[] {
+            this.numericUpDownHeight.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -383,7 +383,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownHeight.Name = "numericUpDownHeight";
             this.numericUpDownHeight.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownHeight.TabIndex = 2;
-            this.numericUpDownHeight.Value = new decimal(new int[] {
+            this.numericUpDownHeight.Value = new decimal(new[]{
             720,
             0,
             0,
@@ -613,12 +613,12 @@ namespace Nikse.SubtitleEdit.Forms
             // numericUpDownTargetFileSize
             // 
             this.numericUpDownTargetFileSize.Location = new System.Drawing.Point(120, 401);
-            this.numericUpDownTargetFileSize.Maximum = new decimal(new int[] {
+            this.numericUpDownTargetFileSize.Maximum = new decimal(new[]{
             1000000,
             0,
             0,
             0});
-            this.numericUpDownTargetFileSize.Minimum = new decimal(new int[] {
+            this.numericUpDownTargetFileSize.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -626,7 +626,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.numericUpDownTargetFileSize.Name = "numericUpDownTargetFileSize";
             this.numericUpDownTargetFileSize.Size = new System.Drawing.Size(64, 20);
             this.numericUpDownTargetFileSize.TabIndex = 13;
-            this.numericUpDownTargetFileSize.Value = new decimal(new int[] {
+            this.numericUpDownTargetFileSize.Value = new decimal(new[]{
             50,
             0,
             0,
