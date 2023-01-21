@@ -103,7 +103,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
             // Update preview
             RefreshControls(null, EventArgs.Empty);
         }
-        
+
         private void RefreshControls(object sender, EventArgs e)
         {
             if (_isUpdating)
@@ -155,7 +155,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
                     _isUpdating = false;
                 }
             }
-            
+
             RefreshControls(sender, e);
         }
 

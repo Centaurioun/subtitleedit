@@ -587,7 +587,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             foreach (var newChar in newChars)
             {
                 bool found = false;
-                
+
                 foreach (var oldChar in oldChars)
                 {
                     if (oldChar.Text == newChar.Text &&

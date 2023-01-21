@@ -1096,7 +1096,7 @@ namespace Nikse.SubtitleEdit.Forms
             labelError.Visible = false;
             Refresh();
 
-              var sw = System.Diagnostics.Stopwatch.StartNew();
+            var sw = System.Diagnostics.Stopwatch.StartNew();
 
             if (buttonConvert.Text == LanguageSettings.Current.General.Cancel)
             {
@@ -1407,7 +1407,7 @@ namespace Nikse.SubtitleEdit.Forms
                                                             vobSubOcr.FileName = Path.GetFileName(fileName);
 
                                                             //TODO: fix
-                                                            vobSubOcr.InitializeBatch(binaryParagraphs.Cast<IBinaryParagraph>().ToList() , Configuration.Settings.VobSubOcr, fileName, false, track.Language, _ocrEngine);
+                                                            vobSubOcr.InitializeBatch(binaryParagraphs.Cast<IBinaryParagraph>().ToList(), Configuration.Settings.VobSubOcr, fileName, false, track.Language, _ocrEngine);
                                                             sub = vobSubOcr.SubtitleFromOcr;
                                                         }
                                                     }

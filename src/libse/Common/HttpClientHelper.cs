@@ -24,7 +24,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                 handler.UseProxy = true;
             }
 
-            if (proxySettings.UseDefaultCredentials) 
+            if (proxySettings.UseDefaultCredentials)
             {
                 handler.Proxy.Credentials = CredentialCache.DefaultNetworkCredentials;
                 handler.Credentials = CredentialCache.DefaultNetworkCredentials;
@@ -35,8 +35,8 @@ namespace Nikse.SubtitleEdit.Core.Common
                 var credentialCache = new CredentialCache
                 {
                     {
-                        new Uri(proxySettings.ProxyAddress), 
-                        proxySettings.AuthType, 
+                        new Uri(proxySettings.ProxyAddress),
+                        proxySettings.AuthType,
                         networkCredential
                     }
                 };

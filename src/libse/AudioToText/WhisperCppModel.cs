@@ -21,7 +21,7 @@ namespace Nikse.SubtitleEdit.Core.AudioToText
             }
         }
 
-        public WhisperModel[] Models  => new[] 
+        public WhisperModel[] Models => new[]
         {
             new WhisperModel
             {

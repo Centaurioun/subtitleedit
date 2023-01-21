@@ -41,7 +41,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                         else if (currentColor != newColor)
                         {
                             // Don't insert dash if there is already a dash, but DO insert a dash if it is an interruption
-                            if (p.Text.SafeSubstring(index, 1) != "-" && p.Text.SafeSubstring(index - 1, 1) != "-" 
+                            if (p.Text.SafeSubstring(index, 1) != "-" && p.Text.SafeSubstring(index - 1, 1) != "-"
                                 && (p.Text.SafeSubstring(index - 2, 2) != "- " || p.Text.SafeSubstring(index - 3, 3) == "-- "))
                             {
                                 if (dashFirstLine && !firstLineAdded)
@@ -102,7 +102,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                                 if (currentColor != newColor)
                                 {
                                     // Don't insert dash if there is already a dash, but DO insert a dash if it is an interruption
-                                    if (p.Text.SafeSubstring(index, 1) != "-" && p.Text.SafeSubstring(index - 1, 1) != "-" 
+                                    if (p.Text.SafeSubstring(index, 1) != "-" && p.Text.SafeSubstring(index - 1, 1) != "-"
                                         && (p.Text.SafeSubstring(index - 2, 2) != "- " || p.Text.SafeSubstring(index - 3, 3) == "-- "))
                                     {
                                         if (dashFirstLine && !firstLineAdded)
@@ -142,7 +142,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                 {
                     p.Text = HtmlUtil.RemoveColorTags(p.Text);
                     p.Text = p.Text.Replace("  ", " ").Replace(" " + Environment.NewLine, Environment.NewLine);
-                } 
+                }
                 else
                 {
                     p.Text = p.Text.Replace(" </font> ", "</font> ").Replace(" </font>" + Environment.NewLine, "</font>" + Environment.NewLine);
@@ -169,7 +169,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                 {
                     return value.Substring(startIndex);
                 }
-            } 
+            }
             catch (ArgumentOutOfRangeException)
             {
                 return defaultValue;

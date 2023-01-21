@@ -36,11 +36,11 @@ namespace Nikse.SubtitleEdit.Core.Forms
             {
                 var s = line.Trim();
                 if (!s.Contains("BETA", StringComparison.OrdinalIgnoreCase) &&
-                    !s.Contains('x') && 
-                    !s.Contains('*') && 
-                    s.Contains('(') && 
-                    s.Contains(')') && 
-                    _months.Any(month=>s.Contains(month)) &&
+                    !s.Contains('x') &&
+                    !s.Contains('*') &&
+                    s.Contains('(') &&
+                    s.Contains(')') &&
+                    _months.Any(month => s.Contains(month)) &&
                     VersionNumberRegex.IsMatch(s))
                 {
                     var indexOfSpace = s.IndexOf(' ');
@@ -68,9 +68,9 @@ namespace Nikse.SubtitleEdit.Core.Forms
 
                 if (!releaseOn)
                 {
-                    if (!s.Contains('x') && 
-                        !s.Contains('*') && 
-                        s.Contains('(') && 
+                    if (!s.Contains('x') &&
+                        !s.Contains('*') &&
+                        s.Contains('(') &&
                         s.Contains(')') &&
                         _months.Any(month => s.Contains(month)) &&
                         VersionNumberRegex.IsMatch(s))

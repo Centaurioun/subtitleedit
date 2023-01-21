@@ -66,7 +66,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                     writer.WriteLine();
                 }
             }
-            catch 
+            catch
             {
                 // ignore
             }
