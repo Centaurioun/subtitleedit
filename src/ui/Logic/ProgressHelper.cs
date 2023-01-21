@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 
 namespace Nikse.SubtitleEdit.Logic
@@ -11,7 +11,7 @@ namespace Nikse.SubtitleEdit.Logic
             if (totalSeconds < 60)
             {
                 return totalSeconds < 3
-                    ? string.Format(LanguageSettings.Current.GenerateVideoWithBurnedInSubs.TimeRemainingAFewSeconds)
+                    ? LanguageSettings.Current.GenerateVideoWithBurnedInSubs.TimeRemainingAFewSeconds
                     : string.Format(LanguageSettings.Current.GenerateVideoWithBurnedInSubs.TimeRemainingSeconds, totalSeconds);
             }
 

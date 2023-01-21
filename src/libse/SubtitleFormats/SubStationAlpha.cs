@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -792,11 +792,11 @@ Format: Marked, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
                 return s.Header;
             }
 
-            return string.Format($@"{scriptInfo.Trim() + Environment.NewLine}
+            return $@"{scriptInfo.Trim() + Environment.NewLine}
 [V4 Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, TertiaryColour, BackColour, Bold, Italic, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, AlphaLevel, Encoding
 {style.Trim() + Environment.NewLine}
-[Events]");
+[Events]";
         }
 
         public static string DefaultHeader
