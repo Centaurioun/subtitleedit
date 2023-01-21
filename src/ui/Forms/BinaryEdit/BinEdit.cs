@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.BluRaySup;
+using Nikse.SubtitleEdit.Core.BluRaySup;
 using Nikse.SubtitleEdit.Core.Common;
 using Nikse.SubtitleEdit.Core.ContainerFormats.Matroska;
 using Nikse.SubtitleEdit.Core.ContainerFormats.TransportStream;
@@ -129,7 +129,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                         width = 7680;
                         height = 4320;
                     }
-                    else if (videoFormat.Contains("x"))
+                    else if (videoFormat.Contains('x'))
                     {
                         var parts = videoFormat.Split('x');
                         if (parts.Length == 2)

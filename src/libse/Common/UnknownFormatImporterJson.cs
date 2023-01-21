@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.SubtitleFormats;
+using Nikse.SubtitleEdit.Core.SubtitleFormats;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -159,12 +159,12 @@ namespace Nikse.SubtitleEdit.Core.Common
             var text = ReadTextTag(s);
             var originalStart = start;
 
-            if (start != null && start.Contains(":") && start.Length >= 11 && start.Length <= 12 && start.Split(new[] { ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries).Length == 4)
+            if (start != null && start.Contains(':') && start.Length >= 11 && start.Length <= 12 && start.Split(new[] { ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries).Length == 4)
             {
                 start = DecodeFormatToSeconds(start);
             }
 
-            if (end != null && end.Contains(":") && end.Length >= 11 && end.Length <= 12 && end.Split(new[] { ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries).Length == 4)
+            if (end != null && end.Contains(':') && end.Length >= 11 && end.Length <= 12 && end.Split(new[] { ':', ',', '.' }, StringSplitOptions.RemoveEmptyEntries).Length == 4)
             {
                 end = DecodeFormatToSeconds(end);
             }
@@ -284,7 +284,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                 textLines = Json.ReadArray(s, "content");
             }
 
-            bool isArray = s.Contains("[");
+            bool isArray = s.Contains('[');
             if (isArray && textLines.Any(p => p == "end_time" || p == "endTime" || p == "end" || p == "endMs" || p == "endMilliseconds" || p == "end_ms" || p == "endms" || p == "to" || p == "to_ms" || p == "toms" || p == "from" || p == "from_ms"))
             {
                 isArray = false;

@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Linq;
 using System.Text;
@@ -198,7 +198,7 @@ namespace Nikse.SubtitleEdit.Core.Forms
         {
             var pre = string.Empty;
             var s = input;
-            if (s.StartsWith("{\\") && s.Contains("}"))
+            if (s.StartsWith("{\\") && s.Contains('}'))
             {
                 var idx = s.IndexOf('}');
                 pre = s.Substring(0, idx + 1);

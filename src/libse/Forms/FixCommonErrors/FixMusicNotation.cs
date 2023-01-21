@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using Nikse.SubtitleEdit.Core.Interfaces;
 using System;
 
@@ -51,7 +51,7 @@ namespace Nikse.SubtitleEdit.Core.Forms.FixCommonErrors
                         else
                         {
                             var fix = true;
-                            if (ms == "#" && newText.Contains("#") && !newText.Contains("# "))
+                            if (ms == "#" && newText.Contains('#') && !newText.Contains("# "))
                             {
                                 int count = Utilities.CountTagInText(newText, '#');
                                 if (count == 1)

@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Enums;
+using Nikse.SubtitleEdit.Core.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,7 +86,7 @@ namespace Nikse.SubtitleEdit.Core.Common
             }
 
             // Remove SPEAKER: from the beginning
-            if (checkString.Contains(":"))
+            if (checkString.Contains(':'))
             {
                 string[] split = checkString.Split(':');
                 if (string.IsNullOrEmpty(split[0].Trim()))
