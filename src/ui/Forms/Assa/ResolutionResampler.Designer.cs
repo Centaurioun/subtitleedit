@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.Assa
 {
     sealed partial class ResolutionResampler
@@ -64,7 +64,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownTargetHeight
             // 
             this.numericUpDownTargetHeight.Location = new System.Drawing.Point(265, 63);
-            this.numericUpDownTargetHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownTargetHeight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -72,7 +72,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownTargetHeight.Name = "numericUpDownTargetHeight";
             this.numericUpDownTargetHeight.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownTargetHeight.TabIndex = 10;
-            this.numericUpDownTargetHeight.Value = new decimal(new int[] {
+            this.numericUpDownTargetHeight.Value = new decimal(new[]{
             288,
             0,
             0,
@@ -100,7 +100,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownTargetWidth
             // 
             this.numericUpDownTargetWidth.Location = new System.Drawing.Point(196, 63);
-            this.numericUpDownTargetWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownTargetWidth.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -108,7 +108,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownTargetWidth.Name = "numericUpDownTargetWidth";
             this.numericUpDownTargetWidth.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownTargetWidth.TabIndex = 8;
-            this.numericUpDownTargetWidth.Value = new decimal(new int[] {
+            this.numericUpDownTargetWidth.Value = new decimal(new[]{
             384,
             0,
             0,
@@ -126,7 +126,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownSourceHeight
             // 
             this.numericUpDownSourceHeight.Location = new System.Drawing.Point(265, 37);
-            this.numericUpDownSourceHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownSourceHeight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -134,7 +134,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownSourceHeight.Name = "numericUpDownSourceHeight";
             this.numericUpDownSourceHeight.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownSourceHeight.TabIndex = 5;
-            this.numericUpDownSourceHeight.Value = new decimal(new int[] {
+            this.numericUpDownSourceHeight.Value = new decimal(new[]{
             288,
             0,
             0,
@@ -162,7 +162,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownSourceWidth
             // 
             this.numericUpDownSourceWidth.Location = new System.Drawing.Point(196, 37);
-            this.numericUpDownSourceWidth.Maximum = new decimal(new int[] {
+            this.numericUpDownSourceWidth.Maximum = new decimal(new[]{
             10000,
             0,
             0,
@@ -170,7 +170,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownSourceWidth.Name = "numericUpDownSourceWidth";
             this.numericUpDownSourceWidth.Size = new System.Drawing.Size(47, 20);
             this.numericUpDownSourceWidth.TabIndex = 3;
-            this.numericUpDownSourceWidth.Value = new decimal(new int[] {
+            this.numericUpDownSourceWidth.Value = new decimal(new[]{
             384,
             0,
             0,

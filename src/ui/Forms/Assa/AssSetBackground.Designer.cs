@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.Assa
 {
     sealed partial class AssSetBackground
@@ -386,12 +386,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownDrawingMarginV
             // 
             this.numericUpDownDrawingMarginV.Location = new System.Drawing.Point(100, 40);
-            this.numericUpDownDrawingMarginV.Maximum = new decimal(new int[] {
+            this.numericUpDownDrawingMarginV.Maximum = new decimal(new[]{
             9999,
             0,
             0,
             0});
-            this.numericUpDownDrawingMarginV.Minimum = new decimal(new int[] {
+            this.numericUpDownDrawingMarginV.Minimum = new decimal(new[]{
             9999,
             0,
             0,
@@ -413,12 +413,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownDrawingMarginH
             // 
             this.numericUpDownDrawingMarginH.Location = new System.Drawing.Point(100, 15);
-            this.numericUpDownDrawingMarginH.Maximum = new decimal(new int[] {
+            this.numericUpDownDrawingMarginH.Maximum = new decimal(new[]{
             9999,
             0,
             0,
             0});
-            this.numericUpDownDrawingMarginH.Minimum = new decimal(new int[] {
+            this.numericUpDownDrawingMarginH.Minimum = new decimal(new[]{
             9999,
             0,
             0,
@@ -431,12 +431,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownPaddingBottom
             // 
             this.numericUpDownPaddingBottom.Location = new System.Drawing.Point(78, 93);
-            this.numericUpDownPaddingBottom.Maximum = new decimal(new int[] {
+            this.numericUpDownPaddingBottom.Maximum = new decimal(new[]{
             10000,
             0,
             0,
             0});
-            this.numericUpDownPaddingBottom.Minimum = new decimal(new int[] {
+            this.numericUpDownPaddingBottom.Minimum = new decimal(new[]{
             1000,
             0,
             0,
@@ -444,7 +444,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownPaddingBottom.Name = "numericUpDownPaddingBottom";
             this.numericUpDownPaddingBottom.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownPaddingBottom.TabIndex = 7;
-            this.numericUpDownPaddingBottom.Value = new decimal(new int[] {
+            this.numericUpDownPaddingBottom.Value = new decimal(new[]{
             6,
             0,
             0,
@@ -463,12 +463,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownPaddingTop
             // 
             this.numericUpDownPaddingTop.Location = new System.Drawing.Point(78, 67);
-            this.numericUpDownPaddingTop.Maximum = new decimal(new int[] {
+            this.numericUpDownPaddingTop.Maximum = new decimal(new[]{
             10000,
             0,
             0,
             0});
-            this.numericUpDownPaddingTop.Minimum = new decimal(new int[] {
+            this.numericUpDownPaddingTop.Minimum = new decimal(new[]{
             1000,
             0,
             0,
@@ -476,7 +476,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownPaddingTop.Name = "numericUpDownPaddingTop";
             this.numericUpDownPaddingTop.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownPaddingTop.TabIndex = 5;
-            this.numericUpDownPaddingTop.Value = new decimal(new int[] {
+            this.numericUpDownPaddingTop.Value = new decimal(new[]{
             6,
             0,
             0,
@@ -519,12 +519,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownPaddingRight
             // 
             this.numericUpDownPaddingRight.Location = new System.Drawing.Point(78, 41);
-            this.numericUpDownPaddingRight.Maximum = new decimal(new int[] {
+            this.numericUpDownPaddingRight.Maximum = new decimal(new[]{
             10000,
             0,
             0,
             0});
-            this.numericUpDownPaddingRight.Minimum = new decimal(new int[] {
+            this.numericUpDownPaddingRight.Minimum = new decimal(new[]{
             1000,
             0,
             0,
@@ -532,7 +532,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownPaddingRight.Name = "numericUpDownPaddingRight";
             this.numericUpDownPaddingRight.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownPaddingRight.TabIndex = 3;
-            this.numericUpDownPaddingRight.Value = new decimal(new int[] {
+            this.numericUpDownPaddingRight.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -551,12 +551,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownPaddingLeft
             // 
             this.numericUpDownPaddingLeft.Location = new System.Drawing.Point(78, 15);
-            this.numericUpDownPaddingLeft.Maximum = new decimal(new int[] {
+            this.numericUpDownPaddingLeft.Maximum = new decimal(new[]{
             10000,
             0,
             0,
             0});
-            this.numericUpDownPaddingLeft.Minimum = new decimal(new int[] {
+            this.numericUpDownPaddingLeft.Minimum = new decimal(new[]{
             1000,
             0,
             0,
@@ -564,7 +564,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownPaddingLeft.Name = "numericUpDownPaddingLeft";
             this.numericUpDownPaddingLeft.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownPaddingLeft.TabIndex = 0;
-            this.numericUpDownPaddingLeft.Value = new decimal(new int[] {
+            this.numericUpDownPaddingLeft.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -612,7 +612,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownShadowDistance
             // 
             this.numericUpDownShadowDistance.Location = new System.Drawing.Point(261, 166);
-            this.numericUpDownShadowDistance.Minimum = new decimal(new int[] {
+            this.numericUpDownShadowDistance.Minimum = new decimal(new[]{
             100,
             0,
             0,
@@ -628,7 +628,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownOutlineWidth.Name = "numericUpDownOutlineWidth";
             this.numericUpDownOutlineWidth.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownOutlineWidth.TabIndex = 4;
-            this.numericUpDownOutlineWidth.Value = new decimal(new int[] {
+            this.numericUpDownOutlineWidth.Value = new decimal(new[]{
             1,
             0,
             0,
@@ -691,12 +691,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownFillWidthMarginRight
             // 
             this.numericUpDownFillWidthMarginRight.Location = new System.Drawing.Point(93, 73);
-            this.numericUpDownFillWidthMarginRight.Maximum = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginRight.Maximum = new decimal(new[]{
             360,
             0,
             0,
             0});
-            this.numericUpDownFillWidthMarginRight.Minimum = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginRight.Minimum = new decimal(new[]{
             360,
             0,
             0,
@@ -704,7 +704,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownFillWidthMarginRight.Name = "numericUpDownFillWidthMarginRight";
             this.numericUpDownFillWidthMarginRight.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownFillWidthMarginRight.TabIndex = 4;
-            this.numericUpDownFillWidthMarginRight.Value = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginRight.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -723,12 +723,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownFillWidthMarginLeft
             // 
             this.numericUpDownFillWidthMarginLeft.Location = new System.Drawing.Point(93, 48);
-            this.numericUpDownFillWidthMarginLeft.Maximum = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginLeft.Maximum = new decimal(new[]{
             360,
             0,
             0,
             0});
-            this.numericUpDownFillWidthMarginLeft.Minimum = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginLeft.Minimum = new decimal(new[]{
             360,
             0,
             0,
@@ -736,7 +736,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownFillWidthMarginLeft.Name = "numericUpDownFillWidthMarginLeft";
             this.numericUpDownFillWidthMarginLeft.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownFillWidthMarginLeft.TabIndex = 2;
-            this.numericUpDownFillWidthMarginLeft.Value = new decimal(new int[] {
+            this.numericUpDownFillWidthMarginLeft.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -755,7 +755,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownRadius
             // 
             this.numericUpDownRadius.Location = new System.Drawing.Point(97, 2);
-            this.numericUpDownRadius.Maximum = new decimal(new int[] {
+            this.numericUpDownRadius.Maximum = new decimal(new[]{
             1000,
             0,
             0,
@@ -763,7 +763,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownRadius.Name = "numericUpDownRadius";
             this.numericUpDownRadius.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownRadius.TabIndex = 50;
-            this.numericUpDownRadius.Value = new decimal(new int[] {
+            this.numericUpDownRadius.Value = new decimal(new[]{
             25,
             0,
             0,
@@ -782,12 +782,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownSpikesMax
             // 
             this.numericUpDownSpikesMax.Location = new System.Drawing.Point(97, 28);
-            this.numericUpDownSpikesMax.Maximum = new decimal(new int[] {
+            this.numericUpDownSpikesMax.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownSpikesMax.Minimum = new decimal(new int[] {
+            this.numericUpDownSpikesMax.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -795,7 +795,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownSpikesMax.Name = "numericUpDownSpikesMax";
             this.numericUpDownSpikesMax.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownSpikesMax.TabIndex = 52;
-            this.numericUpDownSpikesMax.Value = new decimal(new int[] {
+            this.numericUpDownSpikesMax.Value = new decimal(new[]{
             25,
             0,
             0,
@@ -825,12 +825,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownSpikesStep
             // 
             this.numericUpDownSpikesStep.Location = new System.Drawing.Point(97, 2);
-            this.numericUpDownSpikesStep.Maximum = new decimal(new int[] {
+            this.numericUpDownSpikesStep.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownSpikesStep.Minimum = new decimal(new int[] {
+            this.numericUpDownSpikesStep.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -838,7 +838,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownSpikesStep.Name = "numericUpDownSpikesStep";
             this.numericUpDownSpikesStep.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownSpikesStep.TabIndex = 50;
-            this.numericUpDownSpikesStep.Value = new decimal(new int[] {
+            this.numericUpDownSpikesStep.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -926,12 +926,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownCircleY
             // 
             this.numericUpDownCircleY.Location = new System.Drawing.Point(31, 9);
-            this.numericUpDownCircleY.Maximum = new decimal(new int[] {
+            this.numericUpDownCircleY.Maximum = new decimal(new[]{
             500,
             0,
             0,
             0});
-            this.numericUpDownCircleY.Minimum = new decimal(new int[] {
+            this.numericUpDownCircleY.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -939,7 +939,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownCircleY.Name = "numericUpDownCircleY";
             this.numericUpDownCircleY.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownCircleY.TabIndex = 52;
-            this.numericUpDownCircleY.Value = new decimal(new int[] {
+            this.numericUpDownCircleY.Value = new decimal(new[]{
             25,
             0,
             0,
@@ -960,12 +960,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownBubbleStep
             // 
             this.numericUpDownBubbleStep.Location = new System.Drawing.Point(97, 2);
-            this.numericUpDownBubbleStep.Maximum = new decimal(new int[] {
+            this.numericUpDownBubbleStep.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownBubbleStep.Minimum = new decimal(new int[] {
+            this.numericUpDownBubbleStep.Minimum = new decimal(new[]{
             4,
             0,
             0,
@@ -973,7 +973,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownBubbleStep.Name = "numericUpDownBubbleStep";
             this.numericUpDownBubbleStep.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownBubbleStep.TabIndex = 50;
-            this.numericUpDownBubbleStep.Value = new decimal(new int[] {
+            this.numericUpDownBubbleStep.Value = new decimal(new[]{
             10,
             0,
             0,
@@ -1001,12 +1001,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownBubbleHeight
             // 
             this.numericUpDownBubbleHeight.Location = new System.Drawing.Point(97, 28);
-            this.numericUpDownBubbleHeight.Maximum = new decimal(new int[] {
+            this.numericUpDownBubbleHeight.Maximum = new decimal(new[]{
             1000,
             0,
             0,
             0});
-            this.numericUpDownBubbleHeight.Minimum = new decimal(new int[] {
+            this.numericUpDownBubbleHeight.Minimum = new decimal(new[]{
             1,
             0,
             0,
@@ -1014,7 +1014,7 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             this.numericUpDownBubbleHeight.Name = "numericUpDownBubbleHeight";
             this.numericUpDownBubbleHeight.Size = new System.Drawing.Size(52, 20);
             this.numericUpDownBubbleHeight.TabIndex = 52;
-            this.numericUpDownBubbleHeight.Value = new decimal(new int[] {
+            this.numericUpDownBubbleHeight.Value = new decimal(new[]{
             25,
             0,
             0,

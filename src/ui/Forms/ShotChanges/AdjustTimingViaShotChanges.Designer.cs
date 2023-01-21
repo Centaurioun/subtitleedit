@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Nikse.SubtitleEdit.Core.ContainerFormats.Matroska;
 
 namespace Nikse.SubtitleEdit.Forms.ShotChanges
@@ -149,7 +149,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             // 
             this.numericUpDownFixedMilliseconds.Enabled = false;
             this.numericUpDownFixedMilliseconds.Location = new System.Drawing.Point(88, 19);
-            this.numericUpDownFixedMilliseconds.Maximum = new decimal(new int[] {
+            this.numericUpDownFixedMilliseconds.Maximum = new decimal(new[]{
             20000,
             0,
             0,
@@ -157,7 +157,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             this.numericUpDownFixedMilliseconds.Name = "numericUpDownFixedMilliseconds";
             this.numericUpDownFixedMilliseconds.Size = new System.Drawing.Size(61, 20);
             this.numericUpDownFixedMilliseconds.TabIndex = 14;
-            this.numericUpDownFixedMilliseconds.Value = new decimal(new int[] {
+            this.numericUpDownFixedMilliseconds.Value = new decimal(new[]{
             500,
             0,
             0,
@@ -192,7 +192,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             // 
             this.numericUpDown1.Enabled = false;
             this.numericUpDown1.Location = new System.Drawing.Point(88, 41);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.numericUpDown1.Maximum = new decimal(new[]{
             20000,
             0,
             0,
@@ -200,7 +200,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             this.numericUpDown1.Name = "numericUpDown1";
             this.numericUpDown1.Size = new System.Drawing.Size(61, 20);
             this.numericUpDown1.TabIndex = 17;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.numericUpDown1.Value = new decimal(new[]{
             500,
             0,
             0,
@@ -253,7 +253,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             // 
             this.numericUpDown2.Enabled = false;
             this.numericUpDown2.Location = new System.Drawing.Point(88, 44);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.numericUpDown2.Maximum = new decimal(new[]{
             20000,
             0,
             0,
@@ -261,7 +261,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             this.numericUpDown2.Name = "numericUpDown2";
             this.numericUpDown2.Size = new System.Drawing.Size(61, 20);
             this.numericUpDown2.TabIndex = 17;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.numericUpDown2.Value = new decimal(new[]{
             500,
             0,
             0,
@@ -289,7 +289,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             // 
             this.numericUpDown3.Enabled = false;
             this.numericUpDown3.Location = new System.Drawing.Point(88, 19);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.numericUpDown3.Maximum = new decimal(new[]{
             20000,
             0,
             0,
@@ -297,7 +297,7 @@ namespace Nikse.SubtitleEdit.Forms.ShotChanges
             this.numericUpDown3.Name = "numericUpDown3";
             this.numericUpDown3.Size = new System.Drawing.Size(61, 20);
             this.numericUpDown3.TabIndex = 14;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.numericUpDown3.Value = new decimal(new[]{
             500,
             0,
             0,

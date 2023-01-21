@@ -1,4 +1,4 @@
-﻿
+
 namespace Nikse.SubtitleEdit.Forms.Assa
 {
     sealed partial class SetPosition
@@ -202,12 +202,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // 
             this.numericUpDownRotateX.DecimalPlaces = 1;
             this.numericUpDownRotateX.Location = new System.Drawing.Point(91, 9);
-            this.numericUpDownRotateX.Maximum = new decimal(new int[] {
+            this.numericUpDownRotateX.Maximum = new decimal(new[]{
             360,
             0,
             0,
             0});
-            this.numericUpDownRotateX.Minimum = new decimal(new int[] {
+            this.numericUpDownRotateX.Minimum = new decimal(new[]{
             360,
             0,
             0,
@@ -230,12 +230,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // 
             this.numericUpDownRotateY.DecimalPlaces = 1;
             this.numericUpDownRotateY.Location = new System.Drawing.Point(91, 34);
-            this.numericUpDownRotateY.Maximum = new decimal(new int[] {
+            this.numericUpDownRotateY.Maximum = new decimal(new[]{
             360,
             0,
             0,
             0});
-            this.numericUpDownRotateY.Minimum = new decimal(new int[] {
+            this.numericUpDownRotateY.Minimum = new decimal(new[]{
             360,
             0,
             0,
@@ -258,12 +258,12 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // 
             this.numericUpDownRotateZ.DecimalPlaces = 1;
             this.numericUpDownRotateZ.Location = new System.Drawing.Point(91, 60);
-            this.numericUpDownRotateZ.Maximum = new decimal(new int[] {
+            this.numericUpDownRotateZ.Maximum = new decimal(new[]{
             360,
             0,
             0,
             0});
-            this.numericUpDownRotateZ.Minimum = new decimal(new int[] {
+            this.numericUpDownRotateZ.Minimum = new decimal(new[]{
             360,
             0,
             0,
@@ -312,18 +312,18 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownDistortX
             // 
             this.numericUpDownDistortX.DecimalPlaces = 2;
-            this.numericUpDownDistortX.Increment = new decimal(new int[] {
+            this.numericUpDownDistortX.Increment = new decimal(new[]{
             5,
             0,
             0,
             131072});
             this.numericUpDownDistortX.Location = new System.Drawing.Point(231, 9);
-            this.numericUpDownDistortX.Maximum = new decimal(new int[] {
+            this.numericUpDownDistortX.Maximum = new decimal(new[]{
             3,
             0,
             0,
             0});
-            this.numericUpDownDistortX.Minimum = new decimal(new int[] {
+            this.numericUpDownDistortX.Minimum = new decimal(new[]{
             3,
             0,
             0,
@@ -345,18 +345,18 @@ namespace Nikse.SubtitleEdit.Forms.Assa
             // numericUpDownDistortY
             // 
             this.numericUpDownDistortY.DecimalPlaces = 2;
-            this.numericUpDownDistortY.Increment = new decimal(new int[] {
+            this.numericUpDownDistortY.Increment = new decimal(new[]{
             1,
             0,
             0,
             131072});
             this.numericUpDownDistortY.Location = new System.Drawing.Point(231, 34);
-            this.numericUpDownDistortY.Maximum = new decimal(new int[] {
+            this.numericUpDownDistortY.Maximum = new decimal(new[]{
             2,
             0,
             0,
             0});
-            this.numericUpDownDistortY.Minimum = new decimal(new int[] {
+            this.numericUpDownDistortY.Minimum = new decimal(new[]{
             3,
             0,
             0,
