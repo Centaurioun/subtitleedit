@@ -1987,7 +1987,7 @@ namespace Nikse.SubtitleEdit.Core.Common
                         if (match.Index > 4)
                         {
                             var before = text.Substring(match.Index - 4, 4);
-                            if (int.TryParse(before.Trim(), NumberStyles.None, CultureInfo.InvariantCulture, out  var n) && n > 999)
+                            if (int.TryParse(before.Trim(), NumberStyles.None, CultureInfo.InvariantCulture, out var n) && n > 999)
                             {
                                 skip = false;
                             }

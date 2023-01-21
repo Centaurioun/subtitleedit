@@ -373,8 +373,8 @@ namespace Nikse.SubtitleEdit.Core.Forms
 
                                     var l1Trim = HtmlUtil.RemoveHtmlTags(lines[0]).TrimEnd('"');
                                     if (!skipDoToNumbers &&
-                                        count == 1 && 
-                                        lines.Count == 2 && 
+                                        count == 1 &&
+                                        lines.Count == 2 &&
                                         !l1Trim.EndsWith('.') &&
                                         !l1Trim.EndsWith('!') &&
                                         !l1Trim.EndsWith('?'))
