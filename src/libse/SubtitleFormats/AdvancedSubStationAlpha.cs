@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -365,11 +365,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text"
                 return DefaultHeader;
             }
 
-            return string.Format($@"{scriptInfo.Trim() + Environment.NewLine}
+            return $@"{scriptInfo.Trim() + Environment.NewLine}
 [V4+ Styles]
 {SsaStyle.DefaultAssStyleFormat}
 {style.ToString().Trim() + Environment.NewLine}
-[Events]");
+[Events]";
         }
 
         private static string FixScriptType(string header)

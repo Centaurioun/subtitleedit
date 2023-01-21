@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using Nikse.SubtitleEdit.Core.VobSub;
 using Nikse.SubtitleEdit.Logic;
 using System;
@@ -211,7 +211,7 @@ namespace Nikse.SubtitleEdit.Forms
                 return;
             }
 
-            labelStatus.Text = string.Format(_language.ReadingSubtitleData);
+            labelStatus.Text = _language.ReadingSubtitleData;
             Refresh();
             Application.DoEvents();
             var vobSub = new VobSubParser(radioButtonPal.Checked);
