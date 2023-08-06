@@ -311,7 +311,7 @@ namespace Nikse.SubtitleEdit.Core.AudioToText
             var deleteItems = new List<Paragraph>();
 
             var s = new Subtitle(subtitle);
-            for (var i = 0; i < s.Paragraphs.Count-1; i++)
+            for (var i = 0; i < s.Paragraphs.Count - 1; i++)
             {
                 var p = s.GetParagraphOrDefault(i);
                 var next = s.GetParagraphOrDefault(i + 1);
@@ -321,7 +321,7 @@ namespace Nikse.SubtitleEdit.Core.AudioToText
                     continue;
                 }
 
-                var gapToNext = next.StartTime.TotalMilliseconds- p.EndTime.TotalMilliseconds;
+                var gapToNext = next.StartTime.TotalMilliseconds - p.EndTime.TotalMilliseconds;
                 if (gapToNext > maxMillisecondsBetweenLines || p.Text.HasSentenceEnding(language))
                 {
                     continue;

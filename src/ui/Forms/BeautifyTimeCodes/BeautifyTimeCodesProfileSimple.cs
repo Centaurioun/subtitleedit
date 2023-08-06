@@ -18,7 +18,7 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
             UiUtil.PreInitialize(this);
             InitializeComponent();
             UiUtil.FixFonts(this);
-            
+
             var language = LanguageSettings.Current.BeautifyTimeCodesProfile;
             Text = language.CreateSimpleTitle;
             labelInstructions.Text = language.CreateSimpleInstruction;
@@ -84,7 +84,7 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
                 DialogResult = DialogResult.None;
                 return;
             }
-            
+
             // Save settings
             var gap = Convert.ToInt32(numericUpDownGap.Value);
             var inCuesGap = comboBoxInCues.SelectedIndex;

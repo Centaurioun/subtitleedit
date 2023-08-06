@@ -2143,16 +2143,16 @@ namespace Nikse.SubtitleEdit.Controls
         {
             UpdateItem(index, i => i.BackColor = color, si => si.BackColor = color);
         }
-        
+
         public void SetForegroundColor(int index, Color color)
         {
             UpdateItem(index, i => i.ForeColor = color, si => si.ForeColor = color);
         }
-        
-        private void UpdateItem(int index, Action<ListViewItem> itemUpdater,  Action<ListViewItem.ListViewSubItem> subItemUpdater)
+
+        private void UpdateItem(int index, Action<ListViewItem> itemUpdater, Action<ListViewItem.ListViewSubItem> subItemUpdater)
         {
             if (!IsValidIndex(index)) return;
-            
+
             var item = Items[index];
             itemUpdater(item);
             if (ColumnIndexStart >= 0)

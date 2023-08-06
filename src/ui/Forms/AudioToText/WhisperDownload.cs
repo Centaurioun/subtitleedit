@@ -191,7 +191,7 @@ namespace Nikse.SubtitleEdit.Forms.AudioToText
                 {
                     File.WriteAllText(Path.Combine(folder, "models.txt"), "Whisper Const-me uses models from Whisper.cpp");
                 }
-                catch 
+                catch
                 {
                     // ignore
                 }

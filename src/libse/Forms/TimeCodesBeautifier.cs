@@ -249,7 +249,7 @@ namespace Nikse.SubtitleEdit.Core.Forms
                             // Otherwise, normal behavior: we'll align the connected subtitles around the shot change
                             newLeftOutCueFrame = fixInfo.newLeftOutCueFrame;
                             newRightInCueFrame = fixInfo.newRightInCueFrame;
-                        }                        
+                        }
                     }
                     else if (bestRightInCueFrameInfo.result == FindBestCueResult.SnappedToRedZone)
                     {
@@ -848,7 +848,7 @@ namespace Nikse.SubtitleEdit.Core.Forms
         private void AlignAndSetCue(Paragraph paragraph, bool isInCue, int newFrame)
         {
             double newTime = FramesToMilliseconds(newFrame);
-                        
+
             // Finally, update time
             if (isInCue)
             {

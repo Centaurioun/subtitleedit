@@ -121,8 +121,8 @@ namespace Nikse.SubtitleEdit.Forms
         {
             using (var saveDialog = new SaveFileDialog
             {
-               FileName = GetFileName(),
-               Filter = "Seconds|*.txt|Milliseconds|*.txt|Frames|*.txt|HH:MM:SS,MS|*.txt|HH:MM:SS:FF|*.txt|HH:MM:SS.FF|*.txt",
+                FileName = GetFileName(),
+                Filter = "Seconds|*.txt|Milliseconds|*.txt|Frames|*.txt|HH:MM:SS,MS|*.txt|HH:MM:SS:FF|*.txt|HH:MM:SS.FF|*.txt",
             })
             {
                 if (saveDialog.ShowDialog(form) != DialogResult.OK)
@@ -196,7 +196,7 @@ namespace Nikse.SubtitleEdit.Forms
                 indices.Add(selectedItem.Index);
             }
 
-            foreach (var index in indices.OrderByDescending(p=>p))
+            foreach (var index in indices.OrderByDescending(p => p))
             {
                 ShotChanges.RemoveAt(index);
             }

@@ -512,7 +512,7 @@ namespace Nikse.SubtitleEdit.Controls
             e.Graphics.Clear(BackColor);
             using (var pen = _textBox.Focused ? new Pen(_buttonForeColorOver, 1f) : new Pen(BorderColor, 1f))
             {
-                var borderRectangle = new Rectangle(0,0, Width - 1, Height - 1);
+                var borderRectangle = new Rectangle(0, 0, Width - 1, Height - 1);
                 e.Graphics.DrawRectangle(pen, borderRectangle);
             }
 
@@ -638,7 +638,7 @@ namespace Nikse.SubtitleEdit.Controls
                     new Point(left + 5, top + height -1),
                 });
         }
-        
+
         private void DrawDisabled(PaintEventArgs e)
         {
             e.Graphics.Clear(BackColorDisabled);

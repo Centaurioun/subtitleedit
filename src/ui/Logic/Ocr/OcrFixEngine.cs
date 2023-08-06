@@ -446,7 +446,7 @@ namespace Nikse.SubtitleEdit.Logic.Ocr
             }
 
             text = text.RemoveRecursiveLineBreaks().Trim();
-            
+
             var textNoAssa = Utilities.RemoveSsaTags(text, true);
             if (textNoAssa.Length == 0)
             {
@@ -668,7 +668,7 @@ namespace Nikse.SubtitleEdit.Logic.Ocr
         {
             var text = input;
             var isPreviousLineClose = lastLine.HasSentenceEnding();
-            
+
             if (text.StartsWith(tag.TrimStart(), StringComparison.Ordinal) && text.Length > 3)
             {
                 if (isPreviousLineClose || char.IsUpper(text[2]))

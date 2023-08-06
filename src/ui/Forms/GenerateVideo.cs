@@ -31,7 +31,7 @@ namespace Nikse.SubtitleEdit.Forms
 
             _subtitleFileName = Utilities.GetFileNameWithoutExtension(subtitle.FileName);
             numericUpDownDurationMinutes.Value = Configuration.Settings.Tools.BlankVideoMinutes;
-            
+
             double? maxTimeP = null;
             if (subtitle?.Paragraphs != null && subtitle.Paragraphs.Count > 0)
             {

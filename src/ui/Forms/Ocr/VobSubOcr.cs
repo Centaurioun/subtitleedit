@@ -746,7 +746,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
                     text = text.Replace(" " + Environment.NewLine, Environment.NewLine);
                     text = text.Replace(Environment.NewLine + " ", Environment.NewLine);
                     text = text.RemoveRecursiveLineBreaks();
-                    
+
                     if (Utilities.GetNumberOfLines(text) > 2)
                     {
                         text = Utilities.AutoBreakLine(text);
@@ -1040,7 +1040,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
                     text = text.Replace(" " + Environment.NewLine, Environment.NewLine);
                     text = text.Replace(Environment.NewLine + " ", Environment.NewLine);
                     text = text.RemoveRecursiveLineBreaks();
-                    
+
                     if (Utilities.GetNumberOfLines(text) > 2)
                     {
                         text = Utilities.AutoBreakLine(text);
@@ -4969,7 +4969,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
                     text = text.Replace(Environment.NewLine + " ", Environment.NewLine);
 
                     text = text.RemoveRecursiveLineBreaks();
-                    
+
                     if (Utilities.GetNumberOfLines(text) > 2)
                     {
                         text = Utilities.AutoBreakLine(text);

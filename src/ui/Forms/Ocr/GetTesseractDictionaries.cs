@@ -32,7 +32,7 @@ namespace Nikse.SubtitleEdit.Forms.Ocr
             labelPleaseWait.Text = string.Empty;
             buttonOK.Text = LanguageSettings.Current.General.Ok;
             FixLargeFonts();
-            _dictionaries = TesseractDictionary.List().OrderBy(p=>p.Name).ToList();
+            _dictionaries = TesseractDictionary.List().OrderBy(p => p.Name).ToList();
             LoadDictionaryList(first);
             _cancellationTokenSource = new CancellationTokenSource();
         }

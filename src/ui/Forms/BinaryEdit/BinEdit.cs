@@ -428,8 +428,8 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                 FillListView(_subtitle);
                 found = true;
             }
-            
-            
+
+
             if (!found && (ext == ".mkv" || ext == ".mks"))
             {
                 if (!OpenMatroskaFile(fileName))
@@ -549,7 +549,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                     found = true;
                 }
             }
-            
+
             if (!found && FileUtil.IsManzanita(fileName))
             {
                 if (!ImportSubtitleFromManzanitaTransportStream(fileName))

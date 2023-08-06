@@ -566,7 +566,7 @@ namespace Nikse.SubtitleEdit.Core.Common
             {
                 bestEndMs = Math.Min(bestEndMs, ShotChangeHelper.GetNextShotChangeMinusGapInMs(shotChanges, new TimeCode(originalEndTime)) ?? double.MaxValue);
             }
-            
+
             p.EndTime.TotalMilliseconds = wantedEndMs <= bestEndMs ? wantedEndMs : bestEndMs;
 
             if (p.DurationTotalMilliseconds <= 0)

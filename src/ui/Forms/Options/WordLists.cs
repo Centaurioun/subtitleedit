@@ -141,7 +141,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
             listViewNames.BeginUpdate();
             listBoxUserWordLists.BeginUpdate();
             listBoxOcrFixList.BeginUpdate();
-            
+
             listViewNames.Items.Clear();
             listBoxUserWordLists.Items.Clear();
             listBoxOcrFixList.Items.Clear();
@@ -161,7 +161,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
 
                 await LoadNamesAsync(language, true);
             }
-            
+
             listViewNames.EndUpdate();
             listBoxUserWordLists.EndUpdate();
             listBoxOcrFixList.EndUpdate();
@@ -207,7 +207,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
         {
             // update all names
             _wordListNames = await GetNamesSortedFromSourceAsync().ConfigureAwait(true);
-            
+
             if (reloadListBox)
             {
                 listViewNames.BeginUpdate();
@@ -258,10 +258,10 @@ namespace Nikse.SubtitleEdit.Forms.Options
                 // adds new name
                 var nameList = await NameList.CreateAsync(Configuration.DictionariesDirectory, language, Configuration.Settings.WordLists.UseOnlineNames, Configuration.Settings.WordLists.NamesUrl);
                 nameList.Add(text);
-                
+
                 // reload
                 await LoadNamesAsync(language, true).ConfigureAwait(true);
-                
+
                 labelStatus.Text = string.Format(LanguageSettings.Current.Settings.WordAddedX, text);
                 textBoxNameEtc.Text = string.Empty;
                 textBoxNameEtc.Focus();

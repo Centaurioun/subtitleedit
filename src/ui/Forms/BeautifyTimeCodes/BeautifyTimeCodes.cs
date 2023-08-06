@@ -324,7 +324,7 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
         public static bool IsFfProbeAvailable()
         {
             return !Configuration.IsRunningOnWindows || (
-                !string.IsNullOrWhiteSpace(Configuration.Settings.General.FFmpegLocation) 
+                !string.IsNullOrWhiteSpace(Configuration.Settings.General.FFmpegLocation)
                 && File.Exists(Path.Combine(Path.GetDirectoryName(Configuration.Settings.General.FFmpegLocation), "ffprobe.exe"))
             );
         }

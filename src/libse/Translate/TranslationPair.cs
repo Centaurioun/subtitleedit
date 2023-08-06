@@ -6,7 +6,7 @@ namespace Nikse.SubtitleEdit.Core.Translate
     public class TranslationPair : IEquatable<TranslationPair>
     {
         public string Name { get; }
-        
+
         public string Code { get; }
 
         public TranslationPair(string name, string code)

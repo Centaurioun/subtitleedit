@@ -390,7 +390,7 @@ namespace Nikse.SubtitleEdit.Logic
                 tud.BackColor = buttonBackColor;
                 tud.ForeColor = Control.DefaultForeColor;
                 tud.ButtonForeColor = Control.DefaultForeColor;
-                tud.BackColorDisabled = NikseUpDown.DefaultBackColorDisabled; 
+                tud.BackColorDisabled = NikseUpDown.DefaultBackColorDisabled;
             }
             else if (c is NikseComboBox ncb)
             {

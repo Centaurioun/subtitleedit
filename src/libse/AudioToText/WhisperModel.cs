@@ -34,7 +34,7 @@ namespace Nikse.SubtitleEdit.Core.AudioToText
         }
 
         // See https://github.com/openai/whisper/blob/main/whisper/__init__.py
-        public  WhisperModel[] Models => new[]
+        public WhisperModel[] Models => new[]
         {
             new WhisperModel
             {

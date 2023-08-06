@@ -16,7 +16,7 @@ namespace Test.Logic
         {
             Configuration.Settings.General.DialogStyle = Nikse.SubtitleEdit.Core.Enums.DialogType.DashBothLinesWithSpace;
 
-            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("<font color=\"#ffff00\">That was really delicious.</font>" + Environment.NewLine + 
+            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("<font color=\"#ffff00\">That was really delicious.</font>" + Environment.NewLine +
                                                                               "I know.", 0, 2000) });
 
             ConvertColorsToDialogUtils.ConvertColorsToDialogInSubtitle(subtitle, true, false, false);
@@ -30,7 +30,7 @@ namespace Test.Logic
         {
             Configuration.Settings.General.DialogStyle = Nikse.SubtitleEdit.Core.Enums.DialogType.DashBothLinesWithSpace;
 
-            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("That's it!" + Environment.NewLine + 
+            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("That's it!" + Environment.NewLine +
                                                                               "<font color=\"#ffff00\">..sped to victory.</font>", 0, 2000) });
 
             ConvertColorsToDialogUtils.ConvertColorsToDialogInSubtitle(subtitle, true, false, false);
@@ -58,7 +58,7 @@ namespace Test.Logic
         {
             Configuration.Settings.General.DialogStyle = Nikse.SubtitleEdit.Core.Enums.DialogType.DashBothLinesWithSpace;
 
-            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("<font color=\"#ff0000\">That's it!</font>" + Environment.NewLine + 
+            var subtitle = new Subtitle(new List<Paragraph>() { new Paragraph("<font color=\"#ff0000\">That's it!</font>" + Environment.NewLine +
                                                                               "<font color=\"#ffff00\">..sped to victory.</font>", 0, 2000) });
 
             ConvertColorsToDialogUtils.ConvertColorsToDialogInSubtitle(subtitle, true, false, false);

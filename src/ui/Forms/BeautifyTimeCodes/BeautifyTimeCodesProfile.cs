@@ -17,7 +17,7 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
             UiUtil.PreInitialize(this);
             InitializeComponent();
             UiUtil.FixFonts(this);
-            
+
             if (frameRate > 0)
             {
                 cuesPreviewViewInCues.FrameRate = (float)frameRate;
@@ -28,7 +28,7 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
                 cuesPreviewViewChainingInCueOnShot.FrameRate = (float)frameRate;
                 cuesPreviewViewChainingOutCueOnShot.FrameRate = (float)frameRate;
             }
-            
+
             var language = LanguageSettings.Current.BeautifyTimeCodesProfile;
             Text = language.Title;
             buttonCreateSimple.Text = language.CreateSimple;
@@ -182,11 +182,11 @@ namespace Nikse.SubtitleEdit.Forms.BeautifyTimeCodes
             labelChainingOutCueOnShotMaxGapSuffix.Enabled = radioButtonChainingOutCueOnShotMaxGap.Checked;
             numericUpDownChainingOutCueOnShotRightRedZone.Enabled = radioButtonChainingOutCueOnShotZones.Checked;
             numericUpDownChainingOutCueOnShotRightGreenZone.Enabled = radioButtonChainingOutCueOnShotZones.Checked;
-            
+
             // Connected subtitles page toggling
             cuesPreviewViewConnectedSubtitlesInCueClosest.Visible = tabControlConnectedSubtitles.SelectedIndex == 0;
             cuesPreviewViewConnectedSubtitlesOutCueClosest.Visible = tabControlConnectedSubtitles.SelectedIndex == 1;
-            
+
             // Chaining page toggling
             cuesPreviewViewChainingGeneral.Visible = tabControlChaining.SelectedIndex == 0;
             cuesPreviewViewChainingInCueOnShot.Visible = tabControlChaining.SelectedIndex == 1;

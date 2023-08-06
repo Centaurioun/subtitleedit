@@ -509,12 +509,12 @@ namespace Nikse.SubtitleEdit.Forms
                 textBoxText.ContextMenuStrip = FindReplaceDialogHelper.GetRegExContextMenu(textBoxText);
                 checkBoxCaseSensitive.Enabled = false;
             }
-            else if (comboBoxRule.SelectedIndex == FunctionOdd || 
-                     comboBoxRule.SelectedIndex == FunctionEven || 
-                     comboBoxRule.SelectedIndex == FunctionExactlyOneLine || 
-                     comboBoxRule.SelectedIndex == FunctionExactlyTwoLines || 
-                     comboBoxRule.SelectedIndex == FunctionMoreThanTwoLines || 
-                     comboBoxRule.SelectedIndex == FunctionBookmarked || 
+            else if (comboBoxRule.SelectedIndex == FunctionOdd ||
+                     comboBoxRule.SelectedIndex == FunctionEven ||
+                     comboBoxRule.SelectedIndex == FunctionExactlyOneLine ||
+                     comboBoxRule.SelectedIndex == FunctionExactlyTwoLines ||
+                     comboBoxRule.SelectedIndex == FunctionMoreThanTwoLines ||
+                     comboBoxRule.SelectedIndex == FunctionBookmarked ||
                      comboBoxRule.SelectedIndex == FunctionBlankLines)
             {
                 checkBoxCaseSensitive.Enabled = false;

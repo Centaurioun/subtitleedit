@@ -53,7 +53,7 @@ namespace Nikse.SubtitleEdit.Forms
             comboBoxLineContinuationBegin.Text = continuationProfile.Prefix;
             comboBoxLineContinuationEnd.Text = continuationProfile.Suffix;
 
-            checkBoxSplitAtLineBreaks.Text= LanguageSettings.Current.SplitLongLines.SplitAtLineBreaks;;
+            checkBoxSplitAtLineBreaks.Text = LanguageSettings.Current.SplitLongLines.SplitAtLineBreaks; ;
             toolStripMenuItemInverseSelection.Text = LanguageSettings.Current.Main.Menu.Edit.InverseSelection;
             toolStripMenuItemSelectAll.Text = LanguageSettings.Current.Main.Menu.ContextMenu.SelectAll;
             buttonOK.Text = LanguageSettings.Current.General.Ok;

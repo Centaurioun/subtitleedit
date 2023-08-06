@@ -3730,7 +3730,7 @@ namespace Nikse.SubtitleEdit.Forms.Options
                 form.ShowDialog(this);
             }
         }
-        
+
         private void comboBoxToolbarIconTheme_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (_loading)

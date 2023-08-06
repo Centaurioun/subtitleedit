@@ -68,7 +68,7 @@ namespace Nikse.SubtitleEdit.Forms.VTT
 
             if (ImportExportStyles.Count > 0)
             {
-                DialogResult= DialogResult.OK;
+                DialogResult = DialogResult.OK;
             }
             else
             {

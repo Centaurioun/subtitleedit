@@ -21,7 +21,7 @@ namespace Nikse.SubtitleEdit.Forms
         private readonly List<Paragraph> _unchecked = new List<Paragraph>();
         private readonly List<Paragraph> _edited = new List<Paragraph>();
         private readonly List<Paragraph> _editedOld = new List<Paragraph>();
-        private static readonly Color ListBackMarkColor = Configuration.Settings.General.UseDarkTheme? Color.PaleVioletRed : Color.PeachPuff;
+        private static readonly Color ListBackMarkColor = Configuration.Settings.General.UseDarkTheme ? Color.PaleVioletRed : Color.PeachPuff;
 
         public FormRemoveTextForHearImpaired(Main main, Subtitle subtitle)
         {

@@ -681,7 +681,7 @@ namespace Nikse.SubtitleEdit.Forms
                 }
             }
         }
-        
+
         public bool IsName(string candidate)
         {
             MakeSureNameListIsLoaded();

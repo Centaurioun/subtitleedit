@@ -1732,7 +1732,7 @@ namespace Nikse.SubtitleEdit.Controls
 
                                 _mouseDownParagraph.StartTime.TotalMilliseconds = milliseconds;
 
-                                if (Configuration.Settings.VideoControls.WaveformSnapToShotChanges && ModifierKeys != Keys.Shift  &&
+                                if (Configuration.Settings.VideoControls.WaveformSnapToShotChanges && ModifierKeys != Keys.Shift &&
                                     _shotChanges?.Count > 0)
                                 {
                                     var nearestShotChange = ShotChangeHelper.GetClosestShotChange(_shotChanges, new TimeCode(milliseconds));
@@ -1789,7 +1789,7 @@ namespace Nikse.SubtitleEdit.Controls
                                 }
 
                                 _mouseDownParagraph.EndTime.TotalMilliseconds = milliseconds;
-                                    
+
                                 if (Configuration.Settings.VideoControls.WaveformSnapToShotChanges && ModifierKeys != Keys.Shift)
                                 {
                                     var nearestShotChange = ShotChangeHelper.GetClosestShotChange(_shotChanges, new TimeCode(milliseconds));
@@ -2734,10 +2734,10 @@ namespace Nikse.SubtitleEdit.Controls
             {
                 var largestGapInFrames = Math.Max(Configuration.Settings.BeautifyTimeCodes.Profile.InCuesGap, Configuration.Settings.BeautifyTimeCodes.Profile.OutCuesGap);
                 var pixelsPerFrame = (_wavePeaks.SampleRate * _zoomFactor) / Configuration.Settings.General.CurrentFrameRate;
-                var snappingDistance = (int) Math.Round(pixelsPerFrame * Math.Max(1, largestGapInFrames));
+                var snappingDistance = (int)Math.Round(pixelsPerFrame * Math.Max(1, largestGapInFrames));
 
                 ShotChangeSnapPixels = Math.Max(8, snappingDistance);
-            } 
+            }
             else
             {
                 ShotChangeSnapPixels = 8;

@@ -174,7 +174,7 @@ namespace Nikse.SubtitleEdit.Core.AudioToText
                     while (pctHere < percentageMax && startPos < p.EndTime.TotalSeconds - 1)
                     {
                         pctHere = FindPercentage(startPosForward - 0.05, startPosForward + 0.05, wavePeaks);
-                        if (Math.Abs(pctHere - (- 1)) < 0.01)
+                        if (Math.Abs(pctHere - (-1)) < 0.01)
                         {
                             if (p.DurationTotalMilliseconds < 1000)
                             {

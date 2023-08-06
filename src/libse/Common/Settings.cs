@@ -4397,7 +4397,7 @@ $HorzAlign          =   Center
             {
                 settings.General.ListViewTextDisplayIndex = Convert.ToInt32(subNode.InnerText.Trim(), CultureInfo.InvariantCulture);
             }
-            
+
 
             subNode = node.SelectSingleNode("DirectShowDoubleLoad");
             if (subNode != null)
@@ -9691,7 +9691,7 @@ $HorzAlign          =   Center
                 subNode = node.SelectSingleNode("MainVideoAudioExtractAudioSelectedLines");
                 if (subNode != null)
                 {
-                    shortcuts.MainVideoAudioExtractAudioSelectedLines= subNode.InnerText;
+                    shortcuts.MainVideoAudioExtractAudioSelectedLines = subNode.InnerText;
                 }
 
                 subNode = node.SelectSingleNode("MainSpellCheck");
