@@ -11,8 +11,9 @@ namespace Nikse.SubtitleEdit.Logic
 {
     public static class DarkTheme
     {
-        internal static readonly Color BackColor = Configuration.Settings.General.DarkThemeBackColor;
-        internal static readonly Color ForeColor = Configuration.Settings.General.DarkThemeForeColor;
+        public static Color BackColor => Configuration.Settings.General.DarkThemeBackColor;
+        public static Color ForeColor => Configuration.Settings.General.DarkThemeForeColor;
+        public static Color DarkThemeDisabledColor => Configuration.Settings.General.DarkThemeDisabledColor;
 
         private const int DWMWA_USE_IMMERSIVE_DARK_MODE_BEFORE_20H1 = 19;
         private const int DWMWA_USE_IMMERSIVE_DARK_MODE = 20;
@@ -111,6 +112,14 @@ namespace Nikse.SubtitleEdit.Logic
                     c.FlatStyle = FlatStyle.Flat;
                 }
 
+                var toolStripNikseComboBox = GetSubControls<ToolStripNikseComboBox>(form);
+                foreach (ToolStripNikseComboBox c in toolStripNikseComboBox)
+                {
+                    c.BackColor = BackColor;
+                    c.ForeColor = ForeColor;
+                    SetDarkTheme(c.ComboBox);
+                }
+
                 var toolStripContentPanels = GetSubControls<ToolStripContentPanel>(form);
                 foreach (ToolStripContentPanel c in toolStripContentPanels)
                 {
@@ -205,6 +214,14 @@ namespace Nikse.SubtitleEdit.Logic
                     c.FlatStyle = FlatStyle.Flat;
                 }
 
+                var toolStripNikseComboBox = GetSubControls<ToolStripNikseComboBox>(form);
+                foreach (ToolStripNikseComboBox c in toolStripNikseComboBox)
+                {
+                    c.BackColor = BackColor;
+                    c.ForeColor = ForeColor;
+                    UnFixControl(c.ComboBox);
+                }
+
                 var toolStripContentPanels = GetSubControls<ToolStripContentPanel>(form);
                 foreach (ToolStripContentPanel c in toolStripContentPanels)
                 {
@@ -263,12 +280,14 @@ namespace Nikse.SubtitleEdit.Logic
         {
             c.BackColor = Control.DefaultBackColor;
             c.ForeColor = Control.DefaultForeColor;
+            var buttonBackColor = SystemColors.Window;
 
             if (c is Button b)
             {
                 b.FlatStyle = FlatStyle.Standard;
                 b.EnabledChanged -= Button_EnabledChanged;
                 b.Paint -= Button_Paint;
+                b.BackColor = buttonBackColor;
             }
 
             if (c is CheckBox cb)
@@ -284,6 +303,11 @@ namespace Nikse.SubtitleEdit.Logic
             if (c is ComboBox cmBox)
             {
                 cmBox.FlatStyle = FlatStyle.Standard;
+            }
+
+            if (c is GroupBox gBox)
+            {
+                gBox.Paint -= PaintBorderDarkGray;
             }
 
             if (c is NumericUpDown numeric)
@@ -354,10 +378,83 @@ namespace Nikse.SubtitleEdit.Logic
                 lv.EnabledChanged -= ListView_EnabledChanged;
                 lv.HandleCreated -= ListView_HandleCreated;
             }
+            else if (c is NikseUpDown ud)
+            {
+                ud.BackColor = buttonBackColor;
+                ud.ForeColor = Control.DefaultForeColor;
+                ud.ButtonForeColor = Control.DefaultForeColor;
+                ud.BackColorDisabled = NikseUpDown.DefaultBackColorDisabled;
+            }
+            else if (c is NikseTimeUpDown tud)
+            {
+                tud.BackColor = buttonBackColor;
+                tud.ForeColor = Control.DefaultForeColor;
+                tud.ButtonForeColor = Control.DefaultForeColor;
+                tud.BackColorDisabled = NikseUpDown.DefaultBackColorDisabled; 
+            }
+            else if (c is NikseComboBox ncb)
+            {
+                ncb.BackColor = buttonBackColor;
+                ncb.ForeColor = Control.DefaultForeColor;
+                ncb.ButtonForeColor = Control.DefaultForeColor;
+                ncb.BorderColor = Color.LightGray;
+                ncb.BackColorDisabled = NikseUpDown.DefaultBackColorDisabled;
+                if (ncb.DropDownControl != null)
+                {
+                    UnFixControl(ncb.DropDownControl);
+                }
+            }
+            else if (c is Button bu)
+            {
+                bu.BackColor = buttonBackColor;
+            }
+        }
+
+        private static void PaintBorderDarkGray(object sender, PaintEventArgs p)
+        {
+            var box = (GroupBox)sender;
+            p.Graphics.Clear(BackColor);
+
+            var g = p.Graphics;
+            var textBrush = new SolidBrush(ForeColor);
+            var borderBrush = new SolidBrush(Color.Gray);
+            var borderPen = new Pen(borderBrush);
+            var strSize = g.MeasureString(box.Text, box.Font);
+            var rect = new Rectangle(box.ClientRectangle.X,
+                box.ClientRectangle.Y + (int)(strSize.Height / 2),
+                box.ClientRectangle.Width - 1,
+                box.ClientRectangle.Height - (int)(strSize.Height / 2) - 1);
+
+            // Clear text and border
+            g.Clear(BackColor);
+
+            // Draw text
+            g.DrawString(box.Text, box.Font, textBrush, box.Padding.Left, 0);
+
+            // Drawing Border
+            //Left
+            g.DrawLine(borderPen, rect.Location, new Point(rect.X, rect.Y + rect.Height));
+            //Right
+            g.DrawLine(borderPen, new Point(rect.X + rect.Width, rect.Y), new Point(rect.X + rect.Width, rect.Y + rect.Height - 1));
+            //Bottom
+            g.DrawLine(borderPen, new Point(rect.X, rect.Y + rect.Height - 1), new Point(rect.X + rect.Width, rect.Y + rect.Height - 1));
+            //Top1
+            g.DrawLine(borderPen, new Point(rect.X, rect.Y), new Point(rect.X + box.Padding.Left, rect.Y));
+            //Top2
+            g.DrawLine(borderPen, new Point(rect.X + box.Padding.Left + (int)(strSize.Width), rect.Y), new Point(rect.X + rect.Width, rect.Y));
+
+            borderPen.Dispose();
+            borderBrush.Dispose();
+            textBrush.Dispose();
         }
 
         private static void FixControl(Control c)
         {
+            if (c is SETextBox)
+            {
+                return;
+            }
+
             c.BackColor = BackColor;
             c.ForeColor = ForeColor;
 
@@ -381,6 +478,11 @@ namespace Nikse.SubtitleEdit.Logic
             if (c is ComboBox cmBox)
             {
                 cmBox.FlatStyle = FlatStyle.Flat;
+            }
+
+            if (c is GroupBox gBox)
+            {
+                gBox.Paint += PaintBorderDarkGray;
             }
 
             if (c is NumericUpDown numeric)
@@ -451,6 +553,32 @@ namespace Nikse.SubtitleEdit.Logic
                 lv.EnabledChanged += ListView_EnabledChanged;
                 lv.HandleCreated += ListView_HandleCreated;
             }
+            else if (c is NikseUpDown ud)
+            {
+                ud.BackColor = BackColor;
+                ud.ForeColor = ForeColor;
+                ud.ButtonForeColor = ForeColor;
+                ud.BackColorDisabled = BackColor;
+            }
+            else if (c is NikseTimeUpDown tud)
+            {
+                tud.BackColor = BackColor;
+                tud.ForeColor = ForeColor;
+                tud.ButtonForeColor = ForeColor;
+                tud.BackColorDisabled = BackColor;
+            }
+            else if (c is NikseComboBox ncb)
+            {
+                ncb.BackColor = BackColor;
+                ncb.ForeColor = ForeColor;
+                ncb.ButtonForeColor = ForeColor;
+                ncb.BackColorDisabled = BackColor;
+                ncb.BorderColor = Color.Gray;
+                if (ncb.DropDownControl != null)
+                {
+                    FixControl(ncb.DropDownControl);
+                }
+            }
         }
 
         private static void Button_EnabledChanged(object sender, EventArgs e)
@@ -464,7 +592,7 @@ namespace Nikse.SubtitleEdit.Logic
             if (sender is Button button && !button.Enabled)
             {
                 button.ForeColor = Color.DimGray;
-                TextFormatFlags flags = TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter;
+                var flags = TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter;
                 TextRenderer.DrawText(e.Graphics, button.Text, button.Font, e.ClipRectangle, button.ForeColor, flags);
             }
         }
@@ -474,7 +602,7 @@ namespace Nikse.SubtitleEdit.Logic
             if (sender is CheckBox checkBox && !checkBox.Enabled)
             {
                 var checkBoxWidth = CheckBoxRenderer.GetGlyphSize(e.Graphics, System.Windows.Forms.VisualStyles.CheckBoxState.CheckedDisabled).Width;
-                Rectangle textRectangleValue = new Rectangle
+                var textRectangleValue = new Rectangle
                 {
                     X = e.ClipRectangle.X + checkBoxWidth,
                     Y = e.ClipRectangle.Y,
@@ -491,7 +619,7 @@ namespace Nikse.SubtitleEdit.Logic
             if (sender is RadioButton radioButton && !radioButton.Enabled)
             {
                 var radioButtonWidth = RadioButtonRenderer.GetGlyphSize(e.Graphics, System.Windows.Forms.VisualStyles.RadioButtonState.UncheckedDisabled).Width;
-                Rectangle textRectangleValue = new Rectangle
+                var textRectangleValue = new Rectangle
                 {
                     X = e.ClipRectangle.X + radioButtonWidth,
                     Y = e.ClipRectangle.Y,
@@ -508,7 +636,7 @@ namespace Nikse.SubtitleEdit.Logic
 
         private static void ListView_DrawItem(object sender, DrawListViewItemEventArgs e)
         {
-            if (sender is ListView lv && !lv.Focused && (e.State & ListViewItemStates.Selected) != 0)
+            if (sender is ListView && (e.State & ListViewItemStates.Selected) != 0)
             {
                 if (e.Item.Focused)
                 {
@@ -530,13 +658,7 @@ namespace Nikse.SubtitleEdit.Logic
 
             var backgroundColor = lv.Items[e.ItemIndex].SubItems[e.ColumnIndex].BackColor;
             var subBackgroundColor = Color.FromArgb(backgroundColor.A, Math.Max(backgroundColor.R - 39, 0), Math.Max(backgroundColor.G - 39, 0), Math.Max(backgroundColor.B - 39, 0));
-            if (lv.Focused && backgroundColor == BackColor || lv.RightToLeftLayout)
-            {
-                e.DrawDefault = true;
-                return;
-            }
-
-            if (e.Item.Selected)
+            if (e.Item.Selected || e.Item.Focused)
             {
                 var subtitleFont = e.Item.Font;
                 var rect = e.Bounds;
@@ -562,14 +684,15 @@ namespace Nikse.SubtitleEdit.Logic
                     CheckBoxRenderer.DrawCheckBox(e.Graphics, new Point(e.Bounds.X + 4, e.Bounds.Y + 2), checkBoxState);
                 }
 
+                var foreColor = e.Item.ForeColor;
                 if (lv.Columns[e.ColumnIndex].TextAlign == HorizontalAlignment.Right)
                 {
                     var stringWidth = (int)e.Graphics.MeasureString(e.Item.SubItems[e.ColumnIndex].Text, subtitleFont).Width;
-                    TextRenderer.DrawText(e.Graphics, e.Item.SubItems[e.ColumnIndex].Text, subtitleFont, new Point(e.Bounds.Right - stringWidth - 7, e.Bounds.Top + 2), e.Item.ForeColor, TextFormatFlags.NoPrefix);
+                    TextRenderer.DrawText(e.Graphics, e.Item.SubItems[e.ColumnIndex].Text, subtitleFont, new Point(e.Bounds.Right - stringWidth - 7, e.Bounds.Top + 2), foreColor, TextFormatFlags.NoPrefix);
                 }
                 else
                 {
-                    TextRenderer.DrawText(e.Graphics, e.Item.SubItems[e.ColumnIndex].Text, subtitleFont, new Point(e.Bounds.Left + 3 + addX, e.Bounds.Top + 2), e.Item.ForeColor, TextFormatFlags.NoPrefix);
+                    TextRenderer.DrawText(e.Graphics, e.Item.SubItems[e.ColumnIndex].Text, subtitleFont, new Point(e.Bounds.Left + 3 + addX, e.Bounds.Top + 2), foreColor, TextFormatFlags.NoPrefix);
                 }
             }
             else
@@ -593,7 +716,7 @@ namespace Nikse.SubtitleEdit.Logic
                 e.Graphics.FillRectangle(slightlyDarkerBrush, e.Bounds);
             }
 
-            int posY = Math.Abs(e.Bounds.Height - e.Font.Height) / 2;
+            var posY = Math.Abs(e.Bounds.Height - e.Font.Height) / 2;
             TextRenderer.DrawText(e.Graphics, e.Header.Text, e.Font, new Point(e.Bounds.X + 3, posY), ForeColor);
 
             if (Configuration.Settings.General.DarkThemeShowListViewGridLines && e.ColumnIndex != 0)
@@ -622,8 +745,7 @@ namespace Nikse.SubtitleEdit.Logic
             }
         }
 
-        private static void ListView_HandleCreated(object sender, EventArgs e) =>
-            SetWindowThemeDark((Control)sender);
+        private static void ListView_HandleCreated(object sender, EventArgs e) => SetWindowThemeDark((Control)sender);
 
         private class MyRenderer : ToolStripProfessionalRenderer
         {
@@ -637,7 +759,7 @@ namespace Nikse.SubtitleEdit.Logic
 
             protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
             {
-                if (!(e.ToolStrip is ToolStrip))
+                if (e.ToolStrip == null)
                 {
                     base.OnRenderToolStripBorder(e);
                 }
@@ -843,7 +965,7 @@ namespace Nikse.SubtitleEdit.Logic
             private Rectangle GetTabImageRect(int index)
             {
                 var innerRect = _tabRects[index];
-                int imgHeight = _imageSize.Height;
+                var imgHeight = _imageSize.Height;
                 var imgRect = new Rectangle(
                     new Point(innerRect.X + ImagePadding,
                         innerRect.Y + ((innerRect.Height - imgHeight) / 2)),
@@ -1000,6 +1122,10 @@ namespace Nikse.SubtitleEdit.Logic
                 {
                     dropDownItem.ForeColor = ForeColor;
                     dropDownItem.BackColor = BackColor;
+                    if (dropDownItem is ToolStripSeparator)
+                    {
+                        dropDownItem.Paint += ToolStripSeparatorPaint;
+                    }
                 }
             }
 

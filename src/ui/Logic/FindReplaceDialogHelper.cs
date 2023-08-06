@@ -3,6 +3,7 @@ using Nikse.SubtitleEdit.Core.Enums;
 using System;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
+using Nikse.SubtitleEdit.Controls;
 
 namespace Nikse.SubtitleEdit.Logic
 {
@@ -17,12 +18,13 @@ namespace Nikse.SubtitleEdit.Logic
         public int SelectedPosition { get; set; }
         public int ReplaceFromPosition { get; set; }
         public int StartLineIndex { get; set; }
+        public string StartFindText { get; set; }
         public bool MatchInOriginal { get; set; }
         public bool InProgress { get; set; }
 
-        public int FindTextLength { get; private set; }
+        public int FindTextLength { get; set; }
 
-        public string FindText { get; }
+        public string FindText { get; set; }
 
         public string ReplaceText { get; }
 
@@ -41,6 +43,11 @@ namespace Nikse.SubtitleEdit.Logic
             _regEx = regEx;
             FindTextLength = findText.Length;
             StartLineIndex = startLineIndex;
+            if (StartLineIndex == 0)
+            {
+                StartFindText = findText;
+            }
+
             MatchInOriginal = false;
         }
 
@@ -89,6 +96,11 @@ namespace Nikse.SubtitleEdit.Logic
             Match match;
             try
             {
+                if (_regEx == null)
+                {
+                    _regEx = new Regex(FindText, RegexOptions.None, TimeSpan.FromSeconds(5));
+                }
+
                 match = _regEx.Match(text, startIndex);
             }
             catch (RegexMatchTimeoutException exception)
@@ -131,10 +143,11 @@ namespace Nikse.SubtitleEdit.Logic
                     if (!first)
                     {
                         position = 0;
+                        MatchInOriginal = false;
                     }
 
                     int pos;
-                    if (!MatchInOriginal)
+                    if (!MatchInOriginal && FindReplaceType.SearchTranslation)
                     {
                         pos = FindPositionInText(p.Text, position);
                         if (pos >= 0)
@@ -147,14 +160,14 @@ namespace Nikse.SubtitleEdit.Logic
                             return true;
                         }
                         position = 0;
+
+                        if (index < subtitle.Paragraphs.Count - 1)
+                        {
+                            MatchInOriginal = false;
+                        }
                     }
 
-                    if (index < subtitle.Paragraphs.Count - 1)
-                    {
-                        MatchInOriginal = false;
-                    }
-
-                    if (originalSubtitle != null && allowEditOfOriginalSubtitle)
+                    if (originalSubtitle != null && allowEditOfOriginalSubtitle && FindReplaceType.SearchOriginal)
                     {
                         var o = Utilities.GetOriginalParagraph(index, p, originalSubtitle.Paragraphs);
                         if (o != null)
@@ -171,8 +184,10 @@ namespace Nikse.SubtitleEdit.Logic
                             }
                         }
                     }
+
                     first = false;
                 }
+
                 index++;
             }
 
@@ -181,18 +196,19 @@ namespace Nikse.SubtitleEdit.Logic
 
         public bool FindPrevious(Subtitle subtitle, Subtitle originalSubtitle, int startIndex, int position, bool allowEditOfOriginalSubtitle)
         {
+            //TODO: us whole word
             Success = false;
-            int index = startIndex;
-            bool first = true;
+            var index = startIndex;
+            var first = true;
             for (var i = startIndex; i >= 0; i--)
             {
-                Paragraph p = subtitle.Paragraphs[i];
+                var p = subtitle.Paragraphs[i];
 
                 if (originalSubtitle != null && allowEditOfOriginalSubtitle)
                 {
-                    if (!first || MatchInOriginal)
+                    if ((!first || MatchInOriginal) && FindReplaceType.SearchTranslation)
                     {
-                        Paragraph o = Utilities.GetOriginalParagraph(index, p, originalSubtitle.Paragraphs);
+                        var o = Utilities.GetOriginalParagraph(index, p, originalSubtitle.Paragraphs);
                         if (o != null)
                         {
                             if (!first)
@@ -229,28 +245,42 @@ namespace Nikse.SubtitleEdit.Logic
                     position = p.Text.Length - 1;
                 }
 
-                for (var j = 0; j <= position; j++)
+                if (originalSubtitle != null && allowEditOfOriginalSubtitle && FindReplaceType.SearchOriginal)
                 {
-                    if (position - j >= 0 && position < p.Text.Length)
+
+                    for (var j = 0; j <= position; j++)
                     {
-                        var t = p.Text.Substring(position - j, j + 1);
-                        int pos = FindPositionInText(t, 0);
-                        if (pos >= 0)
+                        if (position - j >= 0 && position < p.Text.Length)
                         {
-                            pos += position - j;
-                            MatchInOriginal = false;
-                            SelectedLineIndex = index;
-                            SelectedPosition = pos;
-                            ReplaceFromPosition = pos;
-                            Success = true;
-                            return true;
+                            var t = p.Text.Substring(position - j, j + 1);
+                            var pos = FindPositionInText(t, 0);
+                            var startWholeWord = position - j < 1;
+                            if (!startWholeWord && position - j - 1 > 0)
+                            {
+                                startWholeWord = SeparatorChars.Contains(p.Text[position - j - 1]);
+                            }
+
+                            var startWholeWorkOkay = !FindReplaceType.WholeWord || startWholeWord;
+
+                            if (pos >= 0 && startWholeWorkOkay)
+                            {
+                                pos += position - j;
+                                MatchInOriginal = false;
+                                SelectedLineIndex = index;
+                                SelectedPosition = pos;
+                                ReplaceFromPosition = pos;
+                                Success = true;
+                                return true;
+                            }
                         }
                     }
                 }
+
                 position = 0;
                 first = false;
                 index--;
             }
+
             return false;
         }
 
@@ -273,7 +303,7 @@ namespace Nikse.SubtitleEdit.Logic
             return cm;
         }
 
-        public static ContextMenuStrip GetRegExContextMenu(ComboBox comboBox)
+        public static ContextMenuStrip GetRegExContextMenu(NikseComboBox comboBox)
         {
             var cm = new ContextMenuStrip();
             var l = LanguageSettings.Current.RegularExpressionContextMenu;
@@ -363,10 +393,11 @@ namespace Nikse.SubtitleEdit.Logic
                         }
                         Success = true;
                     }
+
                     return Success;
                 }
-                string searchText = text.Substring(0, startIndex);
-                int pos = -1;
+                var searchText = text.Substring(0, startIndex);
+                var pos = -1;
                 var comparison = GetComparison();
                 var idx = searchText.LastIndexOf(FindText, startIndex, comparison);
                 while (idx >= 0)
@@ -389,12 +420,14 @@ namespace Nikse.SubtitleEdit.Logic
                     searchText = text.Substring(0, idx);
                     idx = searchText.LastIndexOf(FindText, comparison);
                 }
+
                 if (pos >= 0)
                 {
                     SelectedLineIndex = pos;
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -468,5 +501,9 @@ namespace Nikse.SubtitleEdit.Logic
 
         private StringComparison GetComparison() => FindReplaceType.FindType == FindType.Normal ? StringComparison.OrdinalIgnoreCase : StringComparison.Ordinal;
 
+        public void SetRegex(Regex regex)
+        {
+            _regEx = regex;
+        }
     }
 }

@@ -38,8 +38,8 @@
             this.columnHeaderOutline = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.contextMenuStripFile = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeAndReplaceWithToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemRemoveAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeAndReplaceWithToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.addToStorageToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator8 = new System.Windows.Forms.ToolStripSeparator();
@@ -65,21 +65,21 @@
             this.buttonRemove = new System.Windows.Forms.Button();
             this.groupBoxProperties = new System.Windows.Forms.GroupBox();
             this.groupBoxBorder = new System.Windows.Forms.GroupBox();
-            this.comboBoxOpaqueBoxStyle = new System.Windows.Forms.ComboBox();
+            this.comboBoxOpaqueBoxStyle = new Nikse.SubtitleEdit.Controls.NikseComboBox();
             this.radioButtonOpaqueBox = new System.Windows.Forms.RadioButton();
             this.radioButtonOutline = new System.Windows.Forms.RadioButton();
-            this.numericUpDownShadowWidth = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownOutline = new System.Windows.Forms.NumericUpDown();
-            this.labelShadow = new System.Windows.Forms.Label();
+            this.numericUpDownShadowWidth = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.numericUpDownOutline = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelShadow = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.textBoxStyleName = new System.Windows.Forms.TextBox();
-            this.labelStyleName = new System.Windows.Forms.Label();
+            this.labelStyleName = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.groupBoxMargins = new System.Windows.Forms.GroupBox();
-            this.numericUpDownMarginVertical = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMarginRight = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownMarginLeft = new System.Windows.Forms.NumericUpDown();
-            this.labelMarginVertical = new System.Windows.Forms.Label();
-            this.labelMarginRight = new System.Windows.Forms.Label();
-            this.labelMarginLeft = new System.Windows.Forms.Label();
+            this.numericUpDownMarginVertical = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.numericUpDownMarginRight = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.numericUpDownMarginLeft = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelMarginVertical = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.labelMarginRight = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.labelMarginLeft = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.groupBoxColors = new System.Windows.Forms.GroupBox();
             this.panelBackColor = new System.Windows.Forms.Panel();
             this.buttonBackColor = new System.Windows.Forms.Button();
@@ -104,32 +104,33 @@
             this.contextMenuStripPreview = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.setPreviewTextToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBoxFont = new System.Windows.Forms.GroupBox();
-            this.numericUpDownAngle = new System.Windows.Forms.NumericUpDown();
-            this.labelAngle = new System.Windows.Forms.Label();
-            this.numericUpDownSpacing = new System.Windows.Forms.NumericUpDown();
-            this.labelSpacing = new System.Windows.Forms.Label();
-            this.numericUpDownScaleY = new System.Windows.Forms.NumericUpDown();
-            this.labelScaleY = new System.Windows.Forms.Label();
-            this.numericUpDownScaleX = new System.Windows.Forms.NumericUpDown();
-            this.labelScaleX = new System.Windows.Forms.Label();
+            this.numericUpDownAngle = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelAngle = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.numericUpDownSpacing = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelSpacing = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.numericUpDownScaleY = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelScaleY = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.numericUpDownScaleX = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.labelScaleX = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.checkBoxStrikeout = new System.Windows.Forms.CheckBox();
             this.buttonPickAttachmentFont = new System.Windows.Forms.Button();
             this.checkBoxFontUnderline = new System.Windows.Forms.CheckBox();
-            this.numericUpDownFontSize = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFontSize = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.checkBoxFontItalic = new System.Windows.Forms.CheckBox();
             this.checkBoxFontBold = new System.Windows.Forms.CheckBox();
-            this.comboBoxFontName = new System.Windows.Forms.ComboBox();
-            this.labelFontSize = new System.Windows.Forms.Label();
-            this.labelFontName = new System.Windows.Forms.Label();
+            this.comboBoxFontName = new Nikse.SubtitleEdit.Controls.NikseComboBox();
+            this.labelFontSize = new Nikse.SubtitleEdit.Controls.NikseLabel();
+            this.labelFontName = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.colorDialogSSAStyle = new System.Windows.Forms.ColorDialog();
             this.openFileDialogImport = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialogStyle = new System.Windows.Forms.SaveFileDialog();
-            this.labelStatus = new System.Windows.Forms.Label();
+            this.labelStatus = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.timerClearStatus = new System.Windows.Forms.Timer(this.components);
             this.groupBoxStorage = new System.Windows.Forms.GroupBox();
             this.buttonAddToFile = new System.Windows.Forms.Button();
             this.buttonStorageExport = new System.Windows.Forms.Button();
             this.buttonStorageImport = new System.Windows.Forms.Button();
+            this.labelDuplicateStyleNames = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.buttonStorageCopy = new System.Windows.Forms.Button();
             this.buttonStorageRemoveAll = new System.Windows.Forms.Button();
             this.buttonStorageAdd = new System.Windows.Forms.Button();
@@ -159,36 +160,25 @@
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripMenuItemStorageImport = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemStorageExport = new System.Windows.Forms.ToolStripMenuItem();
-            this.labelCategoryDefaultNote = new System.Windows.Forms.Label();
+            this.labelCategoryDefaultNote = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.buttonStorageManageCategories = new System.Windows.Forms.Button();
             this.buttonStorageCategoryDelete = new System.Windows.Forms.Button();
             this.buttonStorageCategoryNew = new System.Windows.Forms.Button();
-            this.comboboxStorageCategories = new System.Windows.Forms.ComboBox();
-            this.labelStorageCategory = new System.Windows.Forms.Label();
+            this.comboboxStorageCategories = new Nikse.SubtitleEdit.Controls.NikseComboBox();
+            this.labelStorageCategory = new Nikse.SubtitleEdit.Controls.NikseLabel();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.buttonApply = new System.Windows.Forms.Button();
-            this.labelDuplicateStyleNames = new System.Windows.Forms.Label();
             this.contextMenuStripFile.SuspendLayout();
             this.groupBoxStyles.SuspendLayout();
             this.groupBoxProperties.SuspendLayout();
             this.groupBoxBorder.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShadowWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOutline)).BeginInit();
             this.groupBoxMargins.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginVertical)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginLeft)).BeginInit();
             this.groupBoxColors.SuspendLayout();
             this.groupBoxAlignment.SuspendLayout();
             this.groupBoxPreview.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
             this.contextMenuStripPreview.SuspendLayout();
             this.groupBoxFont.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpacing)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScaleY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScaleX)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFontSize)).BeginInit();
             this.groupBoxStorage.SuspendLayout();
             this.contextMenuStripStorage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -272,7 +262,7 @@
             this.toolStripMenuItemImport,
             this.toolStripMenuItemExport});
             this.contextMenuStripFile.Name = "contextMenuStrip1";
-            this.contextMenuStripFile.Size = new System.Drawing.Size(216, 314);
+            this.contextMenuStripFile.Size = new System.Drawing.Size(216, 292);
             this.contextMenuStripFile.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripFile_Opening);
             // 
             // deleteToolStripMenuItem
@@ -283,19 +273,19 @@
             this.deleteToolStripMenuItem.Text = "Remove";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.buttonRemove_Click);
             // 
-            // removeAndReplaceWithToolStripMenuItem
-            // 
-            this.removeAndReplaceWithToolStripMenuItem.Name = "removeAndReplaceWithToolStripMenuItem";
-            this.removeAndReplaceWithToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
-            this.removeAndReplaceWithToolStripMenuItem.Text = "Replace with...";
-            this.removeAndReplaceWithToolStripMenuItem.Click += new System.EventHandler(this.buttonRemoveAndReplaceWith_Click);
-            // 
             // toolStripMenuItemRemoveAll
             // 
             this.toolStripMenuItemRemoveAll.Name = "toolStripMenuItemRemoveAll";
             this.toolStripMenuItemRemoveAll.Size = new System.Drawing.Size(215, 22);
             this.toolStripMenuItemRemoveAll.Text = "Remove all";
             this.toolStripMenuItemRemoveAll.Click += new System.EventHandler(this.buttonRemoveAll_Click);
+            // 
+            // removeAndReplaceWithToolStripMenuItem
+            // 
+            this.removeAndReplaceWithToolStripMenuItem.Name = "removeAndReplaceWithToolStripMenuItem";
+            this.removeAndReplaceWithToolStripMenuItem.Size = new System.Drawing.Size(215, 22);
+            this.removeAndReplaceWithToolStripMenuItem.Text = "Replace with...";
+            this.removeAndReplaceWithToolStripMenuItem.Click += new System.EventHandler(this.buttonRemoveAndReplaceWith_Click);
             // 
             // toolStripSeparator4
             // 
@@ -1098,7 +1088,7 @@
             // 
             this.checkBoxStrikeout.AutoSize = true;
             this.checkBoxStrikeout.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxStrikeout.Location = new System.Drawing.Point(246, 54);
+            this.checkBoxStrikeout.Location = new System.Drawing.Point(265, 54);
             this.checkBoxStrikeout.Name = "checkBoxStrikeout";
             this.checkBoxStrikeout.Size = new System.Drawing.Size(68, 17);
             this.checkBoxStrikeout.TabIndex = 8;
@@ -1120,7 +1110,7 @@
             // 
             this.checkBoxFontUnderline.AutoSize = true;
             this.checkBoxFontUnderline.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFontUnderline.Location = new System.Drawing.Point(169, 54);
+            this.checkBoxFontUnderline.Location = new System.Drawing.Point(173, 54);
             this.checkBoxFontUnderline.Name = "checkBoxFontUnderline";
             this.checkBoxFontUnderline.Size = new System.Drawing.Size(71, 17);
             this.checkBoxFontUnderline.TabIndex = 7;
@@ -1146,7 +1136,7 @@
             // 
             this.checkBoxFontItalic.AutoSize = true;
             this.checkBoxFontItalic.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxFontItalic.Location = new System.Drawing.Point(90, 54);
+            this.checkBoxFontItalic.Location = new System.Drawing.Point(94, 54);
             this.checkBoxFontItalic.Name = "checkBoxFontItalic";
             this.checkBoxFontItalic.Size = new System.Drawing.Size(48, 17);
             this.checkBoxFontItalic.TabIndex = 6;
@@ -1217,6 +1207,7 @@
             this.groupBoxStorage.Controls.Add(this.buttonAddToFile);
             this.groupBoxStorage.Controls.Add(this.buttonStorageExport);
             this.groupBoxStorage.Controls.Add(this.buttonStorageImport);
+            this.groupBoxStorage.Controls.Add(this.labelDuplicateStyleNames);
             this.groupBoxStorage.Controls.Add(this.buttonStorageCopy);
             this.groupBoxStorage.Controls.Add(this.buttonStorageRemoveAll);
             this.groupBoxStorage.Controls.Add(this.buttonStorageAdd);
@@ -1271,6 +1262,18 @@
             this.buttonStorageImport.Text = "Import...";
             this.buttonStorageImport.UseVisualStyleBackColor = true;
             this.buttonStorageImport.Click += new System.EventHandler(this.buttonStorageImport_Click);
+            // 
+            // labelDuplicateStyleNames
+            // 
+            this.labelDuplicateStyleNames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.labelDuplicateStyleNames.AutoSize = true;
+            this.labelDuplicateStyleNames.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDuplicateStyleNames.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelDuplicateStyleNames.Location = new System.Drawing.Point(494, 102);
+            this.labelDuplicateStyleNames.Name = "labelDuplicateStyleNames";
+            this.labelDuplicateStyleNames.Size = new System.Drawing.Size(154, 13);
+            this.labelDuplicateStyleNames.TabIndex = 10;
+            this.labelDuplicateStyleNames.Text = "labelDuplicateStyleNames";
             // 
             // buttonStorageCopy
             // 
@@ -1613,24 +1616,11 @@
             this.buttonApply.UseVisualStyleBackColor = true;
             this.buttonApply.Click += new System.EventHandler(this.buttonApply_Click);
             // 
-            // labelDuplicateStyleNames
-            // 
-            this.labelDuplicateStyleNames.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.labelDuplicateStyleNames.AutoSize = true;
-            this.labelDuplicateStyleNames.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDuplicateStyleNames.ForeColor = System.Drawing.Color.Firebrick;
-            this.labelDuplicateStyleNames.Location = new System.Drawing.Point(12, 648);
-            this.labelDuplicateStyleNames.Name = "labelDuplicateStyleNames";
-            this.labelDuplicateStyleNames.Size = new System.Drawing.Size(154, 13);
-            this.labelDuplicateStyleNames.TabIndex = 10;
-            this.labelDuplicateStyleNames.Text = "labelDuplicateStyleNames";
-            // 
             // AssaStyles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1064, 670);
-            this.Controls.Add(this.labelDuplicateStyleNames);
             this.Controls.Add(this.buttonApply);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.labelStatus);
@@ -1656,13 +1646,8 @@
             this.groupBoxProperties.PerformLayout();
             this.groupBoxBorder.ResumeLayout(false);
             this.groupBoxBorder.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownShadowWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOutline)).EndInit();
             this.groupBoxMargins.ResumeLayout(false);
             this.groupBoxMargins.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginVertical)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMarginLeft)).EndInit();
             this.groupBoxColors.ResumeLayout(false);
             this.groupBoxAlignment.ResumeLayout(false);
             this.groupBoxAlignment.PerformLayout();
@@ -1671,11 +1656,6 @@
             this.contextMenuStripPreview.ResumeLayout(false);
             this.groupBoxFont.ResumeLayout(false);
             this.groupBoxFont.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownAngle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSpacing)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScaleY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownScaleX)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFontSize)).EndInit();
             this.groupBoxStorage.ResumeLayout(false);
             this.groupBoxStorage.PerformLayout();
             this.contextMenuStripStorage.ResumeLayout(false);
@@ -1704,9 +1684,9 @@
         private System.Windows.Forms.GroupBox groupBoxColors;
         private System.Windows.Forms.GroupBox groupBoxAlignment;
         private System.Windows.Forms.GroupBox groupBoxFont;
-        private System.Windows.Forms.ComboBox comboBoxFontName;
-        private System.Windows.Forms.Label labelFontSize;
-        private System.Windows.Forms.Label labelFontName;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboBoxFontName;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelFontSize;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelFontName;
         private System.Windows.Forms.GroupBox groupBoxPreview;
         private System.Windows.Forms.RadioButton radioButtonBottomRight;
         private System.Windows.Forms.RadioButton radioButtonBottomCenter;
@@ -1718,12 +1698,12 @@
         private System.Windows.Forms.RadioButton radioButtonMiddleCenter;
         private System.Windows.Forms.RadioButton radioButtonTopLeft;
         private System.Windows.Forms.GroupBox groupBoxMargins;
-        private System.Windows.Forms.NumericUpDown numericUpDownMarginVertical;
-        private System.Windows.Forms.NumericUpDown numericUpDownMarginRight;
-        private System.Windows.Forms.NumericUpDown numericUpDownMarginLeft;
-        private System.Windows.Forms.Label labelMarginVertical;
-        private System.Windows.Forms.Label labelMarginRight;
-        private System.Windows.Forms.Label labelMarginLeft;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownMarginVertical;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownMarginRight;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownMarginLeft;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelMarginVertical;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelMarginRight;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelMarginLeft;
         private System.Windows.Forms.Panel panelBackColor;
         private System.Windows.Forms.Button buttonBackColor;
         private System.Windows.Forms.Panel panelOutlineColor;
@@ -1732,21 +1712,21 @@
         private System.Windows.Forms.Button buttonSecondaryColor;
         private System.Windows.Forms.Panel panelPrimaryColor;
         private System.Windows.Forms.Button buttonPrimaryColor;
-        private System.Windows.Forms.NumericUpDown numericUpDownFontSize;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownFontSize;
         private System.Windows.Forms.CheckBox checkBoxFontItalic;
         private System.Windows.Forms.CheckBox checkBoxFontBold;
         private System.Windows.Forms.TextBox textBoxStyleName;
-        private System.Windows.Forms.Label labelStyleName;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelStyleName;
         private System.Windows.Forms.PictureBox pictureBoxPreview;
         private System.Windows.Forms.Button buttonRemoveAll;
         private System.Windows.Forms.CheckBox checkBoxFontUnderline;
         private System.Windows.Forms.ColumnHeader columnHeaderOutline;
         private System.Windows.Forms.Button buttonCopy;
         private System.Windows.Forms.ColorDialog colorDialogSSAStyle;
-        private System.Windows.Forms.NumericUpDown numericUpDownOutline;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownOutline;
         private System.Windows.Forms.GroupBox groupBoxBorder;
-        private System.Windows.Forms.NumericUpDown numericUpDownShadowWidth;
-        private System.Windows.Forms.Label labelShadow;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownShadowWidth;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelShadow;
         private System.Windows.Forms.RadioButton radioButtonOpaqueBox;
         private System.Windows.Forms.RadioButton radioButtonOutline;
         private System.Windows.Forms.Button buttonImport;
@@ -1754,15 +1734,15 @@
         private System.Windows.Forms.ColumnHeader columnHeaderUseCount;
         private System.Windows.Forms.Button buttonExport;
         private System.Windows.Forms.SaveFileDialog saveFileDialogStyle;
-        private System.Windows.Forms.Label labelStatus;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelStatus;
         private System.Windows.Forms.Timer timerClearStatus;
         private System.Windows.Forms.GroupBox groupBoxStorage;
-        private System.Windows.Forms.Label labelStorageCategory;
-        private System.Windows.Forms.ComboBox comboboxStorageCategories;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelStorageCategory;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboboxStorageCategories;
         private System.Windows.Forms.Button buttonStorageCategoryNew;
         private System.Windows.Forms.Button buttonStorageCategoryDelete;
         private System.Windows.Forms.Button buttonStorageManageCategories;
-        private System.Windows.Forms.Label labelCategoryDefaultNote;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelCategoryDefaultNote;
         private System.Windows.Forms.ListView listViewStorage;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -1818,16 +1798,16 @@
         private System.Windows.Forms.Button buttonApply;
         private System.Windows.Forms.Button buttonPickAttachmentFont;
         private System.Windows.Forms.CheckBox checkBoxStrikeout;
-        private System.Windows.Forms.NumericUpDown numericUpDownAngle;
-        private System.Windows.Forms.Label labelAngle;
-        private System.Windows.Forms.NumericUpDown numericUpDownSpacing;
-        private System.Windows.Forms.Label labelSpacing;
-        private System.Windows.Forms.NumericUpDown numericUpDownScaleY;
-        private System.Windows.Forms.Label labelScaleY;
-        private System.Windows.Forms.NumericUpDown numericUpDownScaleX;
-        private System.Windows.Forms.Label labelScaleX;
-        private System.Windows.Forms.ComboBox comboBoxOpaqueBoxStyle;
-        private System.Windows.Forms.Label labelDuplicateStyleNames;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownAngle;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelAngle;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownSpacing;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelSpacing;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownScaleY;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelScaleY;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownScaleX;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelScaleX;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboBoxOpaqueBoxStyle;
+        private Nikse.SubtitleEdit.Controls.NikseLabel labelDuplicateStyleNames;
         private System.Windows.Forms.ToolStripMenuItem removeAndReplaceWithToolStripMenuItem;
     }
 }

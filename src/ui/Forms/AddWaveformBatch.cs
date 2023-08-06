@@ -50,6 +50,15 @@ namespace Nikse.SubtitleEdit.Forms
                 checkBoxGenerateShotChanges.Checked = Configuration.Settings.VideoControls.GenerateSpectrogram;
             }
 
+            checkBoxExtractTimeCodes.Text = LanguageSettings.Current.AddWaveformBatch.ExtractTimeCodes;
+            checkBoxExtractTimeCodes.Left = checkBoxGenerateShotChanges.Left - checkBoxExtractTimeCodes.Width - 20;
+            checkBoxExtractTimeCodes.Visible = BeautifyTimeCodes.BeautifyTimeCodes.IsFfProbeAvailable();
+
+            if (checkBoxExtractTimeCodes.Visible)
+            {
+                checkBoxExtractTimeCodes.Checked = Configuration.Settings.BeautifyTimeCodes.ExtractExactTimeCodes;
+            }
+
             removeToolStripMenuItem.Text = LanguageSettings.Current.MultipleReplace.Remove;
             removeAllToolStripMenuItem.Text = LanguageSettings.Current.MultipleReplace.RemoveAll;
             UiUtil.FixLargeFonts(this, buttonDone);
@@ -366,8 +375,15 @@ namespace Nikse.SubtitleEdit.Forms
                     UpdateStatus(LanguageSettings.Current.AddWaveformBatch.Calculating);
                     MakeWaveformAndSpectrogram(fileName, targetFile, _delayInMilliseconds);
 
+                    if (checkBoxExtractTimeCodes.Visible && checkBoxExtractTimeCodes.Checked)
+                    {
+                        UpdateStatus(LanguageSettings.Current.AddWaveformBatch.ExtractingTimeCodes);
+                        ExtractTimeCodes(fileName);
+                    }
+
                     if (checkBoxGenerateShotChanges.Visible && checkBoxGenerateShotChanges.Checked)
                     {
+                        UpdateStatus(LanguageSettings.Current.AddWaveformBatch.DetectingShotChanges);
                         GenerateShotChanges(fileName);
                     }
 
@@ -401,6 +417,32 @@ namespace Nikse.SubtitleEdit.Forms
             buttonRipWave.Enabled = true;
             buttonInputBrowse.Enabled = true;
             buttonSearchFolder.Enabled = true;
+        }
+
+        private void ExtractTimeCodes(string videoFileName)
+        {
+            var timeCodesGenerator = new TimeCodesGenerator();
+
+            using (var process = timeCodesGenerator.GetProcess(videoFileName))
+            {
+                while (!process.HasExited)
+                {
+                    Application.DoEvents();
+                    System.Threading.Thread.Sleep(100);
+                    if (_abort)
+                    {
+                        DialogResult = DialogResult.Cancel;
+                        process.Kill();
+                        return;
+                    }
+                }
+            }
+
+            var timeCodes = timeCodesGenerator.GetTimeCodes();
+            if (timeCodes.Count > 0)
+            {
+                TimeCodesFileHelper.SaveTimeCodes(videoFileName, timeCodes);
+            }
         }
 
         private void GenerateShotChanges(string videoFileName)

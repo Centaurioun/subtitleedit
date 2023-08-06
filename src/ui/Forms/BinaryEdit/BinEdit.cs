@@ -360,6 +360,9 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             _ocrLowercaseHeightsTotalCount = 0;
             _ocrUppercaseHeightsTotal = 0;
             _ocrUppercaseHeightsTotalCount = 0;
+
+            videoPlayerContainer1.TryLoadGfx();
+            videoPlayerContainer1.HidePlayerName();
         }
 
         private void OpenBinSubtitle(string fileName)
@@ -380,6 +383,8 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 
             var ext = Path.GetExtension(fileName)?.ToLowerInvariant();
             var fileInfo = new FileInfo(fileName);
+            var found = false;
+
             if (FileUtil.IsBluRaySup(fileName))
             {
                 CleanUp();
@@ -421,8 +426,11 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                 _binSubtitles = new List<IBinaryParagraphWithPosition>(bluRaySubtitles);
                 _subtitle.Renumber();
                 FillListView(_subtitle);
+                found = true;
             }
-            else if (ext == ".mkv" || ext == ".mks")
+            
+            
+            if (!found && (ext == ".mkv" || ext == ".mks"))
             {
                 if (!OpenMatroskaFile(fileName))
                 {
@@ -437,9 +445,11 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 
                 _subtitle.Renumber();
                 FillListView(_subtitle);
+                found = true;
             }
-            else if (ext == ".m2ts" || ext == ".ts" || ext == ".mts" || ext == ".rec" || ext == ".mpeg" || ext == ".mpg" ||
-                     (fileInfo.Length < 100_000_000 && TransportStreamParser.IsDvbSup(fileName)))
+
+            if (!found && (ext == ".m2ts" || ext == ".ts" || ext == ".mts" || ext == ".rec" || ext == ".mpeg" || ext == ".mpg" ||
+                     (fileInfo.Length < 100_000_000 && TransportStreamParser.IsDvbSup(fileName))))
             {
                 var videoInfo = UiUtil.GetVideoInfo(fileName);
                 if (videoInfo != null && videoInfo.FramesPerSecond > 20 && videoInfo.FramesPerSecond < 1000)
@@ -454,8 +464,11 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 
                 _subtitle.Renumber();
                 FillListView(_subtitle);
+                found = true;
             }
-            else if (ext == ".xml")
+
+
+            if (!found && ext == ".xml")
             {
                 var bdnXml = new BdnXml();
                 var enc = LanguageAutoDetect.GetEncodingFromFile(fileName, true);
@@ -476,6 +489,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                         _extra.Add(new Extra { IsForced = bp.IsForced, X = bp.GetPosition().Left, Y = bp.GetPosition().Top });
                     }
                     FillListView(_subtitle);
+                    found = true;
                 }
                 else
                 {
@@ -493,10 +507,12 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                             _extra.Add(new Extra { IsForced = bp.IsForced, X = bp.GetPosition().Left, Y = bp.GetPosition().Top });
                         }
                         FillListView(_subtitle);
+                        found = true;
                     }
                 }
             }
-            else if (ext == ".ttml")
+
+            if (!found && (ext == ".ttml" || ext == ".xml" || ext == ".dfxp"))
             {
                 var list = new List<string>(File.ReadAllLines(fileName, LanguageAutoDetect.GetEncodingFromFile(fileName)));
                 var f = new TimedTextBase64Image();
@@ -530,9 +546,11 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 
                     _subtitle = new Subtitle(sub);
                     FillListView(_subtitle);
+                    found = true;
                 }
             }
-            else if (FileUtil.IsManzanita(fileName))
+            
+            if (!found && FileUtil.IsManzanita(fileName))
             {
                 if (!ImportSubtitleFromManzanitaTransportStream(fileName))
                 {
@@ -698,11 +716,11 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
 
             if (_columnIndexDuration >= 0)
             {
-                if (paragraph.Duration.TotalMilliseconds < Configuration.Settings.General.SubtitleMinimumDisplayMilliseconds && _columnIndexDuration >= 0)
+                if (paragraph.DurationTotalMilliseconds < Configuration.Settings.General.SubtitleMinimumDisplayMilliseconds && _columnIndexDuration >= 0)
                 {
                     colorDuration = true;
                 }
-                else if (paragraph.Duration.TotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds)
+                else if (paragraph.DurationTotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds)
                 {
                     colorDuration = true;
                 }
@@ -1121,10 +1139,10 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
                     if (pes == null && subtitle.Paragraphs.Count > 0)
                     {
                         var last = subtitle.Paragraphs[subtitle.Paragraphs.Count - 1];
-                        if (last.Duration.TotalMilliseconds < 100)
+                        if (last.DurationTotalMilliseconds < 100)
                         {
                             last.EndTime.TotalMilliseconds = msub.Start;
-                            if (last.Duration.TotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds)
+                            if (last.DurationTotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds)
                             {
                                 last.EndTime.TotalMilliseconds = last.StartTime.TotalMilliseconds + 3000;
                             }
@@ -1152,7 +1170,7 @@ namespace Nikse.SubtitleEdit.Forms.BinaryEdit
             for (var index = 0; index < subtitle.Paragraphs.Count; index++)
             {
                 var p = subtitle.Paragraphs[index];
-                if (p.Duration.TotalMilliseconds < 200)
+                if (p.DurationTotalMilliseconds < 200)
                 {
                     p.EndTime.TotalMilliseconds = p.StartTime.TotalMilliseconds + 3000;
                 }
@@ -1683,7 +1701,7 @@ $DROP=[DROPVALUE]" + Environment.NewLine + Environment.NewLine +
                 ntsc = "TRUE";
             }
 
-            var duration = SubtitleFormat.MillisecondsToFrames(p.Duration.TotalMilliseconds, _frameRate);
+            var duration = SubtitleFormat.MillisecondsToFrames(p.DurationTotalMilliseconds, _frameRate);
             var start = SubtitleFormat.MillisecondsToFrames(p.StartTime.TotalMilliseconds, _frameRate);
             var end = SubtitleFormat.MillisecondsToFrames(p.EndTime.TotalMilliseconds, _frameRate);
 
@@ -3967,11 +3985,11 @@ $DROP=[DROPVALUE]" + Environment.NewLine + Environment.NewLine +
 
             if (string.IsNullOrEmpty(errorText))
             {
-                if (paragraph.Duration.TotalMilliseconds < Configuration.Settings.General.SubtitleMinimumDisplayMilliseconds && _columnIndexDuration >= 0)
+                if (paragraph.DurationTotalMilliseconds < Configuration.Settings.General.SubtitleMinimumDisplayMilliseconds && _columnIndexDuration >= 0)
                 {
                     errorText = "Duration too small";
                 }
-                else if (paragraph.Duration.TotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds && _columnIndexDuration >= 0)
+                else if (paragraph.DurationTotalMilliseconds > Configuration.Settings.General.SubtitleMaximumDisplayMilliseconds && _columnIndexDuration >= 0)
                 {
                     errorText = "Duration too large";
                 }

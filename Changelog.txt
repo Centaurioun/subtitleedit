@@ -1,5 +1,88 @@
 ﻿Subtitle Edit Changelog
 
+3.6.14 (xth August 2023) BETA
+* NEW:
+   * New toolbar/video-player themes - thx jmaraujouy
+   * Beautify time codes (via shot changes) - thx  Flitskikker
+   * Use native styles for WebVTT
+   * Add video format ProRes for "Generate video with burned-in sub"
+   * Allow setting profile from cmd line - thx emcodem
+   * ASSA set layer - thx JonSchram
+   * Allow OCR of XML/PNG from MXF - thx Rodney
+* IMPROVED:
+   * Update German translation - thx Netspark
+   * Update Chinese translation - thx nkh0472
+   * Update Bulgarian translation - thx Калин
+   * Update Russian translation - thx elfriob
+   * Update Portuguese translation - thx hugok79
+   * Update Korean translation - thx domddol
+   * Update Tesseract OCR to 5.3.1 (64-bit only)
+   * Improve convert of SSA to ASSA - thx Emiliano
+   * Update burn-in video preview to video - thx Masina86
+   * Improve handling of invalid xml in ttml - thx m0ck69
+   * Update Whisper Const-me to version 1.12
+   * Minor refact/optmize - thx ivandrofly
+* FIXED:
+   * Fix "Find Double Words" - th uckthis
+   * Fix "double dash" issue in "Fix common errors" - thx Joel
+   * Avoid crash on very large TS files - thx Mariusz
+   * Do not count Unicode control characters in Auto-br - MichaelYochpaz 
+   * Fix to eager file locked check - thx OSokil
+   * Preserve white space in "Multiple replace import" - thx OtaStrom
+   * Fix frozen settings in "Batch convert" - thx OtaStrom
+   * Fix export image alignment when using font tag - thx Matt
+   * Fix crash in OCR Find - thx przemo20
+   * Fix crash generating empty wav for online video - thx Gromko1111 
+
+
+3.6.13 (14th May 2023)
+* NEW:
+   * Add new subtitle format "nVivo transcript" - thx Ashin
+   * Add Whisper CTranslate2 - thx jordimas
+   * Add "Proper Case" option in "Change casing" - thx lolipopsz
+   * Add shortcut for text "color picker" - thx rRobis
+   * Add shortcut for 3 seconds forward - thx Cyberyoda1411
+   * Add more mpv preview settings in UI
+   * Add cmd convert param "/teletextonlypage:<number>" - thx dystopia2017
+   * Add export of TTML SMPTE-TT with inline Base64 encoded PNG images
+   * Add new settings for WebVTT auto merge
+* IMPROVED:
+   * Update Hebrew translation - thx אלחנן 
+   * Update Slovenian translation - thx Jadran
+   * Update Finnish translation - thx Teijo S
+   * Update Korean translation - thx domddol
+   * Update Chinese translation - thx nkh0472
+   * Update Russian translation - thx elfriob
+   * Update Portuguese translation - thx hugok79
+   * Update Italian language - thx bovirus
+   * Update Catalan translation - thx  jordimas
+   * Update German translation - thx Netspark
+   * Update Bulgarian translation - thx Калин
+   * Find/Replace are no longer modal windows - thx Cyberyoda1411/domddol
+   * Replace: Add find/replace target + minor redesign
+   * List all EBU language codes - thx TerrorizedGakon
+   * Update Whisper CPP to v1.4.0
+   * Update Whisper Const-me to 1.11
+   * Make main text boxes a little wider - thx Cyberyoda1411
+   * Allow raw WebVTT preview in mpv - thx DeicPro
+   * Make "Toogle custom tags (surround with)" work with empty start or end tag
+   * Make "Fix common errors" ignore Chinese six dots - thx TokerX
+   * Keep original text box visible when not allowing edit of original - thx OmrSi
+* FIXED:
+   * Fix "Add embedded subtitles" with ANSI encoding - thx Cyberyoda1411
+   * Fix running Whisper CPP/Const-me after setting folder for Whisper OpenAI - thx rsmith02ct
+   * Fix possible crash after "Options - Settings" - thx JDTR75
+   * Fix undo/redo for text
+   * Fix reading "DCinema Interop" with only bold - thx Chris
+   * Fix crash in import of SSA styles - thx librafrog
+   * Fix possible crash reading .ts files - thx hepalin
+   * Fix crash in split lines - thx Papai
+   * Fix video cut duration in "Generate video with burned-in subitle" - thx Alxndr
+   * Fix "Insert after" with a minimum gap of zero ms - thx steam3d
+   * Fix crash in image export - thx dimailer
+   * Fix (re-enable) "full frame" for export FCP + image - thx Anders
+
+
 3.6.12 (26th March 2023)
 * NEW:
    * Add/remove embedded subtitles to/from video files - thx David
@@ -689,6 +772,7 @@
    * Update Tesseract 5 Alpha to "2021-05-06" - thx iGom
    * Add French letters in OCR char inspect - thx tormento
    * Handle Unicode control char in "Remove empty lines" - thx igenaya
+   * Improve audio-to-text post processing a little - thx oep42
 * FIXED:
    * Fix for unwanted line copy with alt+arrow-up/down fast - thx Nathália
    * Fix for reading BDSup position - thx akaicat

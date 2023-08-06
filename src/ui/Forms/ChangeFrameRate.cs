@@ -1,9 +1,8 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
-using Nikse.SubtitleEdit.Logic;
+﻿using Nikse.SubtitleEdit.Logic;
 using System;
-using System.Drawing;
 using System.Globalization;
 using System.Windows.Forms;
+using Nikse.SubtitleEdit.Controls;
 
 namespace Nikse.SubtitleEdit.Forms
 {
@@ -31,7 +30,7 @@ namespace Nikse.SubtitleEdit.Forms
             UiUtil.FixLargeFonts(this, buttonOK);
         }
 
-        private static void InitializeCombobox(ComboBox comboBox)
+        private static void InitializeCombobox(NikseComboBox comboBox)
         {
             comboBox.BeginUpdate();
             comboBox.Items.Clear();

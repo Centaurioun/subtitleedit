@@ -1,4 +1,4 @@
-﻿using Nikse.SubtitleEdit.Core.Common;
+using Nikse.SubtitleEdit.Core.Common;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -36,7 +36,7 @@ namespace Nikse.SubtitleEdit.Core.SubtitleFormats
 
         public override string ToText(Subtitle subtitle, string title)
         {
-            var guid = new Guid().ToString();
+            var guid = Guid.Empty.ToString();
             string xmlStructure =
                 "<?xml version=\"1.0\" encoding=\"utf-8\" ?>" + Environment.NewLine +
                 "<OpenDVT UUID=\"{" + guid + "\" ShortID=\"" + title + "\" Type=\"Deposition\" Version=\"1.3\">" + Environment.NewLine +

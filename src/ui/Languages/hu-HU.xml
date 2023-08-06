@@ -2,7 +2,7 @@
 <Language Name="Hungarian">
   <General>
     <Title>Subtitle Edit</Title>
-    <Version>3.6.12</Version>
+    <Version>3.6.13</Version>
     <TranslatedBy>Fordító: Zityi's Translator Team (http://szoftverforditasok.hu)</TranslatedBy>
     <CultureName>hu-HU</CultureName>
     <HelpFile />
@@ -1563,7 +1563,7 @@ Szeretné a dokumentum tetejétől kezdeni, és folytatni a keresést és a cser
     <BeforeDisplayTimeAdjustment>A megjelenítési idő beállítása előtti állapotra</BeforeDisplayTimeAdjustment>
     <DisplayTimeAdjustedX>Megjelenítési idők beállítva: {0}</DisplayTimeAdjustedX>
     <DisplayTimesAdjustedX>Megjelenítési idő beállítva: {0}</DisplayTimesAdjustedX>
-    <StarTimeAdjustedX>Kezdési idő beállítva: {0}</StarTimeAdjustedX>
+    <StartTimeAdjustedX>Kezdési idő beállítva: {0}</StartTimeAdjustedX>
     <BeforeCommonErrorFixes>A gyakori hibák javítása előtti állapotra</BeforeCommonErrorFixes>
     <CommonErrorsFixedInSelectedLines>A gyakori hibák javítva lettek a kijelölt soroknál</CommonErrorsFixedInSelectedLines>
     <CommonErrorsFixed>Gyakori hibák javítva</CommonErrorsFixed>
@@ -2498,7 +2498,7 @@ szerkesztheti ugyanazt a feliratfájlt (együttműködés)</Information>
     <GoForwardXSSeconds>Kis kiválasztott idő előre</GoForwardXSSeconds>
     <GoBackXLSeconds>Nagy kiválasztott idő vissza</GoBackXLSeconds>
     <GoForwardXLSeconds>Nagy kiválasztott idő előre</GoForwardXLSeconds>
-    <GoBack3Second>Három másodperc vissza</GoBack3Second>
+    <GoBack3Seconds>Három másodperc vissza</GoBack3Seconds>
     <GoToStartCurrent>Videó pozíció beállítása az aktuális felirat kezdetére</GoToStartCurrent>
     <ToggleStartEndCurrent>Videó pozíció váltása az aktuális felirat kezdete/vége között</ToggleStartEndCurrent>
     <PlaySelectedLines>Kijelölt sorok lejátszása</PlaySelectedLines>

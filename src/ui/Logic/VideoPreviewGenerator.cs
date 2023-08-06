@@ -104,7 +104,46 @@ namespace Nikse.SubtitleEdit.Logic
             var presetSettings = string.Empty;
             if (!string.IsNullOrEmpty(preset))
             {
-                presetSettings = $" -preset {preset}";
+                if (videoEncoding == "prores_ks")
+                {
+                    if (preset == "proxy")
+                    {
+                        preset = "0";
+                    }
+                    else if (preset == "lt")
+                    {
+                        preset = "1";
+                    }
+                    else if (preset == "standard")
+                    {
+                        preset = "2";
+                    }
+                    else if (preset == "hq")
+                    {
+                        preset = "3";
+                    }
+                    else if (preset == "4444")
+                    {
+                        preset = "4";
+                    }
+                    else if (preset == "4444xq")
+                    {
+                        preset = "5";
+                    }
+                    else
+                    {
+                        preset = string.Empty;
+                    }
+
+                    if (!string.IsNullOrEmpty(preset))
+                    {
+                        presetSettings = $" -profile:v {preset}";
+                    }
+                }
+                else
+                {
+                    presetSettings = $" -preset {preset}";
+                }
             }
 
             var crfSettings = string.Empty;
@@ -310,6 +349,10 @@ namespace Nikse.SubtitleEdit.Logic
                     if (lang.Length == 3)
                     {
                         threeLetterCode = lang;
+                    }
+                    else if (lang.IndexOf('-') == 2)
+                    {
+                        threeLetterCode = Iso639Dash2LanguageCode.GetThreeLetterCodeFromTwoLetterCode(lang.Substring(0, 2));
                     }
 
                     var languageName = Iso639Dash2LanguageCode.List.FirstOrDefault(p => p.ThreeLetterCode == threeLetterCode)?.EnglishName;

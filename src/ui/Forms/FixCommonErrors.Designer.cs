@@ -32,14 +32,14 @@ namespace Nikse.SubtitleEdit.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            TimeCode timeCode1 = new TimeCode();
+            Nikse.SubtitleEdit.Core.Common.TimeCode timeCode2 = new Nikse.SubtitleEdit.Core.Common.TimeCode();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonNextFinish = new System.Windows.Forms.Button();
             this.labelStatus = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.groupBoxStep1 = new System.Windows.Forms.GroupBox();
             this.buttonResetDefault = new System.Windows.Forms.Button();
-            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
+            this.comboBoxLanguage = new Nikse.SubtitleEdit.Controls.NikseComboBox();
             this.labelLanguage = new System.Windows.Forms.Label();
             this.buttonInverseSelection = new System.Windows.Forms.Button();
             this.buttonSelectAll = new System.Windows.Forms.Button();
@@ -83,8 +83,8 @@ namespace Nikse.SubtitleEdit.Forms
             this.buttonAutoBreak = new System.Windows.Forms.Button();
             this.labelStartTimeWarning = new System.Windows.Forms.Label();
             this.labelDurationWarning = new System.Windows.Forms.Label();
-            this.timeUpDownStartTime = new Nikse.SubtitleEdit.Controls.TimeUpDown();
-            this.numericUpDownDuration = new System.Windows.Forms.NumericUpDown();
+            this.timeUpDownStartTime = new Nikse.SubtitleEdit.Controls.NikseTimeUpDown();
+            this.numericUpDownDuration = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelDuration = new System.Windows.Forms.Label();
             this.labelStartTime = new System.Windows.Forms.Label();
             this.labelTextLineTotal = new System.Windows.Forms.Label();
@@ -105,7 +105,6 @@ namespace Nikse.SubtitleEdit.Forms
             this.contextMenuStripFixes.SuspendLayout();
             this.contextMenuStripListview.SuspendLayout();
             this.groupBoxEditPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuration)).BeginInit();
             this.tabPageLog.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -252,6 +251,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.listView1.TabIndex = 1;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
+            this.listView1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listView1_KeyDown);
             // 
             // columnHeader1
             // 
@@ -407,6 +407,7 @@ namespace Nikse.SubtitleEdit.Forms
             this.listViewFixes.View = System.Windows.Forms.View.Details;
             this.listViewFixes.ColumnClick += new System.Windows.Forms.ColumnClickEventHandler(this.ListViewFixesColumnClick);
             this.listViewFixes.SelectedIndexChanged += new System.EventHandler(this.ListViewFixesSelectedIndexChanged);
+            this.listViewFixes.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listViewFixes_KeyDown);
             // 
             // columnHeader4
             // 
@@ -649,21 +650,20 @@ namespace Nikse.SubtitleEdit.Forms
             // timeUpDownStartTime
             // 
             this.timeUpDownStartTime.AutoSize = true;
-            this.timeUpDownStartTime.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.timeUpDownStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.timeUpDownStartTime.Location = new System.Drawing.Point(8, 27);
             this.timeUpDownStartTime.Margin = new System.Windows.Forms.Padding(4);
             this.timeUpDownStartTime.Name = "timeUpDownStartTime";
-            this.timeUpDownStartTime.Size = new System.Drawing.Size(111, 27);
+            this.timeUpDownStartTime.Size = new System.Drawing.Size(113, 27);
             this.timeUpDownStartTime.TabIndex = 112;
-            timeCode1.Hours = 0;
-            timeCode1.Milliseconds = 0;
-            timeCode1.Minutes = 0;
-            timeCode1.Seconds = 0;
-            timeCode1.TimeSpan = System.TimeSpan.Parse("00:00:00");
-            timeCode1.TotalMilliseconds = 0D;
-            timeCode1.TotalSeconds = 0D;
-            this.timeUpDownStartTime.TimeCode = timeCode1;
+            timeCode2.Hours = 0;
+            timeCode2.Milliseconds = 0;
+            timeCode2.Minutes = 0;
+            timeCode2.Seconds = 0;
+            timeCode2.TimeSpan = System.TimeSpan.Parse("00:00:00");
+            timeCode2.TotalMilliseconds = 0D;
+            timeCode2.TotalSeconds = 0D;
+            this.timeUpDownStartTime.TimeCode = timeCode2;
             this.timeUpDownStartTime.UseVideoOffset = false;
             // 
             // numericUpDownDuration
@@ -816,7 +816,6 @@ namespace Nikse.SubtitleEdit.Forms
             this.contextMenuStripListview.ResumeLayout(false);
             this.groupBoxEditPanel.ResumeLayout(false);
             this.groupBoxEditPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDuration)).EndInit();
             this.tabPageLog.ResumeLayout(false);
             this.tabPageLog.PerformLayout();
             this.ResumeLayout(false);
@@ -858,8 +857,8 @@ namespace Nikse.SubtitleEdit.Forms
         private System.Windows.Forms.Button buttonFixesSelectAll;
         private System.Windows.Forms.Label labelStartTimeWarning;
         private System.Windows.Forms.Label labelDurationWarning;
-        private Nikse.SubtitleEdit.Controls.TimeUpDown timeUpDownStartTime;
-        private System.Windows.Forms.NumericUpDown numericUpDownDuration;
+        private Nikse.SubtitleEdit.Controls.NikseTimeUpDown timeUpDownStartTime;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownDuration;
         private System.Windows.Forms.Label labelDuration;
         private System.Windows.Forms.Label labelStartTime;
         private System.Windows.Forms.Button buttonRefreshFixes;
@@ -873,7 +872,7 @@ namespace Nikse.SubtitleEdit.Forms
         private System.Windows.Forms.SplitContainer splitContainerStep2;
         private System.Windows.Forms.Label labelSingleLine;
         private System.Windows.Forms.Button buttonSplitLine;
-        private System.Windows.Forms.ComboBox comboBoxLanguage;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboBoxLanguage;
         private System.Windows.Forms.Label labelLanguage;
         private System.Windows.Forms.Button buttonResetDefault;
         private System.Windows.Forms.ContextMenuStrip contextMenuStripFixes;

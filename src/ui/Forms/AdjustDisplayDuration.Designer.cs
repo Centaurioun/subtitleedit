@@ -38,22 +38,19 @@
             this.labelAddSeconds = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
             this.buttonOK = new System.Windows.Forms.Button();
-            this.numericUpDownMaxCharsSec = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownMaxCharsSec = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelMaxCharsPerSecond = new System.Windows.Forms.Label();
-            this.numericUpDownSeconds = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownPercent = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDownOptimalCharsSec = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownSeconds = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.numericUpDownPercent = new Nikse.SubtitleEdit.Controls.NikseUpDown();
+            this.numericUpDownOptimalCharsSec = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelOptimalCharsSec = new System.Windows.Forms.Label();
-            this.numericUpDownFixedMilliseconds = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownFixedMilliseconds = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelMillisecondsFixed = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.checkBoxExtendOnly = new System.Windows.Forms.CheckBox();
+            this.checkBoxCheckShotChanges = new System.Windows.Forms.CheckBox();
+            this.checkBoxEnforceDurationLimits = new System.Windows.Forms.CheckBox();
             this.groupBoxAdjustVia.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxCharsSec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeconds)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOptimalCharsSec)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFixedMilliseconds)).BeginInit();
             this.SuspendLayout();
             // 
             // radioButtonPercent
@@ -119,8 +116,10 @@
             // 
             // labelNote
             // 
+            this.labelNote.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.labelNote.AutoSize = true;
-            this.labelNote.Location = new System.Drawing.Point(10, 211);
+            this.labelNote.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelNote.Location = new System.Drawing.Point(10, 275);
             this.labelNote.Name = "labelNote";
             this.labelNote.Size = new System.Drawing.Size(279, 13);
             this.labelNote.TabIndex = 7;
@@ -149,7 +148,7 @@
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonCancel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonCancel.Location = new System.Drawing.Point(537, 231);
+            this.buttonCancel.Location = new System.Drawing.Point(537, 270);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 21;
@@ -160,7 +159,7 @@
             // 
             this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOK.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.buttonOK.Location = new System.Drawing.Point(456, 231);
+            this.buttonOK.Location = new System.Drawing.Point(456, 270);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 20;
@@ -330,11 +329,35 @@
             this.checkBoxExtendOnly.Text = "Extend only";
             this.checkBoxExtendOnly.UseVisualStyleBackColor = true;
             // 
+            // checkBoxCheckShotChanges
+            // 
+            this.checkBoxCheckShotChanges.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.checkBoxCheckShotChanges.AutoSize = true;
+            this.checkBoxCheckShotChanges.Location = new System.Drawing.Point(12, 247);
+            this.checkBoxCheckShotChanges.Name = "checkBoxCheckShotChanges";
+            this.checkBoxCheckShotChanges.Size = new System.Drawing.Size(122, 17);
+            this.checkBoxCheckShotChanges.TabIndex = 19;
+            this.checkBoxCheckShotChanges.Text = "Check shot changes";
+            this.checkBoxCheckShotChanges.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxEnforceDurationLimits
+            // 
+            this.checkBoxEnforceDurationLimits.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.checkBoxEnforceDurationLimits.AutoSize = true;
+            this.checkBoxEnforceDurationLimits.Location = new System.Drawing.Point(12, 224);
+            this.checkBoxEnforceDurationLimits.Name = "checkBoxEnforceDurationLimits";
+            this.checkBoxEnforceDurationLimits.Size = new System.Drawing.Size(217, 17);
+            this.checkBoxEnforceDurationLimits.TabIndex = 18;
+            this.checkBoxEnforceDurationLimits.Text = "Enforce minimum and maximum duration";
+            this.checkBoxEnforceDurationLimits.UseVisualStyleBackColor = true;
+            // 
             // AdjustDisplayDuration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 268);
+            this.ClientSize = new System.Drawing.Size(624, 307);
+            this.Controls.Add(this.checkBoxEnforceDurationLimits);
+            this.Controls.Add(this.checkBoxCheckShotChanges);
             this.Controls.Add(this.checkBoxExtendOnly);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numericUpDownFixedMilliseconds);
@@ -363,11 +386,6 @@
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormAdjustDisplayTime_KeyDown);
             this.groupBoxAdjustVia.ResumeLayout(false);
             this.groupBoxAdjustVia.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMaxCharsSec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSeconds)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPercent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownOptimalCharsSec)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFixedMilliseconds)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -384,16 +402,18 @@
         private System.Windows.Forms.Button buttonCancel;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.RadioButton radioButtonAutoRecalculate;
-        private System.Windows.Forms.NumericUpDown numericUpDownMaxCharsSec;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownMaxCharsSec;
         private System.Windows.Forms.Label labelMaxCharsPerSecond;
-        private System.Windows.Forms.NumericUpDown numericUpDownSeconds;
-        private System.Windows.Forms.NumericUpDown numericUpDownPercent;
-        private System.Windows.Forms.NumericUpDown numericUpDownOptimalCharsSec;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownSeconds;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownPercent;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownOptimalCharsSec;
         private System.Windows.Forms.Label labelOptimalCharsSec;
         private System.Windows.Forms.RadioButton radioButtonFixed;
-        private System.Windows.Forms.NumericUpDown numericUpDownFixedMilliseconds;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownFixedMilliseconds;
         private System.Windows.Forms.Label labelMillisecondsFixed;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox checkBoxExtendOnly;
+        private System.Windows.Forms.CheckBox checkBoxCheckShotChanges;
+        private System.Windows.Forms.CheckBox checkBoxEnforceDurationLimits;
     }
 }

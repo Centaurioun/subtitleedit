@@ -63,6 +63,17 @@ namespace Nikse.SubtitleEdit.Forms
             columnHeader5FileName.Text = LanguageSettings.Current.JoinSubtitles.FileName;
             buttonGenerate.Text = LanguageSettings.Current.Watermark.Generate;
             buttonCancel.Text = LanguageSettings.Current.General.Cancel;
+
+            addToolStripMenuItem.Text = LanguageSettings.Current.DvdSubRip.Add;
+            toolStripMenuItemStorageRemove.Text = LanguageSettings.Current.SubStationAlphaStyles.Remove;
+            toolStripMenuItemStorageRemoveAll.Text = LanguageSettings.Current.SubStationAlphaStyles.RemoveAll;
+            toolStripMenuItemStorageMoveUp.Text = LanguageSettings.Current.DvdSubRip.MoveUp;
+            toolStripMenuItemStorageMoveDown.Text = LanguageSettings.Current.DvdSubRip.MoveDown;
+            toggleForcedToolStripMenuItem.Text = LanguageSettings.Current.GenerateVideoWithEmbeddedSubs.ToggleForced;
+            toggleDefaultToolStripMenuItem.Text = LanguageSettings.Current.GenerateVideoWithEmbeddedSubs.ToggleDefault;
+            setLanguageToolStripMenuItem.Text = LanguageSettings.Current.GenerateVideoWithEmbeddedSubs.SetLanguage;
+            viewToolStripMenuItem.Text = LanguageSettings.Current.General.ShowPreview;
+
             promptParameterBeforeGenerateToolStripMenuItem.Text = LanguageSettings.Current.GenerateBlankVideo.GenerateWithFfmpegParametersPrompt;
             labelSubtitles.Text = string.Format(LanguageSettings.Current.GenerateVideoWithEmbeddedSubs.SubtitlesX, 0);
             labelNotSupported.Text = string.Empty;
@@ -196,6 +207,11 @@ namespace Nikse.SubtitleEdit.Forms
                 threeLetterCode = language;
             }
 
+            if (language.IndexOf('-') == 2)
+            {
+                threeLetterCode = Iso639Dash2LanguageCode.GetThreeLetterCodeFromTwoLetterCode(language.Substring(0, 2));
+            }
+
             return Iso639Dash2LanguageCode.List.FirstOrDefault(p => p.ThreeLetterCode == threeLetterCode)?.EnglishName;
         }
 
@@ -248,17 +264,19 @@ namespace Nikse.SubtitleEdit.Forms
             if (fileName.EndsWith(".sup", StringComparison.OrdinalIgnoreCase) &&
                 FileUtil.IsBluRaySup(fileName))
             {
-                AddListViewItem(new VideoPreviewGeneratorSub
-                {
-                    Name = Path.GetFileName(fileName),
-                    Language = "eng", //TODO: get from file name or sup
-                    Format = "Blu-ray sup",
-                    SubtitleFormat = null,
-                    IsNew = true,
-                    IsForced = false,
-                    IsDefault = false,
-                    FileName = fileName,
-                });
+                MessageBox.Show("FFmpeg does not support embedding of PGS/Blu-ray sup :(");
+
+                //AddListViewItem(new VideoPreviewGeneratorSub
+                //{
+                //    Name = Path.GetFileName(fileName),
+                //    Language = "eng", //TODO: get from file name or sup
+                //    Format = "Blu-ray sup",
+                //    SubtitleFormat = null,
+                //    IsNew = true,
+                //    IsForced = false,
+                //    IsDefault = false,
+                //    FileName = fileName,
+                //});
                 return;
             }
 
@@ -276,7 +294,7 @@ namespace Nikse.SubtitleEdit.Forms
 
             AddListViewItem(new VideoPreviewGeneratorSub
             {
-                Name = Path.GetFileName(fileName), 
+                Name = Path.GetFileName(fileName),
                 Language = LanguageAutoDetect.AutoDetectGoogleLanguage(subtitle),
                 Format = subtitle.OriginalFormat.FriendlyName,
                 SubtitleFormat = subtitle.OriginalFormat,
@@ -565,10 +583,10 @@ namespace Nikse.SubtitleEdit.Forms
                 {
                     Directory.Delete(cleanUpFolder, true);
                 }
-                catch 
+                catch
                 {
                     // ignore
-                }   
+                }
             }
         }
 

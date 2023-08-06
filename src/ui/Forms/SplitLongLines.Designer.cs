@@ -34,24 +34,23 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.numericUpDownSingleLineMaxCharacters = new System.Windows.Forms.NumericUpDown();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.toolStripMenuItemSelectAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemInverseSelection = new System.Windows.Forms.ToolStripMenuItem();
+            this.numericUpDownSingleLineMaxCharacters = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelLineMaxLength = new System.Windows.Forms.Label();
             this.labelSingleLineMaxLength = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.numericUpDownLineMaxCharacters = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDownLineMaxCharacters = new Nikse.SubtitleEdit.Controls.NikseUpDown();
             this.labelMaxSingleLineLengthIs = new System.Windows.Forms.Label();
             this.labelMaxLineLengthIs = new System.Windows.Forms.Label();
-            this.comboBoxLineContinuationBegin = new System.Windows.Forms.ComboBox();
+            this.comboBoxLineContinuationBegin = new Nikse.SubtitleEdit.Controls.NikseComboBox();
             this.labelLineContinuationBeginEnd = new System.Windows.Forms.Label();
-            this.comboBoxLineContinuationEnd = new System.Windows.Forms.ComboBox();
+            this.comboBoxLineContinuationEnd = new Nikse.SubtitleEdit.Controls.NikseComboBox();
             this.SubtitleListview1 = new Nikse.SubtitleEdit.Controls.SubtitleListView();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.toolStripMenuItemSelectAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemInverseSelection = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkBoxSplitAtLineBreaks = new System.Windows.Forms.CheckBox();
             this.groupBoxLinesFound.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSingleLineMaxCharacters)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLineMaxCharacters)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,9 +59,9 @@
             this.groupBoxLinesFound.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBoxLinesFound.Controls.Add(this.listViewFixes);
-            this.groupBoxLinesFound.Location = new System.Drawing.Point(12, 64);
+            this.groupBoxLinesFound.Location = new System.Drawing.Point(12, 100);
             this.groupBoxLinesFound.Name = "groupBoxLinesFound";
-            this.groupBoxLinesFound.Size = new System.Drawing.Size(750, 200);
+            this.groupBoxLinesFound.Size = new System.Drawing.Size(750, 164);
             this.groupBoxLinesFound.TabIndex = 4;
             this.groupBoxLinesFound.TabStop = false;
             this.groupBoxLinesFound.Text = "Lines that will be split";
@@ -101,6 +100,28 @@
             // 
             this.columnHeader7.Text = "New text";
             this.columnHeader7.Width = 500;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItemSelectAll,
+            this.toolStripMenuItemInverseSelection});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 48);
+            // 
+            // toolStripMenuItemSelectAll
+            // 
+            this.toolStripMenuItemSelectAll.Name = "toolStripMenuItemSelectAll";
+            this.toolStripMenuItemSelectAll.Size = new System.Drawing.Size(161, 22);
+            this.toolStripMenuItemSelectAll.Text = "Select all";
+            this.toolStripMenuItemSelectAll.Click += new System.EventHandler(this.toolStripMenuItemSelectAll_Click);
+            // 
+            // toolStripMenuItemInverseSelection
+            // 
+            this.toolStripMenuItemInverseSelection.Name = "toolStripMenuItemInverseSelection";
+            this.toolStripMenuItemInverseSelection.Size = new System.Drawing.Size(161, 22);
+            this.toolStripMenuItemInverseSelection.Text = "Inverse selection";
+            this.toolStripMenuItemInverseSelection.Click += new System.EventHandler(this.toolStripMenuItemInverseSelection_Click);
             // 
             // numericUpDownSingleLineMaxCharacters
             // 
@@ -275,33 +296,23 @@
             this.SubtitleListview1.UseSyntaxColoring = true;
             this.SubtitleListview1.View = System.Windows.Forms.View.Details;
             // 
-            // contextMenuStrip1
+            // checkBoxSplitAtLineBreaks
             // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItemSelectAll,
-            this.toolStripMenuItemInverseSelection});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 70);
-            // 
-            // toolStripMenuItemSelectAll
-            // 
-            this.toolStripMenuItemSelectAll.Name = "toolStripMenuItemSelectAll";
-            this.toolStripMenuItemSelectAll.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemSelectAll.Text = "Select all";
-            this.toolStripMenuItemSelectAll.Click += new System.EventHandler(this.toolStripMenuItemSelectAll_Click);
-            // 
-            // toolStripMenuItemInverseSelection
-            // 
-            this.toolStripMenuItemInverseSelection.Name = "toolStripMenuItemInverseSelection";
-            this.toolStripMenuItemInverseSelection.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItemInverseSelection.Text = "Inverse selection";
-            this.toolStripMenuItemInverseSelection.Click += new System.EventHandler(this.toolStripMenuItemInverseSelection_Click);
+            this.checkBoxSplitAtLineBreaks.AutoSize = true;
+            this.checkBoxSplitAtLineBreaks.Location = new System.Drawing.Point(28, 70);
+            this.checkBoxSplitAtLineBreaks.Name = "checkBoxSplitAtLineBreaks";
+            this.checkBoxSplitAtLineBreaks.Size = new System.Drawing.Size(112, 17);
+            this.checkBoxSplitAtLineBreaks.TabIndex = 49;
+            this.checkBoxSplitAtLineBreaks.Text = "Split at line breaks";
+            this.checkBoxSplitAtLineBreaks.UseVisualStyleBackColor = true;
+            this.checkBoxSplitAtLineBreaks.CheckedChanged += new System.EventHandler(this.checkBoxSplitAtLineBreaks_CheckedChanged);
             // 
             // SplitLongLines
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(774, 614);
+            this.Controls.Add(this.checkBoxSplitAtLineBreaks);
             this.Controls.Add(this.comboBoxLineContinuationEnd);
             this.Controls.Add(this.labelLineContinuationBeginEnd);
             this.Controls.Add(this.comboBoxLineContinuationBegin);
@@ -322,12 +333,10 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Split long lines";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SplitLongLines_KeyDown);
-            this.ResizeEnd += new System.EventHandler(this.SplitLongLines_ResizeEnd);
             this.Shown += new System.EventHandler(this.SplitLongLines_Shown);
+            this.ResizeEnd += new System.EventHandler(this.SplitLongLines_ResizeEnd);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.SplitLongLines_KeyDown);
             this.groupBoxLinesFound.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownSingleLineMaxCharacters)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownLineMaxCharacters)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -341,20 +350,21 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader7;
-        private System.Windows.Forms.NumericUpDown numericUpDownSingleLineMaxCharacters;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownSingleLineMaxCharacters;
         private System.Windows.Forms.Label labelLineMaxLength;
         private System.Windows.Forms.Label labelSingleLineMaxLength;
         private Controls.SubtitleListView SubtitleListview1;
         private System.Windows.Forms.Button buttonOK;
         private System.Windows.Forms.Button buttonCancel;
-        private System.Windows.Forms.NumericUpDown numericUpDownLineMaxCharacters;
+        private Nikse.SubtitleEdit.Controls.NikseUpDown numericUpDownLineMaxCharacters;
         private System.Windows.Forms.Label labelMaxSingleLineLengthIs;
         private System.Windows.Forms.Label labelMaxLineLengthIs;
-        private System.Windows.Forms.ComboBox comboBoxLineContinuationBegin;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboBoxLineContinuationBegin;
         private System.Windows.Forms.Label labelLineContinuationBeginEnd;
-        private System.Windows.Forms.ComboBox comboBoxLineContinuationEnd;
+        private Nikse.SubtitleEdit.Controls.NikseComboBox comboBoxLineContinuationEnd;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemSelectAll;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemInverseSelection;
+        private System.Windows.Forms.CheckBox checkBoxSplitAtLineBreaks;
     }
 }

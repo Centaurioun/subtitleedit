@@ -2,7 +2,7 @@
 <Language Name="Slovenščina">
   <General>
     <Title>Subtitle Edit</Title>
-    <Version>3.6.12</Version>
+    <Version>3.6.13</Version>
     <TranslatedBy>Prevod: Jadran Rudec, Pošta: jrudec@gmail.com</TranslatedBy>
     <CultureName>sl-SI</CultureName>
     <HelpFile />
@@ -1580,7 +1580,7 @@ Ali želite začeti z vrha dokumenta ter nadaljevati iskanje in zamenjavo?</Repl
     <BeforeDisplayTimeAdjustment>Pred prilagoditvijo časa prikaza</BeforeDisplayTimeAdjustment>
     <DisplayTimeAdjustedX>Prilagojen čas prikaza: {0}</DisplayTimeAdjustedX>
     <DisplayTimesAdjustedX>Prilagojeni časi prikaza: {0}</DisplayTimesAdjustedX>
-    <StarTimeAdjustedX>Prilagojen začetni čas: {0}</StarTimeAdjustedX>
+    <StartTimeAdjustedX>Prilagojen začetni čas: {0}</StartTimeAdjustedX>
     <BeforeCommonErrorFixes>Pred pogostimi popravki napak</BeforeCommonErrorFixes>
     <CommonErrorsFixedInSelectedLines>Pogoste napake, popravljene v izbranih vrsticah</CommonErrorsFixedInSelectedLines>
     <CommonErrorsFixed>Pogoste napake odpravljene</CommonErrorsFixed>
@@ -2516,7 +2516,7 @@ lahko ureja v isti datoteki s podnapisi (sodelovanje)</Information>
     <GoForwardXSSeconds>Majhen izbran čas naprej</GoForwardXSSeconds>
     <GoBackXLSeconds>Velik izbran čas nazaj</GoBackXLSeconds>
     <GoForwardXLSeconds>Velik izbran čas naprej</GoForwardXLSeconds>
-    <GoBack3Second>Tri sekunde nazaj</GoBack3Second>
+    <GoBack3Seconds>Tri sekunde nazaj</GoBack3Seconds>
     <GoToStartCurrent>Nastavi položaj videa na začetek trenutnega podnapisa</GoToStartCurrent>
     <ToggleStartEndCurrent>Preklop videa med začetkom in koncem trenutnega podnapisa</ToggleStartEndCurrent>
     <PlaySelectedLines>Predvajaj izbrane vrstice</PlaySelectedLines>

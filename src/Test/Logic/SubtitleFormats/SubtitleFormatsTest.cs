@@ -1226,10 +1226,13 @@ Dialogue: Marked=0,0:00:01.00,0:00:03.00,Default,NTP,0000,0000,0000,!Effect," + 
                 if (format.IsTextBased)
                 {
                     format.BatchMode = true;
-                    string text = format.ToText(subtitle, "test");
+                    var text = format.ToText(subtitle, "test");
                     var list = new List<string>();
                     foreach (string line in text.Replace("\r\n", "\n").Split('\n'))
+                    {
                         list.Add(line);
+                    }
+
                     var s2 = new Subtitle();
                     format.LoadSubtitle(s2, list, null);
 
@@ -1593,6 +1596,7 @@ and astronauts.“...""
 
         #region WebVTT
 
+        [Ignore] //rewriting WebVTT...
         [TestMethod]
         public void WebVttFontColor()
         {
@@ -1631,6 +1635,7 @@ Hi, I'm Keith Lemon.
             Assert.AreEqual("<font color=\"#r008000\">AUDIENCE: Aww!</font>", subtitle.Paragraphs[1].Text);
         }
 
+        [Ignore] // rewriting WebVTT
         [TestMethod]
         public void WebVttFontColorHex2()
         {
