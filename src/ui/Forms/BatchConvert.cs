@@ -413,6 +413,9 @@ namespace Nikse.SubtitleEdit.Forms
             checkBoxDrawing.Text = LanguageSettings.Current.AssaResolutionChanger.ChangeResolutionDrawing;
             labelSource.Text = LanguageSettings.Current.GoogleTranslate.From;
             labelTarget.Text = LanguageSettings.Current.GoogleTranslate.To;
+            nikseLabelModel.Text = LanguageSettings.Current.AudioToText.Model;
+            nikseLabelModel.Visible = false;
+            nikseComboBoxTranslateModel.Visible = false;
             groupBoxAutoTranslate.Text = LanguageSettings.Current.Main.VideoControls.AutoTranslate;
 
             labelSource.Left = comboBoxSource.Left - labelSource.Width - 5;
@@ -733,13 +736,14 @@ namespace Nikse.SubtitleEdit.Forms
             _autoTranslatorEngines = new List<IAutoTranslator>
             { // only add local APIs
                 new LibreTranslate(),
+                new OllamaTranslate(),
                 new NoLanguageLeftBehindServe(),
                 new NoLanguageLeftBehindApi(),
-                new OllamaTranslate(),
             };
             nikseComboBoxEngine.Items.Clear();
             nikseComboBoxEngine.Items.AddRange(_autoTranslatorEngines.Select(p => p.Name).ToArray<object>());
             nikseComboBoxEngine.SelectedIndex = 0;
+            nikseComboBoxEngine.Text = Configuration.Settings.Tools.BatchConvertTranslateEngine;
             var targetLanguageIsoCode = AutoTranslate.EvaluateDefaultTargetLanguageCode(CultureInfo.CurrentCulture.TwoLetterISOLanguageName);
             AutoTranslate.SelectLanguageCode(comboBoxTarget, targetLanguageIsoCode);
         }
@@ -828,6 +832,7 @@ namespace Nikse.SubtitleEdit.Forms
                 var mkvVobSub = new List<string>();
                 var mkvSrt = new List<string>();
                 var mkvSsa = new List<string>();
+                var mkvDvbSub = new List<string>();
                 var mkvAss = new List<string>();
                 var mkvTextST = new List<string>();
                 var mkvCount = 0;
@@ -916,7 +921,7 @@ namespace Nikse.SubtitleEdit.Forms
                                     }
                                     else if (track.CodecId.Equals("S_DVBSUB", StringComparison.OrdinalIgnoreCase))
                                     {
-                                        mkvAss.Add(MakeMkvTrackInfoString(track));
+                                        mkvDvbSub.Add(MakeMkvTrackInfoString(track));
                                     }
                                     else if (track.CodecId.Equals("S_HDMV/TEXTST", StringComparison.OrdinalIgnoreCase))
                                     {
@@ -926,7 +931,7 @@ namespace Nikse.SubtitleEdit.Forms
                             }
                         }
 
-                        if (mkvVobSub.Count + mkvPgs.Count + mkvSrt.Count + mkvSsa.Count + mkvAss.Count + mkvTextST.Count <= 0)
+                        if (mkvVobSub.Count + mkvPgs.Count + mkvSrt.Count + mkvSsa.Count + mkvAss.Count + mkvDvbSub.Count + mkvTextST.Count <= 0)
                         {
                             item.SubItems.Add(LanguageSettings.Current.UnknownSubtitle.Title);
                         }
@@ -986,6 +991,7 @@ namespace Nikse.SubtitleEdit.Forms
                         { "SSA", mkvSsa },
                         { "ASS", mkvAss },
                         { "TextST", mkvTextST },
+                        { "DvdSub", mkvDvbSub },
                     };
 
                     foreach (var mkvSubFormat in mkvSubFormats)
@@ -1528,7 +1534,7 @@ namespace Nikse.SubtitleEdit.Forms
                                                 }
                                                 else
                                                 {
-                                                    if (bluRaySubtitles.Count > 0)
+                                                    if (binaryParagraphs.Count > 0)
                                                     {
                                                         item.SubItems[3].Text = LanguageSettings.Current.BatchConvert.Ocr;
                                                         using (var vobSubOcr = new VobSubOcr())
@@ -1733,7 +1739,7 @@ namespace Nikse.SubtitleEdit.Forms
                                         {
                                             try
                                             {
-                                                var res = RunAutoTranslate(subtitle).Result;
+                                                var res = RunAutoTranslate(subtitle);
                                                 subtitle = res.Subtitle;
                                             }
                                             catch (Exception exception)
@@ -1787,7 +1793,7 @@ namespace Nikse.SubtitleEdit.Forms
                                     {
                                         try
                                         {
-                                            var res = RunAutoTranslate(subtitle).Result;
+                                            var res = RunAutoTranslate(subtitle);
                                             subtitle = res.Subtitle;
                                         }
                                         catch (Exception exception)
@@ -1920,7 +1926,7 @@ namespace Nikse.SubtitleEdit.Forms
                             {
                                 try
                                 {
-                                    var res = RunAutoTranslate(parameter.Subtitle).Result;
+                                    var res = RunAutoTranslate(parameter.Subtitle);
                                     parameter.Subtitle = res.Subtitle;
 
                                     var newFileName = FileNameHelper.GetFileNameWithTargetLanguage(parameter.FileName, null, null, parameter.Format, res.Source.TwoLetterIsoLanguageName, res.Target.TwoLetterIsoLanguageName);
@@ -1969,7 +1975,7 @@ namespace Nikse.SubtitleEdit.Forms
             public TranslationPair Target { get; set; }
         }
 
-        private async Task<TranslateResult> RunAutoTranslate(Subtitle subtitle)
+        private TranslateResult RunAutoTranslate(Subtitle subtitle)
         {
             var engine = GetCurrentEngine();
             engine.Initialize();
@@ -2005,22 +2011,37 @@ namespace Nikse.SubtitleEdit.Forms
               engine.Name == NoLanguageLeftBehindApi.StaticName ||  // NLLB seems to miss some text...
               engine.Name == NoLanguageLeftBehindServe.StaticName;
 
+            if (_autoTranslator.Name == OllamaTranslate.StaticName && !string.IsNullOrEmpty(nikseComboBoxTranslateModel.Text))
+            {
+                Configuration.Settings.Tools.OllamaModel = nikseComboBoxTranslateModel.Text;
+            }
+
+            _autoTranslator.Initialize();
+
             var index = 0;
             while (index < subtitle.Paragraphs.Count && !_abort)
             {
                 Application.DoEvents();
-                var linesMergedAndTranslated = await MergeAndSplitHelper.MergeAndTranslateIfPossible(subtitle, translatedSubtitle, source, target, index, engine, forceSingleLineMode, CancellationToken.None);
+
+                var task = Task.Run(async () => await MergeAndSplitHelper.MergeAndTranslateIfPossible(subtitle, translatedSubtitle, source, target, index, engine, forceSingleLineMode, CancellationToken.None).ConfigureAwait(false));
+                task.Wait();
+
+                var linesMergedAndTranslated = task.Result;
                 if (linesMergedAndTranslated > 0)
                 {
                     index += linesMergedAndTranslated;
                     continue;
                 }
 
+                forceSingleLineMode = true;
                 var p = subtitle.Paragraphs[index];
                 var f = new Formatting();
                 var unformattedText = f.SetTagsAndReturnTrimmed(p.Text, source.Code);
 
-                var translation = await _autoTranslator.Translate(unformattedText, source.Code, target.Code, CancellationToken.None);
+                var task2 = Task.Run(async () => await _autoTranslator.Translate(unformattedText, source.Code, target.Code, CancellationToken.None).ConfigureAwait(false));
+                task2.Wait();
+
+                var translation = task2.Result;
                 translation = translation
                     .Replace("<br />", Environment.NewLine)
                     .Replace("<br/>", Environment.NewLine);
@@ -3534,6 +3555,7 @@ namespace Nikse.SubtitleEdit.Forms
 
             Configuration.Settings.Tools.BatchConvertOcrEngine = _ocrEngine;
             Configuration.Settings.Tools.BatchConvertOcrLanguage = _ocrLanguage;
+            Configuration.Settings.Tools.BatchConvertTranslateEngine = nikseComboBoxEngine.Text;
 
             UpdateRtlSettings();
         }
@@ -4205,6 +4227,9 @@ namespace Nikse.SubtitleEdit.Forms
             comboBoxSource.SelectedIndex = 0;
 
             FillComboWithLanguages(comboBoxTarget, _autoTranslator.GetSupportedTargetLanguages());
+
+            var targetLanguageIsoCode = AutoTranslate.EvaluateDefaultTargetLanguageCode(CultureInfo.CurrentCulture.TwoLetterISOLanguageName);
+            AutoTranslate.SelectLanguageCode(comboBoxTarget, targetLanguageIsoCode);
         }
 
         public static void FillComboWithLanguages(NikseComboBox comboBox, IEnumerable<TranslationPair> languages)
@@ -4226,6 +4251,24 @@ namespace Nikse.SubtitleEdit.Forms
         {
             _autoTranslator = GetCurrentEngine();
             linkLabelPoweredBy.Text = string.Format(LanguageSettings.Current.GoogleTranslate.PoweredByX, _autoTranslator.Name);
+
+            if (_autoTranslator.Name == OllamaTranslate.StaticName)
+            {
+                var models = Configuration.Settings.Tools.OllamaModels.Split(',').ToList();
+                nikseComboBoxTranslateModel.Items.Clear();
+                foreach (var model in models)
+                {
+                    nikseComboBoxTranslateModel.Items.Add(model);
+                }
+                nikseComboBoxTranslateModel.Text = Configuration.Settings.Tools.OllamaModel;
+                nikseLabelModel.Visible = true;
+                nikseComboBoxTranslateModel.Visible = true;
+            }
+            else
+            {
+                nikseLabelModel.Visible = false;
+                nikseComboBoxTranslateModel.Visible = false;
+            }
         }
 
         private IAutoTranslator GetCurrentEngine()

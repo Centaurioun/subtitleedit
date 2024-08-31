@@ -135,6 +135,11 @@ namespace Nikse.SubtitleEdit.Core.Settings
                     settings.Shortcuts.GeneralSwitchOriginalAndTranslation = "Control+Alt+O";
                 }
 
+                if (settings.Shortcuts.MainFileSaveAs == "Control+Shift+S" && settings.Shortcuts.MainSpellCheck == "Control+Shift+S")
+                {
+                    settings.Shortcuts.MainSpellCheck = "Alt+F7";
+                }
+
                 if (settings.General.UseFFmpegForWaveExtraction && string.IsNullOrEmpty(settings.General.FFmpegLocation) && Configuration.IsRunningOnWindows)
                 {
                     var guessPath = Path.Combine(Configuration.DataDirectory, "ffmpeg", "ffmpeg.exe");
@@ -2940,6 +2945,12 @@ namespace Nikse.SubtitleEdit.Core.Settings
             if (subNode != null)
             {
                 settings.Tools.BatchConvertOcrLanguage = subNode.InnerText;
+            }
+
+            subNode = node.SelectSingleNode("BatchConvertTranslateEngine");
+            if (subNode != null)
+            {
+                settings.Tools.BatchConvertTranslateEngine = subNode.InnerText;
             }
 
             subNode = node.SelectSingleNode("WaveformBatchLastFolder");
@@ -9096,6 +9107,7 @@ namespace Nikse.SubtitleEdit.Core.Settings
                 textWriter.WriteElementString("BatchConvertMkvLanguageCodeStyle", settings.Tools.BatchConvertMkvLanguageCodeStyle);
                 textWriter.WriteElementString("BatchConvertOcrEngine", settings.Tools.BatchConvertOcrEngine);
                 textWriter.WriteElementString("BatchConvertOcrLanguage", settings.Tools.BatchConvertOcrLanguage);
+                textWriter.WriteElementString("BatchConvertTranslateEngine", settings.Tools.BatchConvertTranslateEngine);
                 textWriter.WriteElementString("WaveformBatchLastFolder", settings.Tools.WaveformBatchLastFolder);
                 textWriter.WriteElementString("ModifySelectionRule", settings.Tools.ModifySelectionRule);
                 textWriter.WriteElementString("ModifySelectionText", settings.Tools.ModifySelectionText);
